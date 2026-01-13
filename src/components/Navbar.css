@@ -1,0 +1,528 @@
+/* Navbar.css */
+
+/* ====== SENİN MEVCUT CSS'İN (DEĞİŞMEDİ) ====== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1rem 0;
+    transition: all var(--transition-normal);
+    background: var(--primary);
+}
+
+.navbar.scrolled {
+    padding: 0.75rem 0;
+    box-shadow: var(--shadow-lg);
+}
+
+.navbar-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.25rem;
+    z-index: 1001;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--gradient-accent);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-icon svg {
+    width: 24px;
+    height: 24px;
+    color: var(--white);
+}
+
+.logo-text {
+    letter-spacing: -0.5px;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.navbar-item {
+    position: relative;
+}
+
+.navbar-link {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.75rem 1.25rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+    font-family: inherit;
+}
+
+.navbar-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-link.active {
+    color: var(--accent);
+}
+
+.navbar-link.open {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.dropdown-arrow {
+    width: 14px;
+    height: 14px;
+    transition: transform var(--transition-fast);
+}
+
+.navbar-link.open .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+/* Simple Dropdown (Daha Fazlası için) */
+.navbar-item.has-dropdown {
+    position: relative;
+}
+
+.simple-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 200px;
+    background: var(--white);
+    border-radius: var(--radius-md);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    padding: 0.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.2s ease;
+    z-index: 1000;
+}
+
+.simple-dropdown.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(5px);
+}
+
+.simple-dropdown-item {
+    display: block;
+    padding: 0.7rem 1rem;
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+}
+
+.simple-dropdown-item:hover {
+    background: rgba(26, 47, 110, 0.1);
+    color: var(--primary);
+    border-left: 3px solid var(--primary);
+    padding-left: calc(1rem - 3px);
+}
+
+.simple-dropdown-item.active {
+    background: rgba(26, 47, 110, 0.1);
+    color: var(--primary);
+    border-left: 3px solid var(--primary);
+    padding-left: calc(1rem - 3px);
+}
+
+/* Mega Menu */
+.mega-menu {
+    position: fixed;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    min-width: 450px;
+    overflow: hidden;
+}
+
+.mega-menu-close {
+    display: none;
+    align-items: center;
+    gap: 0.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 10;
+    font-family: inherit;
+}
+
+.mega-menu-close svg {
+    width: 18px;
+    height: 18px;
+}
+
+.mega-menu-close:hover {
+    background: var(--secondary);
+}
+
+.navbar.scrolled~.mega-menu {
+    top: 58px;
+}
+
+.mega-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.mega-menu-inner {
+    display: flex;
+}
+
+/* Sol Panel - Kategoriler */
+.mega-menu-left {
+    width: 200px;
+    background: var(--light-gray);
+    padding: 1.25rem;
+    border-right: 1px solid var(--gray);
+}
+
+.mega-menu-left h4 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--gray);
+}
+
+.mega-category-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mega-category-list li {
+    margin-bottom: 0.25rem;
+}
+
+.mega-category-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 0.75rem;
+    background: transparent;
+    border: none;
+    border-radius: var(--radius-sm);
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    font-family: inherit;
+    text-align: left;
+}
+
+.mega-category-btn svg {
+    width: 14px;
+    height: 14px;
+    color: var(--text-light);
+    opacity: 1;
+    transition: all var(--transition-fast);
+}
+
+.mega-category-btn:hover {
+    background: rgba(26, 47, 110, 0.1);
+    color: var(--primary);
+    border-left: 3px solid var(--primary);
+    padding-left: calc(0.75rem - 3px);
+}
+
+.mega-category-btn:hover svg {
+    opacity: 1;
+    color: var(--primary);
+}
+
+.mega-category-btn.active {
+    background: rgba(26, 47, 110, 0.15);
+    color: var(--primary);
+    border-left: 3px solid var(--primary);
+    padding-left: calc(0.75rem - 3px);
+}
+
+.mega-category-btn.active svg {
+    opacity: 1;
+    color: var(--primary);
+}
+
+.mega-view-all {
+    display: block;
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--gray);
+    color: var(--secondary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: color var(--transition-fast);
+}
+
+.mega-view-all:hover {
+    color: var(--primary);
+}
+
+/* Sağ Panel - Alt Öğeler */
+.mega-menu-right {
+    flex: 1;
+    padding: 1.25rem;
+    min-width: 220px;
+}
+
+.mega-item-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mega-item-list li {
+    margin-bottom: 0.25rem;
+}
+
+.mega-item-link {
+    display: block;
+    padding: 0.6rem 0.75rem;
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+}
+
+.mega-item-link:hover {
+    background: rgba(26, 47, 110, 0.1);
+    color: var(--primary);
+    border-left: 3px solid var(--primary);
+    padding-left: calc(0.75rem - 3px);
+}
+
+.mega-item-link.active {
+    background: rgba(26, 47, 110, 0.1);
+    color: var(--primary);
+    border-left: 3px solid var(--primary);
+    padding-left: calc(0.75rem - 3px);
+}
+
+/* Overlay */
+.mega-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 998;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-normal);
+}
+
+.mega-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Hamburger */
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: transparent;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.navbar-toggle span {
+    width: 25px;
+    height: 2px;
+    background: var(--white);
+    transition: all var(--transition-fast);
+}
+
+.navbar-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile */
+@media (max-width: 968px) {
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .navbar-menu {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: var(--primary);
+        flex-direction: column;
+        padding: 1rem;
+        gap: 0.5rem;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all var(--transition-normal);
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
+        z-index: 999;
+    }
+
+    .navbar-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .navbar-item {
+        width: 100%;
+    }
+
+    .navbar-link {
+        width: 100%;
+        justify-content: space-between;
+        padding: 1rem 1.25rem;
+    }
+
+    .mega-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: translateX(100%);
+        border-radius: 0;
+        min-width: 100%;
+        z-index: 1002;
+    }
+
+    .mega-menu.active {
+        transform: translateX(0);
+    }
+
+    .mega-menu-inner {
+        flex-direction: column;
+        height: 100%;
+        padding-top: 60px;
+    }
+
+    .mega-menu-left {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--gray);
+    }
+
+    .mega-menu-right {
+        flex: 1;
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text {
+        display: none;
+    }
+
+    .logo-icon {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* ====== EK CSS: Sadece SineTamer'de 3 eşit kolon + DAHA GENİŞ ====== */
+
+/* Mega menüyü biraz genişlet (kolonların rahatlaması için) */
+@media (min-width: 969px) {
+    .mega-menu {
+        min-width: 980px;
+        /* önce 450 idi, SineTamer için rahat */
+        max-width: 1100px;
+        /* aşırı büyümesin */
+        width: calc(100vw - 80px);
+    }
+}
+
+/* 3 eşit kolon; divider sabit 1px, kolonlar daha geniş */
+.mega-menu-right.mega-right-triple {
+    display: grid;
+    grid-template-columns: minmax(260px, 1fr) 1px minmax(260px, 1fr) 1px minmax(260px, 1fr);
+    gap: 1.5rem;
+    /* 1.25rem'den biraz fazla */
+    align-items: start;
+}
+
+/* Kolon içeriği taşmasın */
+.mega-menu-right.mega-right-triple .mega-col {
+    min-width: 0;
+}
+
+/* Divider */
+.mega-right-divider {
+    width: 1px;
+    height: 100%;
+    background: var(--gray);
+    opacity: 0.9;
+}
+
+/* Mobil: alt alta, divider yok */
+@media (max-width: 968px) {
+    .mega-menu-right.mega-right-triple {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .mega-menu-right.mega-right-triple .mega-right-divider {
+        display: none;
+    }
+}
