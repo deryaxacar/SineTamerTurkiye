@@ -45,7 +45,7 @@ const Navbar = () => {
           items: [
             { path: '/cozumler/ups-cozumleri/gyenilenmis-ups-cozumleri', label: 'Güvenilir Güç Koruması İçin Yenilenmiş UPS Sistemleri' },
             { path: '/cozumler/ups-cozumleri/xtreme-power-serisi', label: 'Xtreme Power Serisi UPS Üniteleri' },
-            { path: '/cozumler/ups-cozumleri#bakim', label: 'Eaton/Powerware UPS' },
+            { path: '/cozumler/ups-cozumleri/eaton-powerware-ups', label: 'Eaton/Powerware UPS' },
             { path: '/cozumler/ups-cozumleri#bakim', label: 'Yaygın Güç Kalitesi Sorunları ve Mitleri' },
             { path: '/cozumler/ups-cozumleri#bakim', label: 'Piller' },
             { path: '/cozumler/ups-cozumleri#bakim', label: 'UPS Pil Servis Departmanı' },

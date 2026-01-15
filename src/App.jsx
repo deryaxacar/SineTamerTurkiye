@@ -28,6 +28,10 @@ import AskSineTamer from './pages/more/AskSineTamer';
 // UPS Solutions
 import RenewedUPS from './pages/solutions/RenewedUPS';
 import XtremePowerUPS from './pages/solutions/XtremePowerUPS';
+import EatonPowerwareUPS from './pages/solutions/EatonPowerwareUPS';
+import Eaton3Series from './pages/solutions/Eaton3Series';
+import Eaton5Series from './pages/solutions/Eaton5Series';
+import Eaton9Series from './pages/solutions/Eaton9Series';
 
 import './App.css';
 
@@ -57,6 +61,10 @@ function App() {
             {/* More Categories */}
             <Route path="/cozumler/ups-cozumleri/gyenilenmis-ups-cozumleri" element={<RenewedUPS />} />
             <Route path="/cozumler/ups-cozumleri/xtreme-power-serisi" element={<XtremePowerUPS />} />
+            <Route path="/cozumler/ups-cozumleri/eaton-powerware-ups" element={<EatonPowerwareUPS />} />
+            <Route path="/cozumler/ups-cozumleri/eaton-powerware/3-serisi" element={<Eaton3Series />} />
+            <Route path="/cozumler/ups-cozumleri/eaton-powerware/5-serisi" element={<Eaton5Series />} />
+            <Route path="/cozumler/ups-cozumleri/eaton-powerware/9-serisi" element={<Eaton9Series />} />
             <Route path="/daha-fazlasi/teknoloji-konulari" element={<TechTopics />} />
             <Route path="/daha-fazlasi/brosurler" element={<BrochuresPage />} />
             <Route path="/daha-fazlasi/videolar" element={<VideosPage />} />

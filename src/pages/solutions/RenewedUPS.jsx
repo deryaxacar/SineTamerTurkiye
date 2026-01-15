@@ -47,7 +47,7 @@ const RenewedUPS = () => {
     return (
         <div className="solution-category-page">
             {/* Hero Section */}
-            <section className="category-hero" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1558494949-ef8b565698fa?w=1920)' }}>
+            <section className="category-hero" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920)' }}>
                 <div className="category-hero-overlay"></div>
                 <div className="category-hero-content">
                     <h1>Güvenilir Güç Koruması için Yenilenmiş UPS Sistemleri</h1>
