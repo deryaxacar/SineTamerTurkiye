@@ -173,7 +173,7 @@
 }
 
 .mega-menu-close {
-    display: none;
+    display: flex;
     align-items: center;
     gap: 0.5rem;
     position: absolute;
@@ -403,7 +403,7 @@
 
     .navbar-menu {
         position: fixed;
-        top: 70px;
+        top: 57px;
         left: 0;
         right: 0;
         background: var(--primary);
@@ -449,6 +449,10 @@
 
     .mega-menu.active {
         transform: translateX(0);
+    }
+
+    .mega-menu-close {
+        display: flex;
     }
 
     .mega-menu-inner {
@@ -524,5 +528,50 @@
 
     .mega-menu-right.mega-right-triple .mega-right-divider {
         display: none;
+    }
+}
+
+/* 2 logoyu yan yana tut, arayı sen belirle */
+.navbar-logos {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* aradaki boşluk (8-16px arası iyi) */
+}
+
+/* Link'in kendi gap'ini kapat, sadece resim olsun */
+.navbar-logo {
+    gap: 1;
+}
+
+/* Ortak img ayarı */
+.navbar-logo-image {
+    display: block;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Logo1 ayrı boyut */
+.logo-sinetamer {
+    height: 50px;
+}
+
+/* Logo2 ayrı boyut */
+.logo-womner {
+    height: 34px;
+}
+
+/* Mobilde ayrı ayrı küçült */
+@media (max-width: 480px) {
+    .navbar-logos {
+        gap: 8px;
+    }
+
+    .logo-sinetamer {
+        height: 32px;
+    }
+
+    .logo-womner {
+        height: 28px;
     }
 }

@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Solutions from './pages/Solutions';
 import Products from './pages/Products';
-import Blog from './pages/Blog';
+import BlogPage from './pages/more/BlogPage';
 import BlogDetail from './pages/BlogDetail';
 import ProductDetail from './pages/ProductDetail';
 import Contact from './pages/Contact';
@@ -21,7 +21,6 @@ import SmartGrid from './pages/solutions/SmartGrid';
 import TechTopics from './pages/more/TechTopics';
 import BrochuresPage from './pages/more/Brochures';
 import VideosPage from './pages/more/VideosPage';
-import BlogPage from './pages/more/BlogPage';
 import Newsletter from './pages/more/Newsletter';
 import AskSineTamer from './pages/more/AskSineTamer';
 
@@ -32,6 +31,10 @@ import EatonPowerwareUPS from './pages/solutions/EatonPowerwareUPS';
 import Eaton3Series from './pages/solutions/Eaton3Series';
 import Eaton5Series from './pages/solutions/Eaton5Series';
 import Eaton9Series from './pages/solutions/Eaton9Series';
+import PowerQualityProblems from './pages/solutions/PowerQualityProblems';
+import Batteries from './pages/solutions/Batteries';
+import BatteryService from './pages/solutions/BatteryService';
+import PowerQualityAnalysis from './pages/solutions/PowerQualityAnalysis';
 
 import './App.css';
 
@@ -46,7 +49,7 @@ function App() {
             <Route path="/cozumler" element={<Solutions />} />
             <Route path="/urunler" element={<Products />} />
             <Route path="/urunler/:id" element={<ProductDetail />} />
-            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/:id" element={<BlogDetail />} />
             <Route path="/iletisim" element={<Contact />} />
             <Route path="/daha-fazlasi" element={<More />} />
@@ -65,6 +68,10 @@ function App() {
             <Route path="/cozumler/ups-cozumleri/eaton-powerware/3-serisi" element={<Eaton3Series />} />
             <Route path="/cozumler/ups-cozumleri/eaton-powerware/5-serisi" element={<Eaton5Series />} />
             <Route path="/cozumler/ups-cozumleri/eaton-powerware/9-serisi" element={<Eaton9Series />} />
+            <Route path="/cozumler/ups-cozumleri/yaygin-gucluk-sorunlari" element={<PowerQualityProblems />} />
+            <Route path="/cozumler/ups-cozumleri/piller" element={<Batteries />} />
+            <Route path="/cozumler/ups-cozumleri/pil-servis-departmani" element={<BatteryService />} />
+            <Route path="/cozumler/ups-cozumleri/guc-kalitesi-analizi" element={<PowerQualityAnalysis />} />
             <Route path="/daha-fazlasi/teknoloji-konulari" element={<TechTopics />} />
             <Route path="/daha-fazlasi/brosurler" element={<BrochuresPage />} />
             <Route path="/daha-fazlasi/videolar" element={<VideosPage />} />

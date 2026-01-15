@@ -244,12 +244,12 @@
 
 /* CTA Section */
 .category-cta {
-    padding: 5rem 0;
+    padding: 3rem 0;
     background: var(--white);
 }
 
 .cta-container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
     padding: 3rem;
@@ -468,6 +468,10 @@
 }
 
 @media (max-width: 768px) {
+    .solution-category-page {
+        padding-top: 10px;
+    }
+
     .product-item-horizontal {
         flex-direction: column;
         padding: 1.25rem;
@@ -1092,5 +1096,281 @@
 
     .series-docs--row {
         grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================================
+   Split Layout for Information Pages (Power Quality Problems etc)
+   ========================================================= */
+.split-layout-section {
+    padding: 3rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.split-top {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 4rem;
+    align-items: start;
+    margin-bottom: 3rem;
+    padding: 0 2rem;
+}
+
+.split-side-image {
+    width: 100%;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--gray);
+    overflow: hidden;
+}
+
+.split-side-image img {
+    width: 100%;
+    display: block;
+}
+
+.split-side-image.small {
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.split-side-image.small img {
+    width: auto;
+    max-width: 480px;
+    height: auto;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--gray);
+    border-radius: var(--radius-md);
+}
+
+.split-main-text h2 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.split-main-text p {
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+}
+
+.split-bottom {
+    padding: 0 2rem;
+}
+
+.problem-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.problem-item {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    border-top: 5px solid var(--primary-light);
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease;
+}
+
+.problem-item:hover {
+    transform: translateY(-5px);
+}
+
+.problem-item h4 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.problem-item p {
+    color: var(--text-light);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.problem-item ul {
+    list-style: disc;
+    margin-left: 1.25rem;
+    margin-top: 1rem;
+}
+
+.problem-item ul li {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 968px) {
+    .split-top {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .split-side-image {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .problem-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================================
+   Information Grid (3 Cards) - Used in Batteries Page
+   ========================================================= */
+.info-grid-section {
+    padding: 3rem 0;
+    background: var(--gray-light);
+}
+
+.info-cards-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.info-card {
+    background: var(--white);
+    padding: 3rem 2rem;
+    border-radius: var(--radius-xl);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--gray);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: inherit;
+}
+
+.info-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary);
+}
+
+/* Horizontal Variant */
+.info-card.horizontal {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.info-card.horizontal .info-card-icon {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .info-card.horizontal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-card.horizontal .info-card-icon {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.info-card-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    color: var(--white);
+    box-shadow: 0 8px 20px rgba(13, 27, 76, 0.2);
+}
+
+.info-card-icon svg {
+    width: 32px;
+    height: 32px;
+}
+
+.info-card h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.info-card .btn-outline {
+    margin-top: auto;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.info-card:hover .btn-outline {
+    background: var(--primary);
+    color: var(--white);
+}
+
+/* =========================================================
+   Detailed Info Blocks
+   ========================================================= */
+.detailed-info-section {
+    padding: 1rem 0;
+    background: var(--white);
+}
+
+.info-blocks-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.info-block {
+    border-left: 4px solid var(--primary);
+    padding-left: 2rem;
+}
+
+.info-block h3 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.info-block p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+}
+
+@media (max-width: 968px) {
+    .info-cards-container {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+    .info-block h3 {
+        font-size: 1.5rem;
     }
 }

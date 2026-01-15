@@ -1,13 +1,13 @@
 .footer {
     background: var(--gradient-primary);
     color: var(--white);
-    padding: 4rem 0 0;
+    padding: 3rem 0 0;
 }
 
 .footer-container {
-    max-width: 1280px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
 }
 
 .footer-grid {
@@ -28,52 +28,11 @@
     margin-bottom: 1rem;
 }
 
-.footer-logo-icon {
-    width: 40px;
-    height: 40px;
-    background: var(--gradient-accent);
-    border-radius: var(--radius-md);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer-logo-icon svg {
-    width: 24px;
-    height: 24px;
-    color: var(--white);
-}
 
 .footer-description {
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.7;
     margin-bottom: 1.5rem;
-}
-
-.footer-social {
-    display: flex;
-    gap: 1rem;
-}
-
-.footer-social a {
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: var(--radius-md);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all var(--transition-fast);
-}
-
-.footer-social a:hover {
-    background: var(--accent);
-    transform: translateY(-3px);
-}
-
-.footer-social svg {
-    width: 20px;
-    height: 20px;
 }
 
 .footer-title {
@@ -162,5 +121,149 @@
 
     .footer-bottom-links {
         gap: 1rem;
+    }
+}
+
+/* Eski ikon+metin düzenini kullanmıyorsan istersen footer-logo stillerini bırakabilirsin */
+
+.footer-logo-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* ortalı dursun */
+    justify-content: center;
+    gap: 40px;
+    /* iki logo arası boşluk */
+    margin-bottom: 1.25rem;
+    text-decoration: none;
+}
+
+.footer-logo-image {
+    display: block;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Üstteki logo */
+.footer-logo-sinetamer {
+    height: 110px;
+    cursor: pointer;
+    /* ayrı ayrı ayarla */
+}
+
+/* Alttaki logo */
+.footer-logo-womner {
+    height: 60px;
+    cursor: pointer;
+    /* ayrı ayrı ayarla */
+}
+
+.footer-logo-ecs {
+    height: 100px;
+    width: auto;
+    cursor: pointer;
+    /* ayrı ayrı ayarla */
+}
+
+/* Mobil */
+@media (max-width: 968px) {
+    .footer-container {
+        padding: 0 1rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        /* tek kolon */
+        gap: 2rem;
+        text-align: center;
+    }
+
+    /* Link listeleri ortalı ve daha derli toplu */
+    .footer-links {
+        align-items: center;
+    }
+
+    /* İletişim satırları: ikon + metin hizası */
+    .footer-contact {
+        align-items: center;
+    }
+
+    .footer-contact li {
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        /* metin çok satırsa daha okunaklı */
+        max-width: 320px;
+        /* taşmayı engeller */
+        margin: 0 auto;
+    }
+
+    .footer-contact svg {
+        margin-top: 0;
+    }
+
+    /* Logolar mobilde daha kompakt */
+    .footer-logo-group {
+        gap: 16px;
+        /* 40px çoktu */
+        margin-bottom: 0.75rem;
+    }
+
+    .footer-logo-sinetamer {
+        height: 64px;
+    }
+
+    .footer-logo-womner {
+        height: 44px;
+    }
+
+    .footer-logo-ecs {
+        height: 56px;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer {
+        padding: 3rem 0 0;
+    }
+
+    .footer-grid {
+        gap: 1.75rem;
+    }
+
+    .footer-title {
+        margin-bottom: 1rem;
+    }
+
+    .footer-description {
+        margin-bottom: 1rem;
+    }
+
+    .footer-logo-group {
+        gap: 12px;
+    }
+
+    .footer-logo-sinetamer {
+        height: 56px;
+    }
+
+    .footer-logo-womner {
+        height: 40px;
+    }
+
+    .footer-logo-ecs {
+        height: 48px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 0.75rem;
+        text-align: center;
+    }
+
+    .footer-bottom-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem 1rem;
     }
 }

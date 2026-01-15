@@ -80,7 +80,7 @@ const EnergyStorage = () => {
                     <div className="breadcrumb">
                         <Link to="/">Ana Sayfa</Link>
                         <span>/</span>
-                        <Link to="/cozumler">Çözümler</Link>
+                        <span>Çözümler</span>
                         <span>/</span>
                         <span>Enerji Depolama</span>
                     </div>

@@ -59,7 +59,7 @@ const Home = () => {
             excerpt: 'Güneş panelleri ile evinizin enerji ihtiyacını karşılayarak faturalarınızı nasıl düşürebileceğinizi öğrenin.',
             date: '10 Ocak 2026',
             category: 'Güneş Enerjisi',
-            link: '/blog'
+            link: '/daha-fazlasi/blog'
         },
         {
             image: 'https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=600',
@@ -67,7 +67,7 @@ const Home = () => {
             excerpt: 'Rüzgar enerjisi sektöründeki son gelişmeler ve 2026 yılında bizi bekleyen yenilikler.',
             date: '8 Ocak 2026',
             category: 'Rüzgar Enerjisi',
-            link: '/blog'
+            link: '/daha-fazlasi/blog'
         },
         {
             image: 'https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?w=600',
@@ -75,7 +75,7 @@ const Home = () => {
             excerpt: 'Ev ve işletmeler için en uygun enerji depolama çözümlerini karşılaştırmalı olarak inceliyoruz.',
             date: '5 Ocak 2026',
             category: 'Depolama',
-            link: '/blog'
+            link: '/daha-fazlasi/blog'
         },
     ];
 
@@ -95,17 +95,6 @@ const Home = () => {
                         Sürdürülebilir enerji çözümleri ile çevreyi koruyun, maliyetlerinizi düşürün
                         ve enerji bağımsızlığınızı kazanın. 15 yıllık tecrübemizle yanınızdayız.
                     </p>
-                    <div className="hero-buttons animate-fade-in">
-                        <Link to="/cozumler" className="btn btn-accent">
-                            Çözümlerimiz
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                <path d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
-                        </Link>
-                        <Link to="/iletisim" className="btn btn-white">
-                            Ücretsiz Danışmanlık
-                        </Link>
-                    </div>
                 </div>
                 <div className="hero-scroll">
                     <span>Aşağı Kaydır</span>
@@ -132,7 +121,7 @@ const Home = () => {
                         ))}
                     </div>
                     <div className="solutions-cta">
-                        <Link to="/cozumler" className="btn btn-primary">
+                        <Link className="btn btn-primary">
                             Tüm Çözümleri Gör
                         </Link>
                     </div>
@@ -172,30 +161,9 @@ const Home = () => {
                         ))}
                     </div>
                     <div className="blog-cta">
-                        <Link to="/blog" className="btn btn-secondary">
+                        <Link to="/daha-fazlasi/blog" className="btn btn-secondary">
                             Tüm Yazıları Gör
                         </Link>
-                    </div>
-                </div>
-            </section>
-
-            {/* CTA Section */}
-            <section className="cta-section">
-                <div className="container">
-                    <div className="cta-content">
-                        <h2>Enerji Dönüşümünüze Bugün Başlayın</h2>
-                        <p>
-                            Profesyonel ekibimiz ile ücretsiz keşif ve danışmanlık hizmeti alın.
-                            Size en uygun enerji çözümünü birlikte belirleyelim.
-                        </p>
-                        <div className="cta-buttons">
-                            <Link to="/iletisim" className="btn btn-white">
-                                Ücretsiz Teklif Alın
-                            </Link>
-                            <Link to="/daha-fazlasi" className="btn btn-outline-white">
-                                Broşür İndir
-                            </Link>
-                        </div>
                     </div>
                 </div>
             </section>

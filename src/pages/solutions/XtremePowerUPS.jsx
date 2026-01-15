@@ -43,7 +43,7 @@ const XtremePowerUPS = () => {
                     <div className="breadcrumb">
                         <Link to="/">Ana Sayfa</Link>
                         <span>/</span>
-                        <Link >Çözümler</Link>
+                        <span>Çözümler</span>
                         <span>/</span>
                         <Link >UPS Çözümleri</Link>
                         <span>/</span>

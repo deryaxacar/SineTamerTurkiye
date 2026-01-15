@@ -1,6 +1,8 @@
 // Navbar.jsx
 import { useState, useEffect, useMemo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import logo from '../assets/sinetamer-logo.png';
+import logo2 from '../assets/womner-logo.png';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -46,9 +48,9 @@ const Navbar = () => {
             { path: '/cozumler/ups-cozumleri/gyenilenmis-ups-cozumleri', label: 'Güvenilir Güç Koruması İçin Yenilenmiş UPS Sistemleri' },
             { path: '/cozumler/ups-cozumleri/xtreme-power-serisi', label: 'Xtreme Power Serisi UPS Üniteleri' },
             { path: '/cozumler/ups-cozumleri/eaton-powerware-ups', label: 'Eaton/Powerware UPS' },
-            { path: '/cozumler/ups-cozumleri#bakim', label: 'Yaygın Güç Kalitesi Sorunları ve Mitleri' },
-            { path: '/cozumler/ups-cozumleri#bakim', label: 'Piller' },
-            { path: '/cozumler/ups-cozumleri#bakim', label: 'UPS Pil Servis Departmanı' },
+            { path: '/cozumler/ups-cozumleri/yaygin-gucluk-sorunlari', label: 'Yaygın Güç Kalitesi Sorunları ve Yanlış Bilinenler' },
+            { path: '/cozumler/ups-cozumleri/piller', label: 'Piller' },
+            { path: '/cozumler/ups-cozumleri/pil-servis-departmani', label: 'UPS Pil Servis Departmanı' },
           ]
         },
         {
@@ -56,8 +58,8 @@ const Navbar = () => {
           label: 'Çözümler',
           path: '/cozumler/enerji-depolama',
           items: [
-            { path: '/urunler?cat=battery', label: 'UPS Pil Servis Departmanı' },
-            { path: '/cozumler/enerji-depolama#ev', label: 'Güç Kalitesi Analizi' },
+            { path: '/cozumler/ups-cozumleri/pil-servis-departmani', label: 'UPS Pil Servis Departmanı' },
+            { path: '/cozumler/ups-cozumleri/guc-kalitesi-analizi', label: 'Güç Kalitesi Analizi' },
             { path: '/cozumler/enerji-depolama#ticari', label: 'Güç Faktörü Düzeltme' },
             { path: '/cozumler/enerji-depolama#ticari', label: 'Anahtar Teslimi Teknoloji Çözümleri' },
             { path: '/cozumler/enerji-depolama#ticari', label: 'ADF Güç Ayarı' },
@@ -229,14 +231,15 @@ const Navbar = () => {
     <>
       <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo">
-            <div className="logo-icon">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13 3L4 14H12L11 21L20 10H12L13 3Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </div>
-            <span className="logo-text">Enerji Çözümleri</span>
-          </Link>
+          <div className="navbar-logos">
+            <Link to="/" className="navbar-logo">
+              <img
+                src={logo}
+                alt="SineTamer"
+                className="navbar-logo-image logo-sinetamer"
+              />
+            </Link>
+          </div>
 
           <div className={`navbar-menu ${isMobileMenuOpen ? 'active' : ''}`}>
             {navLinks.map((link) => (

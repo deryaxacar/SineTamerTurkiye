@@ -54,7 +54,7 @@ const RenewedUPS = () => {
                     <div className="breadcrumb">
                         <Link to="/">Ana Sayfa</Link>
                         <span>/</span>
-                        <Link to="/cozumler">Çözümler</Link>
+                        <span>Çözümler</span>
                         <span>/</span>
                         <Link to="/cozumler/ups-cozumleri">UPS Çözümleri</Link>
                         <span>/</span>

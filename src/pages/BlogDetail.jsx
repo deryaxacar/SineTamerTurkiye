@@ -290,7 +290,7 @@ gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
                     <div className="not-found">
                         <h2>Yazı Bulunamadı</h2>
                         <p>Aradığınız blog yazısı mevcut değil.</p>
-                        <Link to="/blog" className="btn btn-primary">Blog'a Dön</Link>
+                        <Link to="/daha-fazlasi/blog" className="btn btn-primary">Blog'a Dön</Link>
                     </div>
                 </div>
             </div>
@@ -324,7 +324,7 @@ gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
                     <div className="breadcrumb">
                         <Link to="/">Ana Sayfa</Link>
                         <span>/</span>
-                        <Link to="/blog">Blog</Link>
+                        <Link to="/daha-fazlasi/blog">Blog</Link>
                         <span>/</span>
                         <span>{post.title.substring(0, 30)}...</span>
                     </div>
