@@ -155,9 +155,7 @@ const WindEnergy = () => {
                 <div className="cta-container">
                     <h2>Rüzgar Potansiyelinizi Keşfedin</h2>
                     <p>Arazinizin rüzgar potansiyelini analiz edelim ve size özel çözüm sunalım.</p>
-                    <Link to="/iletisim" className="btn btn-white">
-                        Ücretsiz Analiz İsteyin
-                    </Link>
+
                 </div>
             </section>
         </div>

@@ -505,12 +505,7 @@ Anlık enerji üretimi, günlük/aylık/yıllık raporlar, verimlilik analizi ve
                             </div>
 
                             <div className="product-actions">
-                                <Link to="/iletisim" className="btn btn-primary">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72" />
-                                    </svg>
-                                    Teklif Al
-                                </Link>
+
                                 <a href="tel:+908501234567" className="btn btn-outline">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                         <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />

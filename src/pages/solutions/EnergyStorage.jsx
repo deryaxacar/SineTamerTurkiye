@@ -156,9 +156,7 @@ const EnergyStorage = () => {
                 <div className="cta-container">
                     <h2>Enerji Bağımsızlığınız İçin İlk Adım</h2>
                     <p>Size en uygun enerji depolama çözümünü birlikte belirleyelim.</p>
-                    <Link to="/iletisim" className="btn btn-white">
-                        Teklif Alın
-                    </Link>
+
                 </div>
             </section>
         </div>

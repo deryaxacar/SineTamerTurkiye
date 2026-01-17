@@ -157,9 +157,7 @@ const SolarEnergy = () => {
                 <div className="cta-container">
                     <h2>Ücretsiz Keşif Randevusu Alın</h2>
                     <p>Uzman ekibimiz eviniz veya işletmeniz için en uygun güneş enerjisi çözümünü belirlesin.</p>
-                    <Link to="/iletisim" className="btn btn-white">
-                        Hemen Başlayın
-                    </Link>
+
                 </div>
             </section>
         </div>

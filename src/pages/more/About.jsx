@@ -131,9 +131,7 @@ const About = () => {
             <section className="more-cta-section">
                 <h2>Bizimle Çalışmak İster misiniz?</h2>
                 <p>Ekibimize katılın veya projeleriniz için bizimle iletişime geçin.</p>
-                <Link to="/iletisim" className="btn btn-white">
-                    İletişime Geçin
-                </Link>
+
             </section>
         </div>
     );

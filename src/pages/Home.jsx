@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import VideoSection from '../components/VideoSection';
 import BlogCard from '../components/BlogCard';
-import './Home.css';
+import './Pages.css';
 
 const Home = () => {
     const solutions = [

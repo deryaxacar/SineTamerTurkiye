@@ -7,7 +7,7 @@ import Products from './pages/Products';
 import BlogPage from './pages/more/BlogPage';
 import BlogDetail from './pages/BlogDetail';
 import ProductDetail from './pages/ProductDetail';
-import Contact from './pages/Contact';
+
 import More from './pages/More';
 
 // Solutions Categories
@@ -35,6 +35,7 @@ import PowerQualityProblems from './pages/solutions/PowerQualityProblems';
 import Batteries from './pages/solutions/Batteries';
 import BatteryService from './pages/solutions/BatteryService';
 import PowerQualityAnalysis from './pages/solutions/PowerQualityAnalysis';
+import PowerFactorCorrection from './pages/solutions/PowerFactorCorrection';
 
 import './App.css';
 
@@ -51,7 +52,7 @@ function App() {
             <Route path="/urunler/:id" element={<ProductDetail />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/:id" element={<BlogDetail />} />
-            <Route path="/iletisim" element={<Contact />} />
+
             <Route path="/daha-fazlasi" element={<More />} />
 
             {/* Solutions Categories */}
@@ -72,6 +73,7 @@ function App() {
             <Route path="/cozumler/ups-cozumleri/piller" element={<Batteries />} />
             <Route path="/cozumler/ups-cozumleri/pil-servis-departmani" element={<BatteryService />} />
             <Route path="/cozumler/ups-cozumleri/guc-kalitesi-analizi" element={<PowerQualityAnalysis />} />
+            <Route path="/cozumler/ups-cozumleri/guc-faktoru-duzeltme" element={<PowerFactorCorrection />} />
             <Route path="/daha-fazlasi/teknoloji-konulari" element={<TechTopics />} />
             <Route path="/daha-fazlasi/brosurler" element={<BrochuresPage />} />
             <Route path="/daha-fazlasi/videolar" element={<VideosPage />} />

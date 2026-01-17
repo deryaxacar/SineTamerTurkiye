@@ -156,9 +156,7 @@ const SmartGrid = () => {
                 <div className="cta-container">
                     <h2>Şebekenizi Akıllandırın</h2>
                     <p>Enerji altyapınızı dijital dönüşümle yenileyin.</p>
-                    <Link to="/iletisim" className="btn btn-white">
-                        Demo Talep Edin
-                    </Link>
+
                 </div>
             </section>
         </div>

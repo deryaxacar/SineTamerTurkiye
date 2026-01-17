@@ -60,7 +60,7 @@ const Navbar = () => {
           items: [
             { path: '/cozumler/ups-cozumleri/pil-servis-departmani', label: 'UPS Pil Servis Departmanı' },
             { path: '/cozumler/ups-cozumleri/guc-kalitesi-analizi', label: 'Güç Kalitesi Analizi' },
-            { path: '/cozumler/enerji-depolama#ticari', label: 'Güç Faktörü Düzeltme' },
+            { path: '/cozumler/ups-cozumleri/guc-faktoru-duzeltme', label: 'Güç Faktörü Düzeltme' },
             { path: '/cozumler/enerji-depolama#ticari', label: 'Anahtar Teslimi Teknoloji Çözümleri' },
             { path: '/cozumler/enerji-depolama#ticari', label: 'ADF Güç Ayarı' },
           ]

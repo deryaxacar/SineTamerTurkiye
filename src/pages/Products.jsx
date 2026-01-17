@@ -217,9 +217,7 @@ const Products = () => {
                     <div className="products-cta-content">
                         <h2>Toptan Sipariş mi Vermek İstiyorsunuz?</h2>
                         <p>Kurumsal müşterilerimize özel fiyatlar ve ödeme seçenekleri sunuyoruz.</p>
-                        <Link to="/iletisim" className="btn btn-white">
-                            Bizimle İletişime Geçin
-                        </Link>
+
                     </div>
                 </div>
             </section>

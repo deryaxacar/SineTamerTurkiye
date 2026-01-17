@@ -157,9 +157,7 @@ const EnergyEfficiency = () => {
                 <div className="cta-container">
                     <h2>Ücretsiz Enerji Analizi</h2>
                     <p>İşletmenizin enerji tasarruf potansiyelini ücretsiz keşfedin.</p>
-                    <Link to="/iletisim" className="btn btn-white">
-                        Analiz Talep Edin
-                    </Link>
+
                 </div>
             </section>
         </div>

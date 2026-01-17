@@ -160,9 +160,7 @@ const Solutions = () => {
                                         </li>
                                     ))}
                                 </ul>
-                                <Link to="/iletisim" className="btn btn-primary">
-                                    Teklif Alın
-                                </Link>
+
                             </div>
                         </div>
                     ))}
@@ -184,9 +182,7 @@ const Solutions = () => {
                             Ücretsiz danışmanlık hizmetimiz ile ihtiyaçlarınıza en uygun
                             enerji çözümünü birlikte belirleyelim.
                         </p>
-                        <Link to="/iletisim" className="btn btn-white">
-                            Ücretsiz Danışmanlık Alın
-                        </Link>
+
                     </div>
                 </div>
             </section>

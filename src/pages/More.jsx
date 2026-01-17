@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import VideoSection from '../components/VideoSection';
-import './More.css';
+import './Pages.css';
 
 const More = () => {
     const brochures = [
@@ -247,9 +247,7 @@ const More = () => {
                             Uzman ekibimiz sorularınızı yanıtlamak için burada.
                             Şimdi bizimle iletişime geçin.
                         </p>
-                        <Link to="/iletisim" className="btn btn-white">
-                            Bizimle İletişime Geçin
-                        </Link>
+
                     </div>
                 </div>
             </section>
