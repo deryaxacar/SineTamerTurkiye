@@ -9,29 +9,21 @@ const VideosPage = () => {
             videos: [
                 { id: 1, youtubeId: "JIcHa0iK6As" },
                 { id: 2, youtubeId: "17XGmLY8vw4" },
-                {
-                    id: 3, youtubeId: "ZxIod2leynM"
-                },
+                { id: 3, youtubeId: "ZxIod2leynM" },
             ],
         },
         {
             title: "Neden Kaskad Aşırı Gerilim Koruması?",
             videos: [
-                {
-                    id: 4, youtubeId: "xaYwGdJiE4s"
-                },
-                {
-                    id: 5, youtubeId: "qiwRK2OOqeM"
-                },
+                { id: 4, youtubeId: "xaYwGdJiE4s" },
+                { id: 5, youtubeId: "qiwRK2OOqeM" },
             ],
         },
         {
             title: "UPS gerçekten yeterli mi?",
             videos: [
                 { id: 6, youtubeId: "jsgA-lUzkPQ" },
-                {
-                    id: 7, youtubeId: "_L6_8sIZygA"
-                },
+                { id: 7, youtubeId: "_L6_8sIZygA" },
             ],
         },
     ];
@@ -67,7 +59,6 @@ const VideosPage = () => {
                     className={`video-section ${sectionIndex % 2 === 1 ? "alt-bg" : ""}`}
                 >
                     <div className="content-container">
-                        {/* sadece başlık kalsın (açıklamaları kaldırdık) */}
                         <div className="section-header-left">
                             <h2>{section.title}</h2>
                             <p>{section.description}</p>

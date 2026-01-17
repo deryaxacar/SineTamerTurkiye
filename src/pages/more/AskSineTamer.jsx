@@ -58,7 +58,6 @@ const AskSineTamer = () => {
                     <div className="content-header">
                         <h2>Sorularınızın Cevabı Burada Olabilir</h2>
                     </div>
-
                     <div className="video-row">
                         {videos.map((v) => (
                             <div className="video-card-embed" key={v.id}>

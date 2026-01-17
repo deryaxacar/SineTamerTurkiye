@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
-import './SolutionCategory.css';
+import '../SolutionCategory.css';
 
-// Image URLs provided by the user
 const img1 = "https://www.ecsintl.com/wp-content/uploads/2023/12/g1-300x223-1-300x223.jpg";
 const img2 = "https://www.ecsintl.com/wp-content/uploads/2023/12/pf_meter-225x300-1-225x300.jpg";
 const img3 = "https://www.ecsintl.com/wp-content/uploads/2023/12/g2-267x300-1-267x300.jpg";

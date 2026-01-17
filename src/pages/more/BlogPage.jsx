@@ -161,8 +161,6 @@ const BlogPage = () => {
                                         </Link>
                                     </div>
                                 </article>
-
-
                             );
                         })}
                     </div>
@@ -184,7 +182,6 @@ const BlogPage = () => {
                             </button>
                         </div>
                     </div>
-
                 </div>
             </section>
         </div>

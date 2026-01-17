@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './SolutionCategory.css';
+import '../SolutionCategory.css';
 
 const BatteryService = () => {
     const paragraphs = [
@@ -62,7 +62,8 @@ const BatteryService = () => {
                             to="https://www.ecsintl.com/wp-content/uploads/2023/12/ECS_how-enterprise-products-partners-benefits-from-energy-control-system-solutions1.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="btn-outline">Okumak İçin Tıklayın</Link>
+                            className="btn-outline">Okumak İçin Tıklayın
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -91,7 +92,8 @@ const BatteryService = () => {
                             to="https://www.ecsintl.com/wp-content/uploads/2023/12/1ECS_Service_Department1-1.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="btn-outline">Bilgi Formunu İndir</Link>
+                            className="btn-outline">Bilgi Formunu İndir
+                        </Link>
                     </div>
 
                     <div className="info-card highlight">
@@ -107,7 +109,8 @@ const BatteryService = () => {
                             to="https://www.ecsintl.com/wp-content/uploads/2023/12/1ECS_UPS_Battery_Sales1.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="btn-outline">Bilgi Formunu İndir</Link>
+                            className="btn-outline">Bilgi Formunu İndir
+                        </Link>
                     </div>
 
                     <div className="info-card">
@@ -122,7 +125,8 @@ const BatteryService = () => {
                             to="https://www.ecsintl.com/wp-content/uploads/2023/12/Service-Contracts1.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="btn-outline">Bilgi Formunu İndir</Link>
+                            className="btn-outline">Bilgi Formunu İndir
+                        </Link>
                     </div>
                 </div>
             </section>

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './SolutionCategory.css';
+import '../SolutionCategory.css';
 
 const Batteries = () => {
     return (

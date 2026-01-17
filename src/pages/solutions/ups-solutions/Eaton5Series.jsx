@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./SolutionCategory.css";
+import '../SolutionCategory.css';
 
 const Eaton5Series = () => {
     const products = [
@@ -187,7 +187,6 @@ const Eaton5Series = () => {
                         </div>
                     </div>
 
-                    {/* ✅ 5 ürün + sağda video listesi */}
                     <div className="series-list">
                         {products.map((p) => (
                             <div key={p.id} className="series-row">
@@ -200,7 +199,6 @@ const Eaton5Series = () => {
                                     <div className="series-product-info">
                                         <h2>{p.title}</h2>
 
-                                        {/* ✅ DESCRIPTION (başlığın altına) */}
                                         {p.description && (
                                             <p className="series-product-desc">{p.description}</p>
                                         )}
@@ -232,7 +230,6 @@ const Eaton5Series = () => {
                             </div>
                         ))}
                     </div>
-                    {/* /series-list */}
                 </div>
             </section>
         </div>

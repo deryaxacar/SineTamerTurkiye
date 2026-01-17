@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./SolutionCategory.css";
+import '../SolutionCategory.css';
 
 const Eaton9Series = () => {
     const icons = [
@@ -81,8 +81,6 @@ const Eaton9Series = () => {
         },
     ];
 
-    // 7 ürün: her birinde 1-3 doküman (bazıları 1, bazıları 3)
-    // URL ve görselleri senin gerçek linklerinle değiştirmen yeterli.
     const products = [
         {
             title: "9PX Rack/Tower",
@@ -177,7 +175,6 @@ const Eaton9Series = () => {
 
             {/* CONTENT */}
             <section className="category-features">
-                {/* Üst başlık + açıklama */}
                 <div className="section-header">
                     <h2>Eaton 9 Serisi Ürünler</h2>
                     <p style={{ fontWeight: "bold" }}>

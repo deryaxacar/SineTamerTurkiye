@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './SolutionCategory.css';
+import '../SolutionCategory.css';
 
 const PowerQualityProblems = () => {
     const problems = [
@@ -75,7 +75,6 @@ const PowerQualityProblems = () => {
                         <p>
                             Yaygın inanışın aksine, ekipman hasarları ve duruşlarının büyük çoğunluğu tam kesintilerden değil, mikrosaniye bazlı olaylardan kaynaklanmaktadır. Bu sorunlar zamanla birikerek sistem izolasyonunu zayıflatır ve beklenmedik arızalara yol açar.
                         </p>
-
                     </div>
                     <div className="split-side-image">
                         <img src="https://www.ecsintl.com/wp-content/uploads/2023/12/10-05-1-1024x538.jpg" alt="Power Monitoring" />

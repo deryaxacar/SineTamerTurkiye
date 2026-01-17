@@ -9,12 +9,9 @@ const Newsletter = ({ onSubmit }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Dışarıdan handler gelirse onu çalıştır
         if (typeof onSubmit === "function") {
             onSubmit(email);
         }
-
-        // Şimdilik sadece reset (istersen kaldır)
         setEmail("");
     };
 

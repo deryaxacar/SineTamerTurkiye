@@ -86,7 +86,6 @@ const BrochuresPage = () => {
         },
     ];
 
-    // Gerçek indirme (public içindeki dosyayı indirir)
     const downloadBrochure = (url) => {
         const link = document.createElement('a');
         link.href = url;
@@ -151,7 +150,6 @@ const BrochuresPage = () => {
                                 </div>
 
                                 <div className="brochure-content-new">
-                                    {/* Başlığa tıklayınca PDF webde (yeni sekme) açılır */}
                                     <h3>
                                         <a
                                             href={brochure.url}

@@ -1,10 +1,9 @@
 import { useParams, Link } from 'react-router-dom';
-import './BlogDetail.css';
+import './MoreCategory.css';
 
 const BlogDetail = () => {
     const { id } = useParams();
 
-    // Blog verileri
     const blogPosts = [
         {
             id: 1,
@@ -16,12 +15,10 @@ const BlogDetail = () => {
             author: 'Jeff Edwards',
             content: `
                 <p>Tesisinizin sorunsuz çalışmasını sağlayın, performans göstergelerinizi koruyun ve
-IEEE 1668 uyumluluğunun önünde kalın.</p>
-                
+IEEE 1668 uyumluluğunun önünde kalın.</p>        
                 <figure class="article-image">
                     <img src="https://www.ecsintl.com/wp-content/uploads/2023/12/5500ECS.jpg" alt="Çatı üzerinde güneş panelleri" />
                 </figure>
-                
                 <h2>Beklenmedik arıza sürelerinin %68,9'u buradan başlıyor
 . Hazır mısınız?</h2>
                 <p>Üretim durduğunda, baskı hemen başlar.
@@ -32,11 +29,9 @@ nedenler genellikle planlanmamış duruşların bir numaralı nedenidir.
 Son sektör verilerine göre, beklenmedik
 endüstriyel duruşların %68,9'u mekanik arızalar veya operatör hataları değil,
 gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
-
                 <p style="margin-top: 28px;">
                     <a href="https://www.ecsintl.com/wp-content/uploads/2025/09/August-2025-English.pdf" class="read-more-link">Devamını Oku</a>
                 </p>
-                
             `
         },
         {
@@ -51,7 +46,6 @@ gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
                 <p>Kesinti Süresi Azaltma | Güç Kalitesi | Aşırı Gerilim Koruması</p>
                 <h2>Doğru SPD Montajı</h2>
                 <p>Kablo uzunluğu ve montaj uygulamaları , özellikle kademeli mimaride , aşırı gerilim koruma performansının görünmez kahramanları (veya sessiz sabotajcıları) dır . En gelişmiş frekans azaltıcı aşırı gerilim koruyucularının bile performansı, montaj hassasiyetle yapılmazsa ciddi şekilde tehlikeye girebilir.</p>
-                
                 <p style="margin-top: 28px;">
                     <a href="https://www.ecsintl.com/wp-content/uploads/2025/06/ECS-Lead-Length-and-Installation-2025.pdf" class="read-more-link">Devamını Oku</a>
                 </p>
@@ -68,9 +62,7 @@ gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
             content: `  
                 <h2>Yanlış Sıfır Geçişleri Nedir?</h2>
                 <p>Yanlış sıfır geçişleri, kontrolörün bir sıfır geçiş olayı algıladığını düşündüğü, ancak aslında gerçek bir sıfır geçişine değil, geçici veya harmonik bozulmaya tepki verdiği durumlardır.</p>
-
                 <p>Kelepçeleme ile frekans zayıflama dalgalanma bastırma arasındaki farkları göz önünde bulundurduğumuzda, yanlış sıfır geçişleri, temel dalgalanma bastırmanın çarpıcı bir şekilde başarısız olduğu ve yüksek performanslı dalga formu izlemenin değerini kanıtladığı mükemmel bir örnek haline gelir. Makalenin tamamını okumak için tıklayın!</p>
-                
             `
         },
         {
@@ -84,7 +76,6 @@ gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
             content: `
                 <h2>Harmonikleriniz var mı?</h2>
                 <p>Ama Gerçekten Öyle mi?</p>
-                
                 <figure class="article-image">
                     <div class="video-embed">
                         <iframe
@@ -96,7 +87,6 @@ gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
                         ></iframe>
                     </div>
                 </figure>
-
                 <p style="margin-top: 28px;">
                     <a href="https://www.youtube.com/c/sinetamer" class="read-more-link" target="_blank" rel="noopener noreferrer">Daha Fazla içerik</a>
                 </p>
@@ -114,7 +104,6 @@ gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
             content: `
                 <h2>Güneş panelleriniz var mı?</h2>
                 <p>Bu haftanın Teknoloji Konusu…</p>
-                
                 <figure class="article-image">
                     <div class="video-embed">
                         <iframe
@@ -126,7 +115,6 @@ gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
                         ></iframe>
                     </div>
                 </figure>
-
                 <p style="margin-top: 28px;">
                     <a href="https://www.youtube.com/c/sinetamer" class="read-more-link" target="_blank" rel="noopener noreferrer">Daha Fazla içerik</a>
                 </p>
@@ -142,8 +130,7 @@ gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
             author: 'bricar77',
             content: `
                 <h2>Bir tane yeterli mi?</h2>
-                <p>Ana panelde sadece bir SPD'ye ihtiyacım var... değil mi? İzleyin ve görün...</p>
-                
+                <p>Ana panelde sadece bir SPD'ye ihtiyacım var... değil mi? İzleyin ve görün...</p>                
                 <figure class="article-image">
                     <div class="video-embed">
                         <iframe
@@ -155,7 +142,6 @@ gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
                         ></iframe>
                     </div>
                 </figure>
-
                 <p style="margin-top: 28px;">
                     <a href="https://www.youtube.com/c/sinetamer" class="read-more-link" target="_blank" rel="noopener noreferrer">Daha Fazla içerik</a>
                 </p>
@@ -172,7 +158,6 @@ gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
             content: `
                 <h2>Asansörlerin aşırı gerilim korumasına ihtiyacı var mı?</h2>
                 <p>Genel kanı evet, haklılar! Can güvenliği ve hizmet sürekliliği önemliyse, bu Teknoloji Konusuna göz atın!</p>
-                
                 <figure class="article-image">
                     <div class="video-embed">
                         <iframe
@@ -184,7 +169,6 @@ gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
                         ></iframe>
                     </div>
                 </figure>
-
                 <p style="margin-top: 28px;">
                     <a href="https://www.youtube.com/c/sinetamer" class="read-more-link" target="_blank" rel="noopener noreferrer">Daha Fazla içerik</a>
                 </p>
@@ -211,7 +195,6 @@ gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
                         ></iframe>
                     </div>
                 </figure>
-
                 <p style="margin-top: 28px;">
                     <a href="https://www.youtube.com/c/sinetamer" class="read-more-link" target="_blank" rel="noopener noreferrer">Daha Fazla içerik</a>
                 </p>
@@ -227,7 +210,6 @@ gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
             author: '',
             content: `
                 <h2>UPS cihazının boyutu nasıl belirlenir?</h2>
-                
                 <figure class="article-image">
                     <div class="video-embed">
                         <iframe
@@ -239,7 +221,6 @@ gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
                         ></iframe>
                     </div>
                 </figure>
-
                 <p style="margin-top: 28px;">
                     <a href="https://www.youtube.com/c/sinetamer" class="read-more-link" target="_blank" rel="noopener noreferrer">Daha Fazla içerik</a>
                 </p>
@@ -256,7 +237,6 @@ gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
             content: `
                 <h2>Doğru SPD yi seçmek mi?</h2>
                 <p>Tesisiniz için en iyi veya doğru SPD'yi (Ateş Basınçlı Dezenfeksiyon Cihazı) seçmek oldukça kafa karıştırıcı olabilir. Daha fazla bilgi için bu Teknik Konuya göz atın.</p>
-                
                 <figure class="article-image">
                     <div class="video-embed">
                         <iframe
@@ -268,7 +248,6 @@ gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
                         ></iframe>
                     </div>
                 </figure>
-
                 <p style="margin-top: 28px;">
                     <a href="https://www.youtube.com/c/sinetamer" class="read-more-link" target="_blank" rel="noopener noreferrer">Daha Fazla içerik</a>
                 </p>
@@ -278,7 +257,6 @@ gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
 
     const post = blogPosts.find(p => p.id === parseInt(id));
 
-    // İlgili yazılar
     const relatedPosts = blogPosts
         .filter(p => p.id !== parseInt(id) && p.category === post?.category)
         .slice(0, 3);
@@ -337,7 +315,6 @@ gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
                     <article className="blog-article">
                         <div className="article-body" dangerouslySetInnerHTML={{ __html: post.content }} />
 
-
                         {/* Share Section */}
                         <div className="share-section">
                             <h4>Bu Yazıyı Paylaşın</h4>
@@ -366,26 +343,6 @@ gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
                             </div>
                         </div>
                     </article>
-
-                    {/* Related Posts */}
-                    {relatedPosts.length > 0 && (
-                        <div className="related-posts">
-                            <h3>İlgili Yazılar</h3>
-                            <div className="related-posts-grid">
-                                {relatedPosts.map(related => (
-                                    <Link to={`/blog/${related.id}`} className="related-post-card" key={related.id}>
-                                        <div className="related-post-image">
-                                            <img src={related.image} alt={related.title} />
-                                        </div>
-                                        <div className="related-post-content">
-                                            <span className="related-post-date">{related.date}</span>
-                                            <h4>{related.title}</h4>
-                                        </div>
-                                    </Link>
-                                ))}
-                            </div>
-                        </div>
-                    )}
 
                     {/* Back to Blog */}
                     <div className="back-to-blog">

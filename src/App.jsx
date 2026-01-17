@@ -5,17 +5,12 @@ import Home from './pages/Home';
 import Solutions from './pages/Solutions';
 import Products from './pages/Products';
 import BlogPage from './pages/more/BlogPage';
-import BlogDetail from './pages/BlogDetail';
+import BlogDetail from './pages/more/BlogDetail';
 import ProductDetail from './pages/ProductDetail';
 
 import More from './pages/More';
 
 // Solutions Categories
-import SolarEnergy from './pages/solutions/SolarEnergy';
-import WindEnergy from './pages/solutions/WindEnergy';
-import EnergyStorage from './pages/solutions/EnergyStorage';
-import EnergyEfficiency from './pages/solutions/EnergyEfficiency';
-import SmartGrid from './pages/solutions/SmartGrid';
 
 // More Categories
 import TechTopics from './pages/more/TechTopics';
@@ -25,17 +20,17 @@ import Newsletter from './pages/more/Newsletter';
 import AskSineTamer from './pages/more/AskSineTamer';
 
 // UPS Solutions
-import RenewedUPS from './pages/solutions/RenewedUPS';
-import XtremePowerUPS from './pages/solutions/XtremePowerUPS';
-import EatonPowerwareUPS from './pages/solutions/EatonPowerwareUPS';
-import Eaton3Series from './pages/solutions/Eaton3Series';
-import Eaton5Series from './pages/solutions/Eaton5Series';
-import Eaton9Series from './pages/solutions/Eaton9Series';
-import PowerQualityProblems from './pages/solutions/PowerQualityProblems';
-import Batteries from './pages/solutions/Batteries';
-import BatteryService from './pages/solutions/BatteryService';
-import PowerQualityAnalysis from './pages/solutions/PowerQualityAnalysis';
-import PowerFactorCorrection from './pages/solutions/PowerFactorCorrection';
+import RenewedUPS from './pages/solutions/ups-solutions/RenewedUPS';
+import XtremePowerUPS from './pages/solutions/ups-solutions/XtremePowerUPS';
+import EatonPowerwareUPS from './pages/solutions/ups-solutions/EatonPowerwareUPS';
+import Eaton3Series from './pages/solutions/ups-solutions/Eaton3Series';
+import Eaton5Series from './pages/solutions/ups-solutions/Eaton5Series';
+import Eaton9Series from './pages/solutions/ups-solutions/Eaton9Series';
+import PowerQualityProblems from './pages/solutions/ups-solutions/PowerQualityProblems';
+import Batteries from './pages/solutions/ups-solutions/Batteries';
+import BatteryService from './pages/solutions/ups-solutions/BatteryService';
+import PowerQualityAnalysis from './pages/solutions/analiz/PowerQualityAnalysis';
+import PowerFactorCorrection from './pages/solutions/analiz/PowerFactorCorrection';
 
 import './App.css';
 
@@ -56,11 +51,6 @@ function App() {
             <Route path="/daha-fazlasi" element={<More />} />
 
             {/* Solutions Categories */}
-            <Route path="/cozumler/gunes-enerjisi" element={<SolarEnergy />} />
-            <Route path="/cozumler/ruzgar-enerjisi" element={<WindEnergy />} />
-            <Route path="/cozumler/enerji-depolama" element={<EnergyStorage />} />
-            <Route path="/cozumler/enerji-verimliligi" element={<EnergyEfficiency />} />
-            <Route path="/cozumler/akilli-sebeke" element={<SmartGrid />} />
 
             {/* More Categories */}
             <Route path="/cozumler/ups-cozumleri/gyenilenmis-ups-cozumleri" element={<RenewedUPS />} />
