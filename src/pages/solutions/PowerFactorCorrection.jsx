@@ -99,7 +99,7 @@ const PowerFactorCorrection = () => {
                                 İletişime Geçin
                             </a>
                             <a
-                                href="/pdfs/ssi-prodbrochure.pdf"
+                                href="https://www.ecsintl.com/wp-content/uploads/2023/12/Weather_Stress_Electrical_Supply.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="btn btn-outline-white"
@@ -107,7 +107,7 @@ const PowerFactorCorrection = () => {
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ width: '20px', marginRight: '8px' }}>
                                     <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
                                 </svg>
-                                Kataloğu İndir (PDF)
+                                Teknik Raporu İndirin.
                             </a>
                         </div>
                     </div>

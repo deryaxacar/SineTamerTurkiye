@@ -1431,8 +1431,14 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     max-width: 1200px;
-    margin: 2rem auto 4rem;
+    margin: 2rem auto 1rem;
+    /* Reduced bottom margin */
     padding: 0 2rem;
+}
+
+.pfc-page .category-cta {
+    padding-top: 1rem;
+    /* Reduced top padding */
 }
 
 .pfc-grid-item img {
