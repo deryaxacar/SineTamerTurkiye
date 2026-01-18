@@ -29,8 +29,9 @@ import Eaton9Series from './pages/solutions/ups-solutions/Eaton9Series';
 import PowerQualityProblems from './pages/solutions/ups-solutions/PowerQualityProblems';
 import Batteries from './pages/solutions/ups-solutions/Batteries';
 import BatteryService from './pages/solutions/ups-solutions/BatteryService';
-import PowerQualityAnalysis from './pages/solutions/analiz/PowerQualityAnalysis';
-import PowerFactorCorrection from './pages/solutions/analiz/PowerFactorCorrection';
+import PowerQualityAnalysis from './pages/solutions/solutions/PowerQualityAnalysis';
+import PowerFactorCorrection from './pages/solutions/solutions/PowerFactorCorrection';
+import TurnkeyTechSolutions from './pages/solutions/solutions/TurnkeyTechSolutions';
 
 import './App.css';
 
@@ -62,8 +63,9 @@ function App() {
             <Route path="/cozumler/ups-cozumleri/yaygin-gucluk-sorunlari" element={<PowerQualityProblems />} />
             <Route path="/cozumler/ups-cozumleri/piller" element={<Batteries />} />
             <Route path="/cozumler/ups-cozumleri/pil-servis-departmani" element={<BatteryService />} />
-            <Route path="/cozumler/ups-cozumleri/guc-kalitesi-analizi" element={<PowerQualityAnalysis />} />
-            <Route path="/cozumler/ups-cozumleri/guc-faktoru-duzeltme" element={<PowerFactorCorrection />} />
+            <Route path="/cozumler/solutions/guc-kalitesi-analizi" element={<PowerQualityAnalysis />} />
+            <Route path="/cozumler/solutions/guc-faktoru-duzeltme" element={<PowerFactorCorrection />} />
+            <Route path="/cozumler/solutions/anahtar-teslimi-teknoloji-cozumleri" element={<TurnkeyTechSolutions />} />
             <Route path="/daha-fazlasi/teknoloji-konulari" element={<TechTopics />} />
             <Route path="/daha-fazlasi/brosurler" element={<BrochuresPage />} />
             <Route path="/daha-fazlasi/videolar" element={<VideosPage />} />
