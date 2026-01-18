@@ -27,11 +27,13 @@ const PowerFactorCorrection = () => {
             </section>
 
             {/* Title & Intro */}
-            <section className="pfc-full-text" style={{ paddingBottom: '1rem' }}>
-                <h1>Güç Faktörü Düzeltmesi Nedir?</h1>
-                <p>
-                    Verimsiz ekipmanlar, ihtiyaç duyduklarından daha fazla akım talep eder ve bu da elektrik dağıtım şirketinin tesisinize sağladığı güç miktarını artırmasına neden olur. Bu durum, elektrik dağıtım şirketine altyapı ve inşaat maliyetlerinde artışa yol açar ve Güç Faktörü Cezaları bu maliyetleri dengelemek için tasarlanmıştır. İzin verilen minimum Güç Faktörü, elektrik dağıtım şirketi veya yerel yönetim tarafından belirlenebilir. Floresan lambalar, elektrik motorları, değişken hızlı sürücüler, bilgisayarlar, asansörler ve HVAC ekipmanları, binanızın Güç Faktörünü düşürür ve elektrik faturanızı artırır. Güç Faktörü 0,82 olan orta ölçekli bir sanayi tesisi, sadece 5 yıl içinde 31.000 dolardan fazla Güç Faktörü Cezası biriktirecektir. Büyük bir tüketici ise aynı süre içinde 180.000 dolarlık ceza ödeyecektir. Bu grafik, Güç Faktörü Problemlerini çözmenin yatırım getirisini ne kadar hızlı sağlayabileceğini göstermektedir.
-                </p>
+            <section className="split-layout-section">
+                <div className="split-main-text">
+                    <h2>Güç Faktörü Düzeltmesi Nedir?</h2>
+                    <p>
+                        Verimsiz ekipmanlar, ihtiyaç duyduklarından daha fazla akım talep eder ve bu da elektrik dağıtım şirketinin tesisinize sağladığı güç miktarını artırmasına neden olur. Bu durum, elektrik dağıtım şirketine altyapı ve inşaat maliyetlerinde artışa yol açar ve Güç Faktörü Cezaları bu maliyetleri dengelemek için tasarlanmıştır. İzin verilen minimum Güç Faktörü, elektrik dağıtım şirketi veya yerel yönetim tarafından belirlenebilir. Floresan lambalar, elektrik motorları, değişken hızlı sürücüler, bilgisayarlar, asansörler ve HVAC ekipmanları, binanızın Güç Faktörünü düşürür ve elektrik faturanızı artırır. Güç Faktörü 0,82 olan orta ölçekli bir sanayi tesisi, sadece 5 yıl içinde 31.000 dolardan fazla Güç Faktörü Cezası biriktirecektir. Büyük bir tüketici ise aynı süre içinde 180.000 dolarlık ceza ödeyecektir. Bu grafik, Güç Faktörü Problemlerini çözmenin yatırım getirisini ne kadar hızlı sağlayabileceğini göstermektedir.
+                    </p>
+                </div>
             </section>
 
             {/* Split 1: img1 (Left) */}
@@ -112,7 +114,7 @@ const PowerFactorCorrection = () => {
                     </div>
                 </div>
             </section>
-        </div>
+        </div >
     );
 };
 
