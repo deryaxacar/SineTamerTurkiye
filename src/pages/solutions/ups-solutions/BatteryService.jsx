@@ -31,6 +31,7 @@ const BatteryService = () => {
             <section className="split-layout-section">
                 <div className="split-top">
                     <div className="split-main-text">
+                        <h2>Pil Servis Departmanımız</h2>
                         <p>
                             Müşterilerimize üstün müşteri hizmeti sunma taahhüdüne bağlı olan ECS, tek ve 3 fazlı UPS teknolojisinde uzmanlaşmış, ülke çapında hizmet veren tam kapsamlı bir servis departmanı sunmaktadır. Güç Kalitesi sektöründe ortalama 15 yıllık deneyime sahip olan her teknisyen, UPS sistemleri ve piller dahil olmak üzere güç kalitesi ekipmanlarının kurulumu, onarımı ve genel servisi konusunda zengin bilgi ve uzmanlık birikimini masaya yatırmaktadır.
                         </p>
