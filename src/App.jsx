@@ -10,8 +10,6 @@ import ProductDetail from './pages/ProductDetail';
 
 import More from './pages/More';
 
-// Solutions Categories
-
 // More Categories
 import TechTopics from './pages/more/TechTopics';
 import BrochuresPage from './pages/more/Brochures';
@@ -29,9 +27,12 @@ import Eaton9Series from './pages/solutions/ups-solutions/Eaton9Series';
 import PowerQualityProblems from './pages/solutions/ups-solutions/PowerQualityProblems';
 import Batteries from './pages/solutions/ups-solutions/Batteries';
 import BatteryService from './pages/solutions/ups-solutions/BatteryService';
+
+// Solutions Categories
 import PowerQualityAnalysis from './pages/solutions/solutions/PowerQualityAnalysis';
 import PowerFactorCorrection from './pages/solutions/solutions/PowerFactorCorrection';
 import TurnkeyTechSolutions from './pages/solutions/solutions/TurnkeyTechSolutions';
+import ADFPowerSetting from './pages/solutions/solutions/ADFPowerSetting';
 
 import './App.css';
 
@@ -53,7 +54,6 @@ function App() {
 
             {/* Solutions Categories */}
 
-            {/* More Categories */}
             <Route path="/cozumler/ups-cozumleri/gyenilenmis-ups-cozumleri" element={<RenewedUPS />} />
             <Route path="/cozumler/ups-cozumleri/xtreme-power-serisi" element={<XtremePowerUPS />} />
             <Route path="/cozumler/ups-cozumleri/eaton-powerware-ups" element={<EatonPowerwareUPS />} />
@@ -66,6 +66,8 @@ function App() {
             <Route path="/cozumler/solutions/guc-kalitesi-analizi" element={<PowerQualityAnalysis />} />
             <Route path="/cozumler/solutions/guc-faktoru-duzeltme" element={<PowerFactorCorrection />} />
             <Route path="/cozumler/solutions/anahtar-teslimi-teknoloji-cozumleri" element={<TurnkeyTechSolutions />} />
+            <Route path="/cozumler/solutions/adf-guc-ayari" element={<ADFPowerSetting />} />
+            {/* More Categories */}
             <Route path="/daha-fazlasi/teknoloji-konulari" element={<TechTopics />} />
             <Route path="/daha-fazlasi/brosurler" element={<BrochuresPage />} />
             <Route path="/daha-fazlasi/videolar" element={<VideosPage />} />

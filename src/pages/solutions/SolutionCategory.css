@@ -1314,6 +1314,30 @@
     box-shadow: var(--shadow-md);
 }
 
+.custom-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.custom-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: #000;
+    /* ister theme rengi yap */
+}
+
 /* Removed pfc-grid-item img:hover rule */
 
 @media (max-width: 768px) {

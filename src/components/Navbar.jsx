@@ -62,7 +62,7 @@ const Navbar = () => {
             { path: '/cozumler/solutions/guc-kalitesi-analizi', label: 'Güç Kalitesi Analizi' },
             { path: '/cozumler/solutions/guc-faktoru-duzeltme', label: 'Güç Faktörü Düzeltme' },
             { path: '/cozumler/solutions/anahtar-teslimi-teknoloji-cozumleri', label: 'Anahtar Teslimi Teknoloji Çözümleri' },
-            { path: '/cozumler/enerji-depolama#ticari', label: 'ADF Güç Ayarı' },
+            { path: '/cozumler/solutions/adf-guc-ayari', label: 'ADF Güç Ayarı' },
           ]
         },
         {
