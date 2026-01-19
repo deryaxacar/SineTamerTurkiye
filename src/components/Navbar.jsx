@@ -73,7 +73,7 @@ const Navbar = () => {
             { path: 'https://www.ecsintl.com/sinetamer-product-selector/', label: 'Sinetamer Ürün Seçici', external: true },
             { path: '/cozumler/sinetamer/la-lm-uniteleri', label: 'LA & LM Üniteleri' },
             { path: '/cozumler/sinetamer/avantaj-uniteleri', label: 'SineTamer Avantaj Üniteleri' },
-            { path: '/cozumler/enerji-verimliligi#optimizasyon', label: 'Orta Gerilim Üniteleri' },
+            { path: '/cozumler/sinetamer/orta-gerilim-uniteleri', label: 'Orta Gerilim Üniteleri' },
             { path: '/cozumler/enerji-verimliligi#optimizasyon', label: 'Veri/Telekom Birimleri' },
             { path: '/cozumler/enerji-verimliligi#optimizasyon', label: 'Bireysel Devre Üniteleri' },
 
@@ -85,6 +85,7 @@ const Navbar = () => {
             { path: '/cozumler/enerji-verimliligi#secenek-10', label: 'Web semineri eğitimi' },
             { path: '/cozumler/enerji-verimliligi#secenek-11', label: 'Uluslararası Sinetamer Dağıtım Ortakları' },
             { path: '/cozumler/enerji-verimliligi#secenek-12', label: 'Sadece Distribütörler' },
+            { path: '/cozumler/enerji-verimliligi#secenek-17', label: 'Web Postası' },
             { path: '/cozumler/enerji-verimliligi#secenek-13', label: 'Sinetamer Ana Sayfa' },
             { path: '/cozumler/enerji-verimliligi#secenek-14', label: 'Sinetamer Müşterileri ' },
             { path: '/cozumler/enerji-verimliligi#secenek-15', label: 'Teknoloji Konuları' },

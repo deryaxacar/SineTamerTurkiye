@@ -2016,3 +2016,207 @@
         min-height: auto;
     }
 }
+
+/* =========================================================
+   SineTamer Medium Voltage Units Page Styles
+   ========================================================= */
+.mv-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.mv-split-section {
+    padding: 2.5rem 0;
+    background: var(--white);
+}
+
+.mv-split-grid {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.mv-split-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    max-width: 250px;
+}
+
+.mv-split-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.mv-split-content h2 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.mv-split-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-light);
+    margin-bottom: 1.25rem;
+}
+
+.mv-detail-section {
+    padding: 2.5rem 0;
+    background: var(--gray-light);
+    text-align: center;
+}
+
+.mv-detail-header {
+    margin-bottom: 3rem;
+}
+
+.mv-detail-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.mv-header-line {
+    width: 80px;
+    height: 4px;
+    background: var(--accent);
+    margin: 0 auto;
+    border-radius: var(--radius-full);
+}
+
+.mv-detail-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+}
+
+.mv-pdf-section {
+    padding: 0 0 5rem;
+    background: var(--white);
+}
+
+.pdf-grid-mv {
+    margin-top: -1rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.25rem;
+}
+
+.pdf-card-mv {
+    background: var(--white);
+    padding: 1.25rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--gray);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.pdf-card-mv:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary);
+}
+
+.pdf-icon-mv {
+    width: 50px;
+    height: 50px;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.pdf-icon-mv svg {
+    width: 28px;
+    height: 28px;
+}
+
+.pdf-info-mv h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.25rem;
+    line-height: 1.3;
+}
+
+.pdf-info-mv span {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.pdf-download-btn-mv {
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.25rem;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: background 0.3s ease;
+    width: 100%;
+    justify-content: center;
+}
+
+
+@media (max-width: 1200px) {
+    .pdf-grid-mv {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .pdf-grid-mv {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .pdf-grid-mv {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.pdf-download-btn-mv svg {
+    width: 18px;
+    height: 18px;
+}
+
+@media (max-width: 968px) {
+    .mv-split-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        text-align: center;
+    }
+
+    .mv-split-image {
+        max-width: 600px;
+        margin: 0 auto;
+        order: -1;
+    }
+
+    .mv-split-content h2 {
+        font-size: 1.75rem;
+    }
+}
