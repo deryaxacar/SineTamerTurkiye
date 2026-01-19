@@ -28,7 +28,7 @@ const BatteryService = () => {
             </section>
 
             {/* Split Section - Restored */}
-            <section className="split-layout-section" style={{ paddingBottom: 0 }}>
+            <section className="split-layout-section">
                 <div className="split-top">
                     <div className="split-main-text">
                         <p>
@@ -45,7 +45,7 @@ const BatteryService = () => {
             </section>
 
             {/* Testimonial Brochure Section */}
-            <section className="category-cta" style={{ paddingTop: 0 }}>
+            <section className="category-cta">
                 <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
                     <div className="info-card horizontal">
                         <div className="info-card-icon">
