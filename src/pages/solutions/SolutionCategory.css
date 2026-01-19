@@ -3,6 +3,12 @@
     padding-top: 80px;
 }
 
+@media (max-width: 968px) {
+    .solution-category-page {
+        padding-top: 57px;
+    }
+}
+
 /* Hero Section */
 .category-hero {
     min-height: 50vh;
@@ -1768,5 +1774,113 @@
 @media (max-width: 480px) {
     .adf-datasheets-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================================
+   LA & LM Units Page Styles
+   ========================================================= */
+.lalm-video-section {
+    padding: 3rem 0;
+    background: var(--gray-light);
+}
+
+.lalm-video-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.lalm-video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+}
+
+.lalm-video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius-lg);
+}
+
+.lalm-split-section {
+    padding: 4rem 0;
+    background: var(--white);
+}
+
+.lalm-split-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.lalm-split-left h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.lalm-feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lalm-feature-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-light);
+}
+
+.lalm-feature-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 8px;
+    height: 8px;
+    background: var(--primary);
+    border-radius: 50%;
+}
+
+.lalm-split-right {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.lalm-split-right img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .lalm-split-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .lalm-split-left h2 {
+        font-size: 1.75rem;
+    }
+
+    .lalm-split-right {
+        order: -1;
     }
 }

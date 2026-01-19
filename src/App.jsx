@@ -33,6 +33,9 @@ import PowerFactorCorrection from './pages/solutions/solutions/PowerFactorCorrec
 import TurnkeyTechSolutions from './pages/solutions/solutions/TurnkeyTechSolutions';
 import ADFPowerSetting from './pages/solutions/solutions/ADFPowerSetting';
 
+// SineTamer
+import LALMUnits from './pages/solutions/sinetamer/LALMUnits';
+
 import './App.css';
 
 function App() {
@@ -66,6 +69,8 @@ function App() {
             <Route path="/cozumler/solutions/guc-faktoru-duzeltme" element={<PowerFactorCorrection />} />
             <Route path="/cozumler/solutions/anahtar-teslimi-teknoloji-cozumleri" element={<TurnkeyTechSolutions />} />
             <Route path="/cozumler/solutions/adf-guc-ayari" element={<ADFPowerSetting />} />
+            {/* SineTamer */}
+            <Route path="/cozumler/sinetamer/la-lm-uniteleri" element={<LALMUnits />} />
             {/* More Categories */}
             <Route path="/daha-fazlasi/teknoloji-konulari" element={<TechTopics />} />
             <Route path="/daha-fazlasi/brosurler" element={<BrochuresPage />} />

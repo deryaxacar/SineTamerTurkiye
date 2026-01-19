@@ -3,6 +3,12 @@
     padding-top: 80px;
 }
 
+@media (max-width: 968px) {
+    .more-category-page {
+        padding-top: 57px;
+    }
+}
+
 .more-hero {
     min-height: 45vh;
     display: flex;

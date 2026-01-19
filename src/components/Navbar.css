@@ -471,6 +471,49 @@
         flex: 1;
         overflow-y: auto;
     }
+
+    /* Mobile Simple Dropdown (Daha Fazlası) */
+    .navbar-item.has-dropdown {
+        width: 100%;
+    }
+
+    .simple-dropdown {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        background: var(--white);
+        box-shadow: none;
+        border-radius: var(--radius-md);
+        margin-top: 0.5rem;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, padding 0.3s ease, margin 0.3s ease;
+    }
+
+    .simple-dropdown.active {
+        max-height: 500px;
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .simple-dropdown-item {
+        color: var(--text-dark);
+        padding: 0.75rem 1rem;
+        border-radius: var(--radius-sm);
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    .simple-dropdown-item:hover,
+    .simple-dropdown-item:active,
+    .simple-dropdown-item.active {
+        background: rgba(26, 47, 110, 0.1);
+        color: var(--primary);
+        border-left: 3px solid var(--primary);
+        padding-left: calc(1rem - 3px);
+    }
 }
 
 @media (max-width: 480px) {
