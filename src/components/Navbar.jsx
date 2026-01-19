@@ -160,7 +160,7 @@ const Navbar = () => {
     { path: '/daha-fazlasi/brosurler', label: 'Broşürler' },
     { path: '/daha-fazlasi/videolar', label: 'Videolar' },
     { path: '/daha-fazlasi/blog', label: 'Blog' },
-    { path: '/daha-fazlasi/haber-bulteni', label: 'Haber bülteni' },
+    { path: 'https://www.ecsintl.com/newsletter/', label: 'Haber bülteni', external: true },
   ];
 
   const navLinks = [
@@ -283,16 +283,31 @@ const Navbar = () => {
                       </svg>
                     </button>
                     <div className={`simple-dropdown ${activeMegaMenu === 'dropdown-' + link.path ? 'active' : ''}`}>
-                      {link.dropdown.map((item) => (
-                        <Link
-                          key={item.path}
-                          to={item.path}
-                          className={`simple-dropdown-item ${location.pathname === item.path ? 'active' : ''}`}
-                          onClick={() => { setActiveMegaMenu(null); setIsMobileMenuOpen(false); }}
-                        >
-                          {item.label}
-                        </Link>
-                      ))}
+                      {
+                        link.dropdown.map((item) => (
+                          item.external ? (
+                            <a
+                              key={item.path}
+                              href={item.path}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="simple-dropdown-item"
+                              onClick={() => { setActiveMegaMenu(null); setIsMobileMenuOpen(false); }}
+                            >
+                              {item.label}
+                            </a>
+                          ) : (
+                            <Link
+                              key={item.path}
+                              to={item.path}
+                              className={`simple-dropdown-item ${location.pathname === item.path ? 'active' : ''}`}
+                              onClick={() => { setActiveMegaMenu(null); setIsMobileMenuOpen(false); }}
+                            >
+                              {item.label}
+                            </Link>
+                          )
+                        ))
+                      }
                     </div>
                   </>
                 ) : (
@@ -317,7 +332,7 @@ const Navbar = () => {
             <span></span>
           </button>
         </div>
-      </nav>
+      </nav >
 
       {(activeMegaMenu === 'solutions' || activeMegaMenu === 'products') && (
         <>
@@ -377,7 +392,8 @@ const Navbar = () => {
             onClick={() => { setActiveMegaMenu(null); setActiveCategory(null); }}
           />
         </>
-      )}
+      )
+      }
     </>
   );
 };
