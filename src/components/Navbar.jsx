@@ -70,7 +70,7 @@ const Navbar = () => {
           label: 'SineTamer',
           path: '/cozumler/enerji-verimliligi',
           items: [
-            { path: '/cozumler/enerji-verimliligi#denetim', label: 'Sinetamer Ürün Seçici' },
+            { path: 'https://www.ecsintl.com/sinetamer-product-selector/', label: 'Sinetamer Ürün Seçici', external: true },
             { path: '/cozumler/enerji-verimliligi#optimizasyon', label: 'LA & RM Üniteleri' },
             { path: '/cozumler/enerji-verimliligi#optimizasyon', label: 'SineTamer Avantaj Üniteleri' },
             { path: '/cozumler/enerji-verimliligi#optimizasyon', label: 'Orta Gerilim Üniteleri' },
@@ -211,17 +211,29 @@ const Navbar = () => {
     <ul className="mega-item-list">
       {items.map((item, idx) => (
         <li key={idx}>
-          <Link
-            to={item.path}
-            className={`mega-item-link ${location.pathname === item.path ||
-              location.pathname.startsWith(item.path.split('?')[0])
-              ? 'active'
-              : ''
-              }`}
-            onClick={() => setActiveMegaMenu(null)}
-          >
-            {item.label}
-          </Link>
+          {item.external ? (
+            <a
+              href={item.path}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mega-item-link"
+              onClick={() => setActiveMegaMenu(null)}
+            >
+              {item.label}
+            </a>
+          ) : (
+            <Link
+              to={item.path}
+              className={`mega-item-link ${location.pathname === item.path ||
+                location.pathname.startsWith(item.path.split('?')[0])
+                ? 'active'
+                : ''
+                }`}
+              onClick={() => setActiveMegaMenu(null)}
+            >
+              {item.label}
+            </Link>
+          )}
         </li>
       ))}
     </ul>
