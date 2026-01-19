@@ -72,7 +72,7 @@ const Navbar = () => {
           items: [
             { path: 'https://www.ecsintl.com/sinetamer-product-selector/', label: 'Sinetamer Ürün Seçici', external: true },
             { path: '/cozumler/sinetamer/la-lm-uniteleri', label: 'LA & LM Üniteleri' },
-            { path: '/cozumler/enerji-verimliligi#optimizasyon', label: 'SineTamer Avantaj Üniteleri' },
+            { path: '/cozumler/sinetamer/avantaj-uniteleri', label: 'SineTamer Avantaj Üniteleri' },
             { path: '/cozumler/enerji-verimliligi#optimizasyon', label: 'Orta Gerilim Üniteleri' },
             { path: '/cozumler/enerji-verimliligi#optimizasyon', label: 'Veri/Telekom Birimleri' },
             { path: '/cozumler/enerji-verimliligi#optimizasyon', label: 'Bireysel Devre Üniteleri' },

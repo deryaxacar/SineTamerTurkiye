@@ -35,6 +35,7 @@ import ADFPowerSetting from './pages/solutions/solutions/ADFPowerSetting';
 
 // SineTamer
 import LALMUnits from './pages/solutions/sinetamer/LALMUnits';
+import AdvantageUnits from './pages/solutions/sinetamer/AdvantageUnits';
 
 import './App.css';
 
@@ -71,6 +72,7 @@ function App() {
             <Route path="/cozumler/solutions/adf-guc-ayari" element={<ADFPowerSetting />} />
             {/* SineTamer */}
             <Route path="/cozumler/sinetamer/la-lm-uniteleri" element={<LALMUnits />} />
+            <Route path="/cozumler/sinetamer/avantaj-uniteleri" element={<AdvantageUnits />} />
             {/* More Categories */}
             <Route path="/daha-fazlasi/teknoloji-konulari" element={<TechTopics />} />
             <Route path="/daha-fazlasi/brosurler" element={<BrochuresPage />} />

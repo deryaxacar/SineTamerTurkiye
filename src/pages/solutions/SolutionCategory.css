@@ -1884,3 +1884,135 @@
         order: -1;
     }
 }
+
+/* =========================================================
+   SineTamer Advantage Units Page Styles
+   ========================================================= */
+.advantage-content-section {
+    padding: 5rem 0;
+    background: var(--white);
+}
+
+.advantage-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.advantage-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.advantage-header h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.advantage-header p {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.advantage-grid-2x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.advantage-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--gray);
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.advantage-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary);
+}
+
+.advantage-card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--gray-light);
+}
+
+.advantage-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.advantage-card li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-light);
+}
+
+.advantage-card li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.6rem;
+    width: 8px;
+    height: 8px;
+    background: var(--primary);
+    border-radius: 50%;
+}
+
+.advantage-image-col {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--gray);
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.advantage-image-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.advantage-image-col:hover img {
+    transform: scale(1.08);
+}
+
+@media (max-width: 768px) {
+    .advantage-grid-2x2 {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .advantage-image-col {
+        height: 250px;
+        min-height: auto;
+    }
+}
