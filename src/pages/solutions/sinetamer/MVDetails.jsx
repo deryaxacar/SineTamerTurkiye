@@ -23,8 +23,6 @@ const MVDetails = () => {
 
     return (
         <div className="solution-category-page">
-            <Navbar />
-
             <Hero
                 title="Orta Gerilim Üniteleri Detayları"
                 description="SineTamer Orta Gerilim Üniteleri Ve Detaylı Teknik Dokümantasyonlar"
@@ -33,8 +31,6 @@ const MVDetails = () => {
             />
 
             <MediumVoltageDetails pdfs={pdfs} />
-
-            <Footer />
         </div>
     );
 };

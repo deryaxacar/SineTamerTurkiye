@@ -38,6 +38,7 @@ import LALMUnits from './pages/solutions/sinetamer/LALMUnits';
 import AdvantageUnits from './pages/solutions/sinetamer/AdvantageUnits';
 import MediumVoltageUnits from './pages/solutions/sinetamer/MediumVoltageUnits';
 import MVDetails from './pages/solutions/sinetamer/MVDetails';
+import DataTelecomUnits from './pages/solutions/sinetamer/DataTelecomUnits';
 
 import './App.css';
 
@@ -77,6 +78,7 @@ function App() {
             <Route path="/cozumler/sinetamer/avantaj-uniteleri" element={<AdvantageUnits />} />
             <Route path="/cozumler/sinetamer/orta-gerilim-uniteleri" element={<MediumVoltageUnits />} />
             <Route path="/cozumler/sinetamer/mv-detaylari" element={<MVDetails />} />
+            <Route path="/cozumler/sinetamer/veri-telekom-uniteleri" element={<DataTelecomUnits />} />
             {/* More Categories */}
             <Route path="/daha-fazlasi/teknoloji-konulari" element={<TechTopics />} />
             <Route path="/daha-fazlasi/brosurler" element={<BrochuresPage />} />
