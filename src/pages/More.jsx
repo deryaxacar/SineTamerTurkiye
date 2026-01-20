@@ -1,8 +1,15 @@
 import { Link } from 'react-router-dom';
+import Hero from '../components/Hero';
 import VideoSection from '../components/VideoSection';
 import './Pages.css';
+import './solutions/SolutionCategory.css';
 
 const More = () => {
+    const breadcrumbItems = [
+        { label: 'Ana Sayfa', path: '/' },
+        { label: 'Daha Fazlası' }
+    ];
+
     const brochures = [
         {
             id: 1,
@@ -79,19 +86,12 @@ const More = () => {
 
     return (
         <div className="more-page">
-            {/* Hero Section */}
-            <section className="more-hero">
-                <div className="more-hero-overlay"></div>
-                <div className="more-hero-content">
-                    <h1>Daha Fazlası</h1>
-                    <p>Hakkımızda bilgi edinin, broşürlerimizi indirin ve sorularınıza yanıt bulun</p>
-                    <div className="breadcrumb">
-                        <Link to="/">Ana Sayfa</Link>
-                        <span>/</span>
-                        <span>Daha Fazlası</span>
-                    </div>
-                </div>
-            </section>
+            <Hero
+                title="Daha Fazlası"
+                description="Hakkımızda bilgi edinin, broşürlerimizi indirin ve sorularınıza yanıt bulun"
+                backgroundImage="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=1920"
+                breadcrumbItems={breadcrumbItems}
+            />
 
             {/* About Section */}
             <section className="about-section">

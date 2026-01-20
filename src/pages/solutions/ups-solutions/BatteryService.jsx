@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Hero from '../../../components/Hero';
 import '../SolutionCategory.css';
 
 const BatteryService = () => {
@@ -9,23 +10,20 @@ const BatteryService = () => {
         "Gelecekteki tüm güç kalitesi projelerinizde sizinle birlikte çalışmayı sabırsızlıkla bekliyoruz."
     ];
 
+    const breadcrumbItems = [
+        { label: 'Ana Sayfa', path: '/' },
+        { label: 'Çözümler' },
+        { label: 'Servis Departmanı' }
+    ];
+
     return (
         <div className="solution-category-page">
-            {/* Hero Section */}
-            <section className="category-hero" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920)' }}>
-                <div className="category-hero-overlay"></div>
-                <div className="category-hero-content">
-                    <h1>UPS Pil Servis Departmanı</h1>
-                    <p>Pillerinizin ömrünü uzatmak ve performansını optimize etmek için profesyonel servis çözümleri.</p>
-                    <div className="breadcrumb">
-                        <Link to="/">Ana Sayfa</Link>
-                        <span>/</span>
-                        <span>Çözümler</span>
-                        <span>/</span>
-                        <span>Servis Departmanı</span>
-                    </div>
-                </div>
-            </section>
+            <Hero
+                title="UPS Pil Servis Departmanı"
+                description="Pillerinizin ömrünü uzatmak ve performansını optimize etmek için profesyonel servis çözümleri."
+                backgroundImage="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920"
+                breadcrumbItems={breadcrumbItems}
+            />
 
             {/* Split Section - Restored */}
             <section className="split-layout-section">

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './BlogCard.css';
+import './css/BlogCard.css';
 
 const BlogCard = ({ image, title, excerpt, date, category, link }) => {
     return (

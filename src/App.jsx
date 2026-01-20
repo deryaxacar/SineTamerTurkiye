@@ -37,6 +37,7 @@ import ADFPowerSetting from './pages/solutions/solutions/ADFPowerSetting';
 import LALMUnits from './pages/solutions/sinetamer/LALMUnits';
 import AdvantageUnits from './pages/solutions/sinetamer/AdvantageUnits';
 import MediumVoltageUnits from './pages/solutions/sinetamer/MediumVoltageUnits';
+import MVDetails from './pages/solutions/sinetamer/MVDetails';
 
 import './App.css';
 
@@ -75,6 +76,7 @@ function App() {
             <Route path="/cozumler/sinetamer/la-lm-uniteleri" element={<LALMUnits />} />
             <Route path="/cozumler/sinetamer/avantaj-uniteleri" element={<AdvantageUnits />} />
             <Route path="/cozumler/sinetamer/orta-gerilim-uniteleri" element={<MediumVoltageUnits />} />
+            <Route path="/cozumler/sinetamer/mv-detaylari" element={<MVDetails />} />
             {/* More Categories */}
             <Route path="/daha-fazlasi/teknoloji-konulari" element={<TechTopics />} />
             <Route path="/daha-fazlasi/brosurler" element={<BrochuresPage />} />

@@ -3,7 +3,7 @@ import logo from '../assets/sinetamer-logo.png';
 import logo2 from '../assets/womner-logo.png';
 import logo3 from '../assets/ESC-logo.png';
 
-import './Footer.css';
+import './css/Footer.css';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();

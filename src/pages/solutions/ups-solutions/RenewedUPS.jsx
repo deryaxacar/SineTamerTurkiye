@@ -1,3 +1,4 @@
+import Hero from '../../../components/Hero';
 import { Link } from 'react-router-dom';
 import '../SolutionCategory.css';
 
@@ -44,24 +45,20 @@ const RenewedUPS = () => {
         }
     ];
 
+    const breadcrumbItems = [
+        { label: 'Ana Sayfa', path: '/' },
+        { label: 'Çözümler' },
+        { label: 'UPS Çözümleri', path: '/cozumler/ups-cozumleri' },
+        { label: 'Yenilenmiş UPS' }
+    ];
+
     return (
         <div className="solution-category-page">
-            {/* Hero Section */}
-            <section className="category-hero" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920)' }}>
-                <div className="category-hero-overlay"></div>
-                <div className="category-hero-content">
-                    <h1>Güvenilir Güç Koruması için Yenilenmiş UPS Sistemleri</h1>
-                    <div className="breadcrumb">
-                        <Link to="/">Ana Sayfa</Link>
-                        <span>/</span>
-                        <span>Çözümler</span>
-                        <span>/</span>
-                        <Link to="/cozumler/ups-cozumleri">UPS Çözümleri</Link>
-                        <span>/</span>
-                        <span>Yenilenmiş UPS</span>
-                    </div>
-                </div>
-            </section>
+            <Hero
+                title="Güvenilir Güç Koruması için Yenilenmiş UPS Sistemleri"
+                backgroundImage="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920"
+                breadcrumbItems={breadcrumbItems}
+            />
 
             {/* Content Section */}
             <section className="category-features">

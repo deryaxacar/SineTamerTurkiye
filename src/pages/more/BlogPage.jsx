@@ -1,7 +1,15 @@
 import { Link } from 'react-router-dom';
+import Hero from '../../components/Hero';
 import './MoreCategory.css';
+import '../solutions/SolutionCategory.css';
 
 const BlogPage = () => {
+    const breadcrumbItems = [
+        { label: 'Ana Sayfa', path: '/' },
+        { label: 'Daha Fazlası', path: '/daha-fazlasi' },
+        { label: 'Blog' }
+    ];
+
     const blogPosts = [
         {
             id: 1,
@@ -97,21 +105,12 @@ const BlogPage = () => {
 
     return (
         <div className="more-category-page">
-            {/* Hero Section */}
-            <section className="more-hero" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1432821596592-e2c18b78144f?w=1920)' }}>
-                <div className="more-hero-overlay"></div>
-                <div className="more-hero-content">
-                    <h1>Blog</h1>
-                    <p>Enerji dünyasından haberler, ipuçları ve rehberler</p>
-                    <div className="breadcrumb">
-                        <Link to="/">Ana Sayfa</Link>
-                        <span>/</span>
-                        <Link>Daha Fazlası</Link>
-                        <span>/</span>
-                        <span>Blog</span>
-                    </div>
-                </div>
-            </section>
+            <Hero
+                title="Blog"
+                description="Enerji dünyasından haberler, ipuçları ve rehberler"
+                backgroundImage="https://images.unsplash.com/photo-1432821596592-e2c18b78144f?w=1920"
+                breadcrumbItems={breadcrumbItems}
+            />
 
             {/* Blog Grid */}
             <section className="more-content-section">

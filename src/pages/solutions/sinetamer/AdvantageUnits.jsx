@@ -1,26 +1,22 @@
-import { Link } from 'react-router-dom';
+import Hero from '../../../components/Hero';
 import '../SolutionCategory.css';
 
 const AdvantageUnits = () => {
+    const breadcrumbItems = [
+        { label: 'Ana Sayfa', path: '/' },
+        { label: 'Çözümler' },
+        { label: 'SineTamer' },
+        { label: 'Avantaj Üniteleri' }
+    ];
+
     return (
         <div className="solution-category-page">
-            {/* Hero Section */}
-            <section className="category-hero" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1920)' }}>
-                <div className="category-hero-overlay"></div>
-                <div className="category-hero-content">
-                    <h1>SineTamer Avantaj Üniteleri</h1>
-                    <p>Üstün koruma ve performans için geliştirilmiş SineTamer Avantaj serisi.</p>
-                    <div className="breadcrumb">
-                        <Link to="/">Ana Sayfa</Link>
-                        <span>/</span>
-                        <span>Çözümler</span>
-                        <span>/</span>
-                        <span>SineTamer</span>
-                        <span>/</span>
-                        <span>Avantaj Üniteleri</span>
-                    </div>
-                </div>
-            </section>
+            <Hero
+                title="SineTamer Avantaj Üniteleri"
+                description="Üstün koruma ve performans için geliştirilmiş SineTamer Avantaj serisi."
+                backgroundImage="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1920"
+                breadcrumbItems={breadcrumbItems}
+            />
 
             {/* Main Content Section */}
             <section className="advantage-content-section">

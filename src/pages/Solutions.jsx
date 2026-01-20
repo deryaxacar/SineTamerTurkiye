@@ -1,8 +1,15 @@
 import { Link } from 'react-router-dom';
+import Hero from '../components/Hero';
 import VideoSection from '../components/VideoSection';
 import './Solutions.css';
+import './solutions/SolutionCategory.css';
 
 const Solutions = () => {
+    const breadcrumbItems = [
+        { label: 'Ana Sayfa', path: '/' },
+        { label: 'Çözümler' }
+    ];
+
     const solutions = [
         {
             id: 1,
@@ -119,19 +126,12 @@ const Solutions = () => {
 
     return (
         <div className="solutions-page">
-            {/* Hero Section */}
-            <section className="solutions-hero">
-                <div className="solutions-hero-overlay"></div>
-                <div className="solutions-hero-content">
-                    <h1>Çözümlerimiz</h1>
-                    <p>İhtiyaçlarınıza özel, yenilikçi ve sürdürülebilir enerji çözümleri</p>
-                    <div className="breadcrumb">
-                        <Link to="/">Ana Sayfa</Link>
-                        <span>/</span>
-                        <span>Çözümler</span>
-                    </div>
-                </div>
-            </section>
+            <Hero
+                title="Çözümlerimiz"
+                description="İhtiyaçlarınıza özel, yenilikçi ve sürdürülebilir enerji çözümleri"
+                backgroundImage="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920"
+                breadcrumbItems={breadcrumbItems}
+            />
 
             {/* Solutions List */}
             <section className="solutions-list">

@@ -1,24 +1,22 @@
 import { Link } from 'react-router-dom';
+import Hero from '../../../components/Hero';
 import '../SolutionCategory.css';
 
 const Batteries = () => {
+    const breadcrumbItems = [
+        { label: 'Ana Sayfa', path: '/' },
+        { label: 'Çözümler' },
+        { label: 'Piller' }
+    ];
+
     return (
         <div className="solution-category-page">
-            {/* Hero Section */}
-            <section className="category-hero" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920)' }}>
-                <div className="category-hero-overlay"></div>
-                <div className="category-hero-content">
-                    <h1>UPS Pil Çözümleri</h1>
-                    <p>Güç koruma sisteminizin en kritik bileşeni: Güvenilir ve uzun ömürlü pil çözümleri.</p>
-                    <div className="breadcrumb">
-                        <Link to="/">Ana Sayfa</Link>
-                        <span>/</span>
-                        <span>Çözümler</span>
-                        <span>/</span>
-                        <span>Piller</span>
-                    </div>
-                </div>
-            </section>
+            <Hero
+                title="UPS Pil Çözümleri"
+                description="Güç koruma sisteminizin en kritik bileşeni: Güvenilir ve uzun ömürlü pil çözümleri."
+                backgroundImage="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920"
+                breadcrumbItems={breadcrumbItems}
+            />
 
             {/* Info Cards Section */}
             <section className="info-grid-section">

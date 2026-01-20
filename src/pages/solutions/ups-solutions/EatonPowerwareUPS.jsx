@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Hero from "../../../components/Hero";
 import '../SolutionCategory.css';
 
 const EatonPowerwareUPS = () => {
@@ -33,33 +34,25 @@ const EatonPowerwareUPS = () => {
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <rect x="2" y="7" width="18" height="10" rx="2" />
                     <path d="M22 11v2" />
-                    <path d="M7 12h6" />
                 </svg>
             ),
         },
     ];
 
+    const breadcrumbItems = [
+        { label: 'Ana Sayfa', path: '/' },
+        { label: 'Çözümler' },
+        { label: 'UPS Çözümleri', path: '/cozumler/ups-cozumleri' },
+        { label: 'Eaton / Powerware' }
+    ];
+
     return (
         <div className="solution-category-page">
-            {/* HERO */}
-            <section
-                className="category-hero"
-                style={{ backgroundImage: "url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920)" }}
-            >
-                <div className="category-hero-overlay" />
-                <div className="category-hero-content">
-                    <h1>Eaton / Powerware UPS Çözümleri</h1>
-                    <div className="breadcrumb">
-                        <Link to="/">Ana Sayfa</Link>
-                        <span>/</span>
-                        <span>Çözümler</span>
-                        <span>/</span>
-                        <Link to="/cozumler/ups-cozumleri">UPS Çözümleri</Link>
-                        <span>/</span>
-                        <span>Eaton / Powerware</span>
-                    </div>
-                </div>
-            </section>
+            <Hero
+                title="Eaton / Powerware UPS Çözümleri"
+                backgroundImage="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920"
+                breadcrumbItems={breadcrumbItems}
+            />
 
             {/* CONTENT */}
             <section className="category-features">

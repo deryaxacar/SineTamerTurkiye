@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Hero from '../components/Hero';
 import ProductCard from '../components/ProductCard';
 import './Products.css';
+import './solutions/SolutionCategory.css';
 
 const Products = () => {
     const [activeCategory, setActiveCategory] = useState('all');
@@ -117,21 +119,19 @@ const Products = () => {
         ? products
         : products.filter(p => p.category === activeCategory);
 
+    const breadcrumbItems = [
+        { label: 'Ana Sayfa', path: '/' },
+        { label: 'Ürünler' }
+    ];
+
     return (
         <div className="products-page">
-            {/* Hero Section */}
-            <section className="products-hero">
-                <div className="products-hero-overlay"></div>
-                <div className="products-hero-content">
-                    <h1>Ürünlerimiz</h1>
-                    <p>Yüksek kaliteli enerji ekipmanları ve aksesuarları</p>
-                    <div className="breadcrumb">
-                        <Link to="/">Ana Sayfa</Link>
-                        <span>/</span>
-                        <span>Ürünler</span>
-                    </div>
-                </div>
-            </section>
+            <Hero
+                title="Ürünlerimiz"
+                description="Yüksek kaliteli enerji ekipmanları ve aksesuarları"
+                backgroundImage="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=1920"
+                breadcrumbItems={breadcrumbItems}
+            />
 
             {/* Products Section */}
             <section className="products-section">

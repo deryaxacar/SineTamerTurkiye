@@ -1,7 +1,15 @@
 import { Link } from "react-router-dom";
+import Hero from "../../components/Hero";
 import "./MoreCategory.css";
+import "../solutions/SolutionCategory.css";
 
 const TechTopics = () => {
+    const breadcrumbItems = [
+        { label: 'Ana Sayfa', path: '/' },
+        { label: 'Daha Fazlası', path: '/daha-fazlasi' },
+        { label: 'Teknoloji Konuları' }
+    ];
+
     const videos = [
         { id: 1, youtubeId: "heqbxfgQWE0" },
         { id: 2, youtubeId: "r2Mss7-HtyU" },
@@ -18,27 +26,12 @@ const TechTopics = () => {
 
     return (
         <div className="more-category-page">
-            {/* Hero */}
-            <section
-                className="more-hero"
-                style={{
-                    backgroundImage:
-                        "url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920)",
-                }}
-            >
-                <div className="more-hero-overlay"></div>
-                <div className="more-hero-content">
-                    <h1>Teknoloji Konuları</h1>
-                    <p>Enerji teknolojileri hakkında eğitici videolarla bilginizi artırın</p>
-                    <div className="breadcrumb">
-                        <Link to="/">Ana Sayfa</Link>
-                        <span>/</span>
-                        <Link>Daha Fazlası</Link>
-                        <span>/</span>
-                        <span>Teknoloji Konuları</span>
-                    </div>
-                </div>
-            </section>
+            <Hero
+                title="Teknoloji Konuları"
+                description="Enerji teknolojileri hakkında eğitici videolarla bilginizi artırın"
+                backgroundImage="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920"
+                breadcrumbItems={breadcrumbItems}
+            />
 
             {/* Videos */}
             <section className="more-content-section">

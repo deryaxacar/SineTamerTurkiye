@@ -1,8 +1,16 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Hero from "../../components/Hero";
 import "./MoreCategory.css";
+import "../solutions/SolutionCategory.css";
 
 const AskSineTamer = () => {
+    const breadcrumbItems = [
+        { label: 'Ana Sayfa', path: '/' },
+        { label: 'Daha Fazlası', path: '/daha-fazlasi' },
+        { label: 'SineTamer\'a Sorun' }
+    ];
+
     const videos = [
         { id: 1, youtubeId: "hzqhDs1cv24" },
         { id: 2, youtubeId: "PQIOBi-jxII" },
@@ -30,27 +38,12 @@ const AskSineTamer = () => {
 
     return (
         <div className="more-category-page">
-            {/* Hero */}
-            <section
-                className="more-hero"
-                style={{
-                    backgroundImage:
-                        "url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920)",
-                }}
-            >
-                <div className="more-hero-overlay"></div>
-                <div className="more-hero-content">
-                    <h1>SineTamer'a Sorun</h1>
-                    <p>Sıkça Merak Edilen konuları Sizin İçin Topladık</p>
-                    <div className="breadcrumb">
-                        <Link to="/">Ana Sayfa</Link>
-                        <span>/</span>
-                        <Link>Daha Fazlası</Link>
-                        <span>/</span>
-                        <span>SineTamer'a Sorun</span>
-                    </div>
-                </div>
-            </section>
+            <Hero
+                title="SineTamer'a Sorun"
+                description="Sıkça Merak Edilen konuları Sizin İçin Topladık"
+                backgroundImage="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920"
+                breadcrumbItems={breadcrumbItems}
+            />
 
             {/* Videos */}
             <section className="more-content-section">

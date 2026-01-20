@@ -1,3 +1,4 @@
+import Hero from '../../../components/Hero';
 import { Link } from 'react-router-dom';
 import '../SolutionCategory.css';
 
@@ -33,24 +34,20 @@ const XtremePowerUPS = () => {
         }
     ];
 
+    const breadcrumbItems = [
+        { label: 'Ana Sayfa', path: '/' },
+        { label: 'Çözümler' },
+        { label: 'UPS Çözümleri', path: '/cozumler/ups-cozumleri' },
+        { label: 'Xtreme Power Serisi' }
+    ];
+
     return (
         <div className="solution-category-page">
-            {/* Hero Section */}
-            <section className="category-hero" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920)' }}>
-                <div className="category-hero-overlay"></div>
-                <div className="category-hero-content">
-                    <h1>Xtreme Power Serisi UPS Üniteleri</h1>
-                    <div className="breadcrumb">
-                        <Link to="/">Ana Sayfa</Link>
-                        <span>/</span>
-                        <span>Çözümler</span>
-                        <span>/</span>
-                        <Link >UPS Çözümleri</Link>
-                        <span>/</span>
-                        <span>Xtreme Power Serisi</span>
-                    </div>
-                </div>
-            </section>
+            <Hero
+                title="Xtreme Power Serisi UPS Üniteleri"
+                backgroundImage="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920"
+                breadcrumbItems={breadcrumbItems}
+            />
 
             {/* Products Section */}
             <section className="category-features">

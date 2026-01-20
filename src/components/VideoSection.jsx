@@ -1,4 +1,4 @@
-import './VideoSection.css';
+import './css/VideoSection.css';
 
 const VideoSection = ({ title, subtitle, videoUrl, poster }) => {
     return (

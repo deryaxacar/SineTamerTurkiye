@@ -1,27 +1,24 @@
-import { Link } from 'react-router-dom';
+import Hero from '../../../components/Hero';
 import '../SolutionCategory.css';
 
 const img1 = "https://www.ecsintl.com/wp-content/uploads/2023/12/datacenter-1024x228.jpg";
 const img3 = "https://www.ecsintl.com/wp-content/uploads/2025/07/ADF-product-range_XL-700x377-1-700x377.jpg";
 
 const ADFPowerSetting = () => {
+    const breadcrumbItems = [
+        { label: 'Ana Sayfa', path: '/' },
+        { label: 'Çözümler' },
+        { label: 'ADF Güç Ayarı' }
+    ];
+
     return (
         <div className="solution-category-page adf-page">
-            {/* Hero Section */}
-            <section className="category-hero" style={{ backgroundImage: `url(https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1920)` }}>
-                <div className="category-hero-overlay"></div>
-                <div className="category-hero-content">
-                    <h1>ADF Güç Ayarı</h1>
-                    <p>ADF Güç Ayarı – geleceğin güç anlayışı!</p>
-                    <div className="breadcrumb">
-                        <Link to="/">Ana Sayfa</Link>
-                        <span>/</span>
-                        <span>Çözümler</span>
-                        <span>/</span>
-                        <span>ADF Güç Ayarı</span>
-                    </div>
-                </div>
-            </section>
+            <Hero
+                title="ADF Güç Ayarı"
+                description="ADF Güç Ayarı – geleceğin güç anlayışı!"
+                backgroundImage="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1920"
+                breadcrumbItems={breadcrumbItems}
+            />
 
             {/* Section 1: Title & Image with 6 Items */}
             <section className="split-layout-section">

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Hero from '../../../components/Hero';
 import '../SolutionCategory.css';
 
 const img1 = "https://www.ecsintl.com/wp-content/uploads/2023/12/g1-300x223-1-300x223.jpg";
@@ -8,23 +8,20 @@ const img4 = "https://www.ecsintl.com/wp-content/uploads/2023/12/11-288x258.jpg"
 const img5 = "https://www.ecsintl.com/wp-content/uploads/2023/12/g3-288x258.jpg";
 
 const PowerFactorCorrection = () => {
+    const breadcrumbItems = [
+        { label: 'Ana Sayfa', path: '/' },
+        { label: 'Çözümler' },
+        { label: 'Güç Faktörü Düzeltme' }
+    ];
+
     return (
         <div className="solution-category-page pfc-page">
-            {/* Hero Section */}
-            <section className="category-hero" style={{ backgroundImage: `url(https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1920)` }}>
-                <div className="category-hero-overlay"></div>
-                <div className="category-hero-content">
-                    <h1>Güç Faktörü Düzeltme</h1>
-                    <p>Enerji verimliliğinizi artırın, reaktif güç cezalarından kurtulun ve tesis kapasitenizi optimize edin.</p>
-                    <div className="breadcrumb">
-                        <Link to="/">Ana Sayfa</Link>
-                        <span>/</span>
-                        <span>Çözümler</span>
-                        <span>/</span>
-                        <span>Güç Faktörü Düzeltme</span>
-                    </div>
-                </div>
-            </section>
+            <Hero
+                title="Güç Faktörü Düzeltme"
+                description="Enerji verimliliğinizi artırın, reaktif güç cezalarından kurtulun ve tesis kapasitenizi optimize edin."
+                backgroundImage="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1920"
+                breadcrumbItems={breadcrumbItems}
+            />
 
             {/* Title & Intro */}
             <section className="split-layout-section">

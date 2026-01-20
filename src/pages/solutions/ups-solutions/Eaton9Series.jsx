@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Hero from "../../../components/Hero";
 import '../SolutionCategory.css';
 
 const Eaton9Series = () => {
@@ -143,35 +144,21 @@ const Eaton9Series = () => {
         },
     ];
 
+    const breadcrumbItems = [
+        { label: 'Ana Sayfa', path: '/' },
+        { label: 'Çözümler' },
+        { label: 'UPS Çözümleri', path: '/cozumler/ups-cozumleri' },
+        { label: 'Eaton / Powerware', path: '/cozumler/ups-cozumleri/eaton-powerware-ups' },
+        { label: '9 Serisi' }
+    ];
 
     return (
         <div className="solution-category-page">
-            {/* HERO */}
-            <section
-                className="category-hero"
-                style={{
-                    backgroundImage:
-                        "url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920)",
-                }}
-            >
-                <div className="category-hero-overlay" />
-                <div className="category-hero-content">
-                    <h1>Eaton 9 Serisi UPS</h1>
-                    <div className="breadcrumb">
-                        <Link to="/">Ana Sayfa</Link>
-                        <span>/</span>
-                        <span>Çözümler</span>
-                        <span>/</span>
-                        <Link to="/cozumler/ups-cozumleri">UPS Çözümleri</Link>
-                        <span>/</span>
-                        <Link to="/cozumler/ups-cozumleri/eaton-powerware-ups">
-                            Eaton / Powerware
-                        </Link>
-                        <span>/</span>
-                        <span>9 Serisi</span>
-                    </div>
-                </div>
-            </section>
+            <Hero
+                title="Eaton 9 Serisi UPS"
+                backgroundImage="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920"
+                breadcrumbItems={breadcrumbItems}
+            />
 
             {/* CONTENT */}
             <section className="category-features">

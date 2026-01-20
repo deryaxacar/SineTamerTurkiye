@@ -1,26 +1,22 @@
-import { Link } from 'react-router-dom';
+import Hero from '../../../components/Hero';
 import '../SolutionCategory.css';
 
 const LALMUnits = () => {
+    const breadcrumbItems = [
+        { label: 'Ana Sayfa', path: '/' },
+        { label: 'Çözümler' },
+        { label: 'SineTamer' },
+        { label: 'LA & LM Üniteleri' }
+    ];
+
     return (
         <div className="solution-category-page">
-            {/* Hero Section */}
-            <section className="category-hero" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920)' }}>
-                <div className="category-hero-overlay"></div>
-                <div className="category-hero-content">
-                    <h1>LA & LM Üniteleri</h1>
-                    <p>SineTamer LA ve LM serisi güç koruma çözümleri.</p>
-                    <div className="breadcrumb">
-                        <Link to="/">Ana Sayfa</Link>
-                        <span>/</span>
-                        <span>Çözümler</span>
-                        <span>/</span>
-                        <span>SineTamer</span>
-                        <span>/</span>
-                        <span>LA & LM Üniteleri</span>
-                    </div>
-                </div>
-            </section>
+            <Hero
+                title="LA & LM Üniteleri"
+                description="SineTamer LA ve LM serisi güç koruma çözümleri."
+                backgroundImage="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920"
+                breadcrumbItems={breadcrumbItems}
+            />
 
             {/* YouTube Video Section */}
             <section className="lalm-video-section">

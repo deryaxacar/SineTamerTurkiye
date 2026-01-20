@@ -1,24 +1,21 @@
-import { Link } from 'react-router-dom';
+import Hero from '../../../components/Hero';
 import '../SolutionCategory.css';
 
 const PowerQualityAnalysis = () => {
+    const breadcrumbItems = [
+        { label: 'Ana Sayfa', path: '/' },
+        { label: 'Çözümler' },
+        { label: 'Güç Kalitesi Analizi' }
+    ];
+
     return (
         <div className="solution-category-page">
-            {/* Hero Section */}
-            <section className="category-hero" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920)' }}>
-                <div className="category-hero-overlay"></div>
-                <div className="category-hero-content">
-                    <h1>Güç Kalitesi Analizi</h1>
-                    <p>Tesisinizin enerji altyapısını optimize edin, verimliliği artırın ve maliyetleri düşürün.</p>
-                    <div className="breadcrumb">
-                        <Link to="/">Ana Sayfa</Link>
-                        <span>/</span>
-                        <span>Çözümler</span>
-                        <span>/</span>
-                        <span>Güç Kalitesi Analizi</span>
-                    </div>
-                </div>
-            </section>
+            <Hero
+                title="Güç Kalitesi Analizi"
+                description="Tesisinizin enerji altyapısını optimize edin, verimliliği artırın ve maliyetleri düşürün."
+                backgroundImage="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920"
+                breadcrumbItems={breadcrumbItems}
+            />
 
             {/* Section 1: Split Layout (Image Right) */}
             <section className="split-layout-section" style={{ padding: '6rem 0 0 0' }}>

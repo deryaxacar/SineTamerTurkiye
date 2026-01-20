@@ -3,7 +3,7 @@ import { useState, useEffect, useMemo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/sinetamer-logo.png';
 import logo2 from '../assets/womner-logo.png';
-import './Navbar.css';
+import './css/Navbar.css';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);

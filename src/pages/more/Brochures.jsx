@@ -1,8 +1,16 @@
 // BrochuresPage.jsx
 import { Link } from 'react-router-dom';
+import Hero from '../../components/Hero';
 import './MoreCategory.css';
+import '../solutions/SolutionCategory.css';
 
 const BrochuresPage = () => {
+    const breadcrumbItems = [
+        { label: 'Ana Sayfa', path: '/' },
+        { label: 'Daha Fazlası', path: '/daha-fazlasi' },
+        { label: 'Broşürler' }
+    ];
+
     const brochures = [
         {
             id: 1,
@@ -97,27 +105,12 @@ const BrochuresPage = () => {
 
     return (
         <div className="more-category-page">
-            {/* Hero Section */}
-            <section
-                className="more-hero"
-                style={{
-                    backgroundImage:
-                        'url(https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=1920)',
-                }}
-            >
-                <div className="more-hero-overlay"></div>
-                <div className="more-hero-content">
-                    <h1>Broşürler</h1>
-                    <p>Ürün ve hizmetlerimiz hakkında detaylı bilgi için broşürlerimizi indirin</p>
-                    <div className="breadcrumb">
-                        <Link to="/">Ana Sayfa</Link>
-                        <span>/</span>
-                        <Link>Daha Fazlası</Link>
-                        <span>/</span>
-                        <span>Broşürler</span>
-                    </div>
-                </div>
-            </section>
+            <Hero
+                title="Broşürler"
+                description="Ürün ve hizmetlerimiz hakkında detaylı bilgi için broşürlerimizi indirin"
+                backgroundImage="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=1920"
+                breadcrumbItems={breadcrumbItems}
+            />
 
             {/* Brochures Grid */}
             <section className="more-content-section">
