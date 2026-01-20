@@ -2254,3 +2254,136 @@
         margin: 0 auto;
     }
 }
+
+/* Individual Circuit Units Page Styles */
+.units-tab-selector {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid #eee;
+    flex-wrap: wrap;
+}
+
+.units-tab-btn {
+    padding: 1.5rem 0;
+    background-color: transparent;
+    color: #888;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border: none;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    margin-bottom: -1px;
+}
+
+.units-tab-btn.active {
+    color: #3b5898;
+    border-bottom: 3px solid #3b5898;
+}
+
+.units-content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.units-description {
+    font-size: 1.14rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 2.5rem;
+    font-weight: 500;
+}
+
+.units-points-list {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.units-point-item {
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+
+.units-split-cta {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+    gap: 4rem;
+    align-items: center;
+    background-color: #f8fafc;
+    padding: 4rem;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+
+.units-cta-content {
+    text-align: left;
+}
+
+.units-cta-content h2 {
+    font-size: 2.2rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+}
+
+.units-cta-content p {
+    color: #666;
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.units-pdf-btn {
+    display: inline-block;
+    background-color: var(--primary);
+    color: white !important;
+    padding: 1rem 2.5rem;
+    border-radius: 10px;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(13, 27, 76, 0.2);
+}
+
+.units-pdf-btn:hover {
+    transform: translateY(-3px);
+    background-color: #1a2f6e;
+    box-shadow: 0 15px 35px rgba(13, 27, 76, 0.3);
+}
+
+.units-cta-image-wrapper img {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: var(--shadow-lg);
+    object-fit: contain;
+    height: auto;
+}
+
+@media (max-width: 968px) {
+    .units-split-cta {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 2.5rem;
+        text-align: center;
+    }
+
+    .units-cta-content {
+        text-align: center;
+    }
+
+    .units-cta-image-wrapper {
+        order: -1;
+    }
+
+    .units-tab-selector {
+        gap: 1.5rem;
+    }
+}

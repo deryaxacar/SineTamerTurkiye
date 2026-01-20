@@ -39,6 +39,8 @@ import AdvantageUnits from './pages/solutions/sinetamer/AdvantageUnits';
 import MediumVoltageUnits from './pages/solutions/sinetamer/MediumVoltageUnits';
 import MVDetails from './pages/solutions/sinetamer/MVDetails';
 import DataTelecomUnits from './pages/solutions/sinetamer/DataTelecomUnits';
+import IndividualCircuitUnits from './pages/solutions/sinetamer/IndividualCircuitUnits';
+import SurgeProtectionDevice from './pages/solutions/sinetamer/SurgeProtectionDevice';
 
 import './App.css';
 
@@ -79,6 +81,8 @@ function App() {
             <Route path="/cozumler/sinetamer/orta-gerilim-uniteleri" element={<MediumVoltageUnits />} />
             <Route path="/cozumler/sinetamer/mv-detaylari" element={<MVDetails />} />
             <Route path="/cozumler/sinetamer/veri-telekom-uniteleri" element={<DataTelecomUnits />} />
+            <Route path="/cozumler/sinetamer/bireysel-devre-uniteleri" element={<IndividualCircuitUnits />} />
+            <Route path="/cozumler/sinetamer/asiri-gerilim-koruma-cihazi" element={<SurgeProtectionDevice />} />
             {/* More Categories */}
             <Route path="/daha-fazlasi/teknoloji-konulari" element={<TechTopics />} />
             <Route path="/daha-fazlasi/brosurler" element={<BrochuresPage />} />

@@ -75,7 +75,7 @@ const Navbar = () => {
             { path: '/cozumler/sinetamer/avantaj-uniteleri', label: 'SineTamer Avantaj Üniteleri' },
             { path: '/cozumler/sinetamer/orta-gerilim-uniteleri', label: 'Orta Gerilim Üniteleri' },
             { path: '/cozumler/sinetamer/veri-telekom-uniteleri', label: 'Veri/Telekom Üniteleri' },
-            { path: '/cozumler/enerji-verimliligi#optimizasyon', label: 'Bireysel Devre Üniteleri' },
+            { path: '/cozumler/sinetamer/bireysel-devre-uniteleri', label: 'Bireysel Devre Üniteleri' },
 
             { path: '/cozumler/enerji-verimliligi#secenek-7', label: 'Kurulum Sayfaları' },
             { path: '/cozumler/enerji-verimliligi#secenek-8', label: 'Teknik Makaleler' },

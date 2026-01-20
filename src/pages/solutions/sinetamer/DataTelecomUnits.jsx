@@ -44,7 +44,6 @@ const DataTelecomUnits = () => {
         <div className="solution-category-page">
             <Hero
                 title="Veri / Telekom Üniteleri"
-                description="Kritik veri ve iletişim altyapılarınız için dünyanın en gelişmiş aşırı gerilim koruma çözümleri."
                 backgroundImage="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1920"
                 breadcrumbItems={breadcrumbItems}
             />
