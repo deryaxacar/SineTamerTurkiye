@@ -4,8 +4,6 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Solutions from './pages/Solutions';
 import Products from './pages/Products';
-import BlogPage from './pages/more/BlogPage';
-import BlogDetail from './pages/more/BlogDetail';
 import ProductDetail from './pages/ProductDetail';
 
 import More from './pages/More';
@@ -30,6 +28,7 @@ import MVDetails from './pages/solutions/sinetamer/MVDetails';
 import DataTelecomUnits from './pages/solutions/sinetamer/DataTelecomUnits';
 import IndividualCircuitUnits from './pages/solutions/sinetamer/IndividualCircuitUnits';
 import SurgeProtectionDevice from './pages/solutions/sinetamer/SurgeProtectionDevice';
+import InstallationPages from './pages/solutions/sinetamer/InstallationPages';
 
 import './App.css';
 
@@ -44,8 +43,6 @@ function App() {
             <Route path="/cozumler" element={<Solutions />} />
             <Route path="/urunler" element={<Products />} />
             <Route path="/urunler/:id" element={<ProductDetail />} />
-            <Route path="/blog" element={<BlogPage />} />
-            <Route path="/blog/:id" element={<BlogDetail />} />
 
             <Route path="/daha-fazlasi" element={<More />} />
 
@@ -64,11 +61,11 @@ function App() {
             <Route path="/cozumler/sinetamer/veri-telekom-uniteleri" element={<DataTelecomUnits />} />
             <Route path="/cozumler/sinetamer/bireysel-devre-uniteleri" element={<IndividualCircuitUnits />} />
             <Route path="/cozumler/sinetamer/asiri-gerilim-koruma-cihazi" element={<SurgeProtectionDevice />} />
+            <Route path="/cozumler/sinetamer/kurulum-sayfalari" element={<InstallationPages />} />
             {/* More Categories */}
             <Route path="/daha-fazlasi/teknoloji-konulari" element={<TechTopics />} />
             <Route path="/daha-fazlasi/brosurler" element={<BrochuresPage />} />
             <Route path="/daha-fazlasi/videolar" element={<VideosPage />} />
-            <Route path="/daha-fazlasi/blog" element={<BlogPage />} />
             <Route path="/daha-fazlasi/sinetamer-a-sorun" element={<AskSineTamer />} />
           </Routes>
         </main>

@@ -62,8 +62,8 @@ const Navbar = () => {
             { path: '/cozumler/sinetamer/orta-gerilim-uniteleri', label: 'Orta Gerilim Üniteleri' },
             { path: '/cozumler/sinetamer/veri-telekom-uniteleri', label: 'Veri/Telekom Üniteleri' },
             { path: '/cozumler/sinetamer/bireysel-devre-uniteleri', label: 'Bireysel Devre Üniteleri' },
+            { path: '/cozumler/sinetamer/kurulum-sayfalari', label: 'Kurulum Sayfaları' },
 
-            { path: '/cozumler/enerji-verimliligi#secenek-7', label: 'Kurulum Sayfaları' },
             { path: '/cozumler/enerji-verimliligi#secenek-8', label: 'Teknik Makaleler' },
             {
               path: '/daha-fazlasi/sinetamer-a-sorun', label: 'Sinetamer a sor'
@@ -148,7 +148,7 @@ const Navbar = () => {
     { path: '/daha-fazlasi/teknoloji-konulari', label: 'Teknoloji Konuları' },
     { path: '/daha-fazlasi/brosurler', label: 'Broşürler' },
     { path: '/daha-fazlasi/videolar', label: 'Videolar' },
-    { path: '/daha-fazlasi/blog', label: 'Blog' },
+    { path: 'https://www.ecsintl.com/blog/', label: 'Blog', external: true },
     { path: 'https://www.ecsintl.com/newsletter/', label: 'Haber bülteni', external: true },
   ];
 
