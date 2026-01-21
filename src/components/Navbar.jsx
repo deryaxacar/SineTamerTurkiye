@@ -41,24 +41,10 @@ const Navbar = () => {
       mainPath: '/cozumler',
       categories: [
         {
-          id: 'ups',
-          label: 'UPS Çözümleri',
-          path: '/cozumler/ups-cozumleri',
-          items: [
-            { path: '/cozumler/ups-cozumleri/gyenilenmis-ups-cozumleri', label: 'Güvenilir Güç Koruması İçin Yenilenmiş UPS Sistemleri' },
-            { path: '/cozumler/ups-cozumleri/xtreme-power-serisi', label: 'Xtreme Power Serisi UPS Üniteleri' },
-            { path: '/cozumler/ups-cozumleri/eaton-powerware-ups', label: 'Eaton/Powerware UPS' },
-            { path: '/cozumler/ups-cozumleri/yaygin-gucluk-sorunlari', label: 'Yaygın Güç Kalitesi Sorunları ve Yanlış Bilinenler' },
-            { path: '/cozumler/ups-cozumleri/piller', label: 'Piller' },
-            { path: '/cozumler/ups-cozumleri/pil-servis-departmani', label: 'UPS Pil Servis Departmanı' },
-          ]
-        },
-        {
           id: 'storage',
           label: 'Çözümler',
           path: '/cozumler/enerji-depolama',
           items: [
-            { path: '/cozumler/ups-cozumleri/pil-servis-departmani', label: 'UPS Pil Servis Departmanı' },
             { path: '/cozumler/solutions/guc-kalitesi-analizi', label: 'Güç Kalitesi Analizi' },
             { path: '/cozumler/solutions/guc-faktoru-duzeltme', label: 'Güç Faktörü Düzeltme' },
             { path: '/cozumler/solutions/anahtar-teslimi-teknoloji-cozumleri', label: 'Anahtar Teslimi Teknoloji Çözümleri' },

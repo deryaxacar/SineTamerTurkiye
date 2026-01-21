@@ -16,17 +16,6 @@ import BrochuresPage from './pages/more/Brochures';
 import VideosPage from './pages/more/VideosPage';
 import AskSineTamer from './pages/more/AskSineTamer';
 
-// UPS Solutions
-import RenewedUPS from './pages/solutions/ups-solutions/RenewedUPS';
-import XtremePowerUPS from './pages/solutions/ups-solutions/XtremePowerUPS';
-import EatonPowerwareUPS from './pages/solutions/ups-solutions/EatonPowerwareUPS';
-import Eaton3Series from './pages/solutions/ups-solutions/Eaton3Series';
-import Eaton5Series from './pages/solutions/ups-solutions/Eaton5Series';
-import Eaton9Series from './pages/solutions/ups-solutions/Eaton9Series';
-import PowerQualityProblems from './pages/solutions/ups-solutions/PowerQualityProblems';
-import Batteries from './pages/solutions/ups-solutions/Batteries';
-import BatteryService from './pages/solutions/ups-solutions/BatteryService';
-
 // Solutions Categories
 import PowerQualityAnalysis from './pages/solutions/solutions/PowerQualityAnalysis';
 import PowerFactorCorrection from './pages/solutions/solutions/PowerFactorCorrection';
@@ -62,15 +51,7 @@ function App() {
 
             {/* Solutions Categories */}
 
-            <Route path="/cozumler/ups-cozumleri/gyenilenmis-ups-cozumleri" element={<RenewedUPS />} />
-            <Route path="/cozumler/ups-cozumleri/xtreme-power-serisi" element={<XtremePowerUPS />} />
-            <Route path="/cozumler/ups-cozumleri/eaton-powerware-ups" element={<EatonPowerwareUPS />} />
-            <Route path="/cozumler/ups-cozumleri/eaton-powerware/3-serisi" element={<Eaton3Series />} />
-            <Route path="/cozumler/ups-cozumleri/eaton-powerware/5-serisi" element={<Eaton5Series />} />
-            <Route path="/cozumler/ups-cozumleri/eaton-powerware/9-serisi" element={<Eaton9Series />} />
-            <Route path="/cozumler/ups-cozumleri/yaygin-gucluk-sorunlari" element={<PowerQualityProblems />} />
-            <Route path="/cozumler/ups-cozumleri/piller" element={<Batteries />} />
-            <Route path="/cozumler/ups-cozumleri/pil-servis-departmani" element={<BatteryService />} />
+
             <Route path="/cozumler/solutions/guc-kalitesi-analizi" element={<PowerQualityAnalysis />} />
             <Route path="/cozumler/solutions/guc-faktoru-duzeltme" element={<PowerFactorCorrection />} />
             <Route path="/cozumler/solutions/anahtar-teslimi-teknoloji-cozumleri" element={<TurnkeyTechSolutions />} />
