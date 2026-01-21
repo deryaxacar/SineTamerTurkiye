@@ -147,26 +147,6 @@ const Home = () => {
                 title="Enerji Dönüşümünüzü İzleyin"
                 subtitle="Projelerimizden kesitler ve müşteri deneyimlerini keşfedin."
             />
-
-            {/* Blog Preview */}
-            <section className="blog-preview">
-                <div className="container">
-                    <h2 className="section-title">Blog & Haberler</h2>
-                    <p className="section-subtitle">
-                        Enerji sektöründeki son gelişmeler ve ipuçları için blogumuzu takip edin.
-                    </p>
-                    <div className="blog-grid">
-                        {blogPosts.map((post, index) => (
-                            <BlogCard key={index} {...post} />
-                        ))}
-                    </div>
-                    <div className="blog-cta">
-                        <Link to="/daha-fazlasi/blog" className="btn btn-secondary">
-                            Tüm Yazıları Gör
-                        </Link>
-                    </div>
-                </div>
-            </section>
         </div>
     );
 };

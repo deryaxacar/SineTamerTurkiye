@@ -303,6 +303,8 @@
     box-shadow: var(--shadow-md);
     transition: all var(--transition-normal);
     border: 1px solid var(--gray);
+    display: flex;
+    flex-direction: column;
 }
 
 .brochure-card-new:hover {
@@ -356,13 +358,18 @@
 
 .brochure-content-new {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 120px;
 }
 
 .brochure-content-new h3 {
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--text-dark);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    flex: 1;
 }
 
 .brochure-content-new p {
@@ -376,6 +383,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: auto;
 }
 
 .file-info {
@@ -1088,4 +1096,20 @@
     width: 100%;
     height: 100%;
     border: 0;
+}
+
+/* Warranty Grid Styles */
+.warranty-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+    .warranty-grid {
+        grid-template-columns: 1fr;
+    }
 }

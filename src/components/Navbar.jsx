@@ -64,7 +64,7 @@ const Navbar = () => {
             { path: '/cozumler/sinetamer/bireysel-devre-uniteleri', label: 'Bireysel Devre Üniteleri' },
             { path: '/cozumler/sinetamer/kurulum-sayfalari', label: 'Kurulum Sayfaları' },
 
-            { path: '/cozumler/enerji-verimliligi#secenek-8', label: 'Teknik Makaleler' },
+            { path: 'https://www.ecsintl.com/technical-articles/#el-ba9f3153', label: 'Teknik Makaleler', external: true },
             {
               path: '/daha-fazlasi/sinetamer-a-sorun', label: 'Sinetamer a sor'
             },
