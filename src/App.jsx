@@ -14,11 +14,11 @@ import BrochuresPage from './pages/more/Brochures';
 import VideosPage from './pages/more/VideosPage';
 import AskSineTamer from './pages/more/AskSineTamer';
 
-// Solutions Categories
-import PowerQualityAnalysis from './pages/solutions/solutions/PowerQualityAnalysis';
-import PowerFactorCorrection from './pages/solutions/solutions/PowerFactorCorrection';
-import TurnkeyTechSolutions from './pages/solutions/solutions/TurnkeyTechSolutions';
-import ADFPowerSetting from './pages/solutions/solutions/ADFPowerSetting';
+// Services (Çözümler)
+import PowerQualityAnalysis from './pages/solutions/services/PowerQualityAnalysis';
+import PowerFactorCorrection from './pages/solutions/services/PowerFactorCorrection';
+import TurnkeyTechSolutions from './pages/solutions/services/TurnkeyTechSolutions';
+import ADFPowerSetting from './pages/solutions/services/ADFPowerSetting';
 
 // SineTamer
 import LALMUnits from './pages/solutions/sinetamer/LALMUnits';
@@ -47,13 +47,11 @@ function App() {
 
             <Route path="/daha-fazlasi" element={<More />} />
 
-            {/* Solutions Categories */}
-
-
-            <Route path="/cozumler/solutions/guc-kalitesi-analizi" element={<PowerQualityAnalysis />} />
-            <Route path="/cozumler/solutions/guc-faktoru-duzeltme" element={<PowerFactorCorrection />} />
-            <Route path="/cozumler/solutions/anahtar-teslimi-teknoloji-cozumleri" element={<TurnkeyTechSolutions />} />
-            <Route path="/cozumler/solutions/adf-guc-ayari" element={<ADFPowerSetting />} />
+            {/* Services (Çözümler) */}
+            <Route path="/cozumler/hizmetler/guc-kalitesi-analizi" element={<PowerQualityAnalysis />} />
+            <Route path="/cozumler/hizmetler/guc-faktoru-duzeltme" element={<PowerFactorCorrection />} />
+            <Route path="/cozumler/hizmetler/anahtar-teslimi-teknoloji-cozumleri" element={<TurnkeyTechSolutions />} />
+            <Route path="/cozumler/hizmetler/adf-guc-ayari" element={<ADFPowerSetting />} />
             {/* SineTamer */}
             <Route path="/cozumler/sinetamer/la-lm-uniteleri" element={<LALMUnits />} />
             <Route path="/cozumler/sinetamer/avantaj-uniteleri" element={<AdvantageUnits />} />

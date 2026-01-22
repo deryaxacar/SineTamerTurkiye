@@ -45,10 +45,10 @@ const Navbar = () => {
           label: 'Çözümler',
           path: '/cozumler/enerji-depolama',
           items: [
-            { path: '/cozumler/solutions/guc-kalitesi-analizi', label: 'Güç Kalitesi Analizi' },
-            { path: '/cozumler/solutions/guc-faktoru-duzeltme', label: 'Güç Faktörü Düzeltme' },
-            { path: '/cozumler/solutions/anahtar-teslimi-teknoloji-cozumleri', label: 'Anahtar Teslimi Teknoloji Çözümleri' },
-            { path: '/cozumler/solutions/adf-guc-ayari', label: 'ADF Güç Ayarı' },
+            { path: '/cozumler/hizmetler/guc-kalitesi-analizi', label: 'Güç Kalitesi Analizi' },
+            { path: '/cozumler/hizmetler/guc-faktoru-duzeltme', label: 'Güç Faktörü Düzeltme' },
+            { path: '/cozumler/hizmetler/anahtar-teslimi-teknoloji-cozumleri', label: 'Anahtar Teslimi Teknoloji Çözümleri' },
+            { path: '/cozumler/hizmetler/adf-guc-ayari', label: 'ADF Güç Ayarı' },
           ]
         },
         {
