@@ -65,30 +65,12 @@ const Navbar = () => {
             { path: '/cozumler/sinetamer/kurulum-sayfalari', label: 'Kurulum Sayfaları' },
 
             { path: 'https://www.ecsintl.com/technical-articles/#el-ba9f3153', label: 'Teknik Makaleler', external: true },
-            {
-              path: '/daha-fazlasi/sinetamer-a-sorun', label: 'Sinetamer a sor'
-            },
-            { path: '/cozumler/enerji-verimliligi#secenek-10', label: 'Web semineri eğitimi' },
-            { path: '/cozumler/enerji-verimliligi#secenek-11', label: 'Uluslararası Sinetamer Dağıtım Ortakları' },
-            { path: '/cozumler/enerji-verimliligi#secenek-12', label: 'Sadece Distribütörler' },
             { path: 'https://www.ecsintl.com/hostpanel/login/webmail', label: 'Web Postası', external: true },
             { path: 'https://www.ecsintl.com/sinetamer-home/', label: 'Sinetamer Ana Sayfa', external: true },
             { path: '/cozumler/enerji-verimliligi#secenek-15', label: 'Sinetamer Müşterileri ' },
             { path: '/daha-fazlasi/teknoloji-konulari', label: 'Teknoloji Konuları' },
             { path: '/cozumler/enerji-verimliligi#secenek-17', label: 'Asansör Altyapınızı Korumak için Asansör Aşırı Gerilim Koruması' },
-            { path: '/cozumler/enerji-verimliligi#secenek-18', label: 'Proje Meksika' },
-          ]
-        },
-        {
-          id: 'grid',
-          label: 'Güç Kalitesi Ürünleri',
-          path: '/cozumler/akilli-sebeke',
-          items: [
-            { path: '/cozumler/akilli-sebeke#entegrasyon', label: 'Aşırı Gerilim Koruması – ABD' },
-            { path: '/cozumler/akilli-sebeke#izleme', label: 'Mirus Harmonik Azaltma ile Güç Kalitesini İyileştirin' },
-            { path: '/cozumler/akilli-sebeke#izleme', label: 'Tesisinizin İhtiyaçlarına Göre Tasarlanmış Özel Yıldırımdan Korunma Sistemleri' },
-            { path: '/cozumler/akilli-sebeke#izleme', label: 'Enerji Verimliliği' },
-            { path: '/cozumler/akilli-sebeke#izleme', label: 'NexTek – Koaksiyel, TV, CCTV, Hücresel, Radyo Bastırma' },
+
           ]
         },
       ]
@@ -185,8 +167,16 @@ const Navbar = () => {
   const splitTo3 = (arr) => {
     const total = arr.length;
     const base = Math.floor(total / 3);
-    const rem = total % 3; // ilk rem kolona +1
-    const sizes = [base + (rem > 0 ? 1 : 0), base + (rem > 1 ? 1 : 0), base];
+    const rem = total % 3;
+
+    // Eğer 13 öğe varsa orta kolonu 5 yap (4-5-4), aksi takdirde standart bölme
+    let sizes;
+    if (total === 13) {
+      sizes = [5, 5, 3];
+    } else {
+      sizes = [base + (rem > 0 ? 1 : 0), base + (rem > 1 ? 1 : 0), base];
+    }
+
     const a = arr.slice(0, sizes[0]);
     const b = arr.slice(sizes[0], sizes[0] + sizes[1]);
     const c = arr.slice(sizes[0] + sizes[1]);
