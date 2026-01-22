@@ -128,7 +128,7 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Stats Section */}
+            {/* Stats Section 
             <section className="stats-section">
                 <div className="container">
                     <div className="stats-grid">
@@ -140,13 +140,7 @@ const Home = () => {
                         ))}
                     </div>
                 </div>
-            </section>
-
-            {/* Video Section */}
-            <VideoSection
-                title="Enerji Dönüşümünüzü İzleyin"
-                subtitle="Projelerimizden kesitler ve müşteri deneyimlerini keşfedin."
-            />
+            </section>*/}
         </div>
     );
 };

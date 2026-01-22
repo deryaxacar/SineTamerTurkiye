@@ -27,13 +27,6 @@ const VideosPage = () => {
                 { id: 5, youtubeId: "qiwRK2OOqeM" },
             ],
         },
-        {
-            title: "UPS gerçekten yeterli mi?",
-            videos: [
-                { id: 6, youtubeId: "jsgA-lUzkPQ" },
-                { id: 7, youtubeId: "_L6_8sIZygA" },
-            ],
-        },
     ];
 
     return (
