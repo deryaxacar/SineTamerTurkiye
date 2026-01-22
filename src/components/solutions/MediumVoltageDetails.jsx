@@ -16,7 +16,7 @@ const MediumVoltageDetails = ({ pdfs }) => {
             {/* PDF Downloads Section */}
             <section className="mv-pdf-section">
                 <div className="mv-container">
-                    <div className="pdf-grid-mv">
+                    <div className="pdf-grid-mv single-line-titles">
                         {pdfs.map((pdf, index) => (
                             <div key={index} className="pdf-card-mv">
                                 <div className="pdf-icon-mv">

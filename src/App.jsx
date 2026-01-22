@@ -29,6 +29,7 @@ import DataTelecomUnits from './pages/solutions/sinetamer/DataTelecomUnits';
 import IndividualCircuitUnits from './pages/solutions/sinetamer/IndividualCircuitUnits';
 import SurgeProtectionDevice from './pages/solutions/sinetamer/SurgeProtectionDevice';
 import InstallationPages from './pages/solutions/sinetamer/InstallationPages';
+import IndividualCircuitDataSheets from './pages/solutions/sinetamer/IndividualCircuitDataSheets';
 
 import './App.css';
 
@@ -60,6 +61,7 @@ function App() {
             <Route path="/cozumler/sinetamer/mv-detaylari" element={<MVDetails />} />
             <Route path="/cozumler/sinetamer/veri-telekom-uniteleri" element={<DataTelecomUnits />} />
             <Route path="/cozumler/sinetamer/bireysel-devre-uniteleri" element={<IndividualCircuitUnits />} />
+            <Route path="/cozumler/sinetamer/bireysel-devre-veri-sayfalari" element={<IndividualCircuitDataSheets />} />
             <Route path="/cozumler/sinetamer/asiri-gerilim-koruma-cihazi" element={<SurgeProtectionDevice />} />
             <Route path="/cozumler/sinetamer/kurulum-sayfalari" element={<InstallationPages />} />
             {/* More Categories */}

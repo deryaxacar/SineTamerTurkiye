@@ -2112,7 +2112,7 @@
 
 .pdf-card-mv {
     background: var(--white);
-    padding: 1.25rem;
+    padding: 1.5rem;
     border-radius: var(--radius-lg);
     border: 1px solid var(--gray);
     box-shadow: var(--shadow-sm);
@@ -2121,6 +2121,8 @@
     align-items: center;
     text-align: center;
     transition: all 0.3s ease;
+    height: 100%;
+    min-height: 220px;
 }
 
 .pdf-card-mv:hover {
@@ -2140,6 +2142,7 @@
     justify-content: center;
     margin-bottom: 1rem;
     transition: all 0.3s ease;
+    flex-shrink: 0;
 }
 
 .pdf-icon-mv svg {
@@ -2147,12 +2150,26 @@
     height: 28px;
 }
 
+.pdf-info-mv {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
 .pdf-info-mv h3 {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: var(--text-dark);
-    margin-bottom: 0.25rem;
-    line-height: 1.3;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 2.8em;
 }
 
 .pdf-info-mv span {
@@ -2197,6 +2214,15 @@
     }
 }
 
+
+/* Single line titles override for specific pages */
+.single-line-titles .pdf-info-mv h3 {
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    min-height: 1.4em;
+}
 
 .pdf-download-btn-mv svg {
     width: 18px;
@@ -3066,5 +3092,448 @@
     .pqa-param-item {
         padding: 0.75rem;
         font-size: 0.9rem;
+    }
+}
+
+/* =========================================================
+   Surge Protection Device (SPD) Page Styles
+   ========================================================= */
+
+.spd-main-section {
+    padding: 5rem 0;
+    background: var(--white);
+}
+
+.spd-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.spd-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.spd-header h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.spd-header p {
+    font-size: 1.15rem;
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Features Grid */
+.spd-features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.spd-feature-card {
+    background: var(--white);
+    border: 1px solid var(--gray);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.spd-feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(13, 27, 76, 0.12);
+    border-color: var(--primary);
+}
+
+.spd-feature-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--primary) 0%, #1a2f6e 100%);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: var(--white);
+}
+
+.spd-feature-icon svg {
+    width: 32px;
+    height: 32px;
+}
+
+.spd-feature-card h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+}
+
+.spd-feature-card p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* CTA Section */
+.spd-cta-section {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    background: linear-gradient(135deg, #f8fafc 0%, #f0f4ff 100%);
+    border-radius: 20px;
+    padding: 3rem;
+    margin-bottom: 5rem;
+    border: 1px solid rgba(13, 27, 76, 0.08);
+}
+
+.spd-cta-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.spd-cta-content h3 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.spd-cta-content p {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.spd-cta-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.spd-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.9rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.spd-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+.spd-btn-primary {
+    background: var(--primary);
+    color: var(--white);
+    box-shadow: 0 4px 12px rgba(13, 27, 76, 0.2);
+}
+
+.spd-btn-primary:hover {
+    background: #1a2f6e;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(13, 27, 76, 0.3);
+}
+
+.spd-btn-secondary {
+    background: var(--white);
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.spd-btn-secondary:hover {
+    background: var(--primary);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+/* Resources Section */
+.spd-resources-section {
+    border-top: 1px solid #eee;
+    padding-top: 5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.spd-resources-header h2 {
+    font-size: 2.2rem;
+    color: var(--primary);
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.spd-articles-link {
+    font-size: 1.15rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 700;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 4px;
+    transition: all 0.3s ease;
+}
+
+.spd-articles-link:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.spd-global-sites {
+    margin-top: 4rem;
+}
+
+.spd-global-title {
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.spd-sites-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.spd-site-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    background: var(--white);
+    transition: all 0.3s ease;
+}
+
+.spd-site-btn svg {
+    width: 18px;
+    height: 18px;
+    opacity: 0.6;
+}
+
+.spd-site-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.spd-site-btn:hover svg {
+    opacity: 1;
+}
+
+/* Bottom Info */
+.spd-bottom-info {
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.spd-bottom-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary) 0%, #1a2f6e 100%);
+    color: var(--white);
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.spd-bottom-info h3 {
+    font-size: 2rem;
+    color: var(--primary);
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.spd-bottom-info p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .spd-features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .spd-cta-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .spd-header h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .spd-main-section {
+        padding: 3rem 0;
+    }
+
+    .spd-features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .spd-feature-card {
+        padding: 1.5rem;
+    }
+
+    .spd-cta-section {
+        padding: 2rem;
+    }
+
+    .spd-cta-buttons {
+        flex-direction: column;
+    }
+
+    .spd-btn {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .spd-sites-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .spd-site-btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+
+    .spd-bottom-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .spd-bottom-info p {
+        font-size: 0.95rem;
+    }
+}
+
+/* SPD Quick Links - New Simpler Design */
+.spd-quick-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.spd-link-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: var(--white);
+    border: 1px solid var(--gray);
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.spd-link-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 8px 24px rgba(13, 27, 76, 0.1);
+    transform: translateX(8px);
+}
+
+.spd-link-icon {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    background: linear-gradient(135deg, var(--primary) 0%, #1a2f6e 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
+
+.spd-link-icon svg {
+    width: 26px;
+    height: 26px;
+}
+
+.spd-link-text {
+    flex: 1;
+}
+
+.spd-link-text h4 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.25rem;
+}
+
+.spd-link-text p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin: 0;
+}
+
+.spd-link-arrow {
+    width: 24px;
+    height: 24px;
+    color: var(--primary);
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+}
+
+.spd-link-card:hover .spd-link-arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+    .spd-quick-links {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .spd-link-card {
+        padding: 1.5rem;
+    }
+
+    .spd-link-icon {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+    }
+
+    .spd-link-icon svg {
+        width: 22px;
+        height: 22px;
     }
 }

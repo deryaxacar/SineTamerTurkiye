@@ -104,8 +104,8 @@ const IndividualCircuitUnits = () => {
                             <p>
                                 Ürünlerimizin detaylı teknik özelliklerini ve uygulama şemalarını içeren dökümanları inceleyebilirsiniz.
                             </p>
-                            <a href="/daha-fazlasi/brosurler" className="units-pdf-btn">
-                                PDF GÖRÜNTÜLE
+                            <a href="/cozumler/sinetamer/bireysel-devre-veri-sayfalari" className="units-pdf-btn">
+                                Bireysel Veri Sayfası Detay
                             </a>
                         </div>
                         <div className="units-cta-image-wrapper">

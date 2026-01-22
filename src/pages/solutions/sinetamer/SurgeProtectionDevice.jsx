@@ -10,255 +10,203 @@ const SurgeProtectionDevice = () => {
         { label: 'Aşırı Gerilim Koruma Cihazı' },
     ];
 
+    const features = [
+        {
+            icon: (
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                </svg>
+            ),
+            title: 'Stres ve Zaman Tasarrufu',
+            description: 'Üretim kesintilerinden kaynaklanan stres ve zaman kaybını azaltır'
+        },
+        {
+            icon: (
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+            ),
+            title: 'Elektronik Koruma',
+            description: 'Rastgele oluşan elektronik arızaların önüne geçer'
+        },
+        {
+            icon: (
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                    <line x1="8" y1="21" x2="16" y2="21" />
+                    <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+            ),
+            title: 'VFD & PLC Koruması',
+            description: 'VFD ve PLC kilitlenmelerini proaktif olarak engeller'
+        },
+        {
+            icon: (
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                </svg>
+            ),
+            title: 'Kesintisiz Çalışma',
+            description: 'Plansız duruşları minimize ederek operasyonel süreklilik sağlar'
+        },
+        {
+            icon: (
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <line x1="12" y1="1" x2="12" y2="23" />
+                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                </svg>
+            ),
+            title: '%50 Maliyet Düşüşü',
+            description: 'Elektronik bakım maliyetlerini %50\'ye varan oranlarda düşürür'
+        },
+        {
+            icon: (
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                    <polyline points="14 2 14 8 20 8" />
+                    <line x1="16" y1="13" x2="8" y2="13" />
+                    <line x1="16" y1="17" x2="8" y2="17" />
+                </svg>
+            ),
+            title: 'Teknik Dokümantasyon',
+            description: 'Detaylı teknik makaleler ve ürün bilgileri'
+        }
+    ];
+
+    const globalSites = [
+        { name: 'sinetamer.com', url: 'https://www.sinetamer.com' },
+        { name: 'sinetamer.lat', url: 'https://sinetamer.lat/' },
+        { name: 'sinetamer.br.com', url: 'https://sinetamer.br.com/' },
+        { name: 'ecsintl.com', url: 'https://www.ecsintl.com' },
+    ];
+
     return (
         <div className="solution-category-page">
             <Hero
-                title="Aşırı Gerilim Koruma Cihazı (SPD)"
-                description="Hassas elektronik sistemlerinizi şebeke kirliliğinden ve ani voltaj darbelerinden koruyan SineTamer teknolojisi."
+                title="Aşırı Gerilim Koruma Cihazı"
+                description=""
                 backgroundImage="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1920"
                 breadcrumbItems={breadcrumbItems}
             />
 
-            <section style={{ padding: '5rem 0', backgroundColor: 'var(--white)' }}>
-                <div className="container" style={{ maxWidth: '1300px', margin: '0 auto' }}>
+            {/* Main Content Section */}
+            <section className="spd-main-section">
+                <div className="spd-container">
 
-                    {/* ================= SECTION TITLE ================= */}
-                    <div style={{ textAlign: 'center', marginBottom: '5rem' }}>
-                        <h2
-                            style={{
-                                fontSize: '3rem',
-                                color: 'var(--primary)',
-                                fontWeight: '800',
-                                lineHeight: '1.2',
-                                marginBottom: '1rem',
-                            }}
+                    {/* Section Title */}
+                    <div className="spd-header">
+                        <h2>SineTamer Aşırı Gerilim Koruma Ürünleri</h2>
+                        <p>4. Nesil teknolojiye sahip mikroişlemci tabanlı koruma sistemi</p>
+                    </div>
+
+                    {/* Features Grid */}
+                    <div className="spd-features-grid">
+                        {features.map((feature, index) => (
+                            <div key={index} className="spd-feature-card">
+                                <div className="spd-feature-icon">
+                                    {feature.icon}
+                                </div>
+                                <h3>{feature.title}</h3>
+                                <p>{feature.description}</p>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Bottom Info Section */}
+                    <div className="spd-bottom-info">
+                        <div className="spd-bottom-badge">4. NESİL TEKNOLOJİ</div>
+                        <h3>SINETAMER AŞIRI GERİLİM KORUMA CİHAZLARI</h3>
+                        <p>
+                            SINETAMER® ÇÖZÜMÜ, 4. NESİL TEKNOLOJİYE SAHİP BİR AŞIRI GERİLİM VE GEÇİCİ GERİLİM KORUMA
+                            SİSTEMİNİN KULLANIMINI KAPSAMAKTADIR. DÜNYA ÇAPINDA ELEKTRİK PANOLARINDA BULUNAN TIPİK BİR
+                            YILDIRIM KORUYUCUSUNDAN ÇOK DAHA FAZLASIYIZ. SINETAMER®, MİKROİŞLEMCİ TABANLI CİHAZLARIN
+                            TÜM ÇEŞİTLERİNİN ULTRA HASSAS YAPISI İÇİN TASARLANMIŞ BİR MÜHENDİSLİK ÇÖZÜMÜDÜR.
+                        </p>
+                    </div>
+
+                    {/* Quick Links Section */}
+                    <div className="spd-quick-links">
+                        <Link
+                            to="https://www.ecsintl.com/technical-articles/"
+                            target="_blank"
+                            className="spd-link-card"
                         >
-                            SineTamer Aşırı Gerilim Koruma Ürünleri
-                        </h2>
+                            <div className="spd-link-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <line x1="16" y1="13" x2="8" y2="13" />
+                                    <line x1="16" y1="17" x2="8" y2="17" />
+                                </svg>
+                            </div>
+                            <div className="spd-link-text">
+                                <h4>Teknik Makaleler</h4>
+                                <p>Detaylı teknik bilgiler ve makaleler</p>
+                            </div>
+                            <svg className="spd-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </Link>
+
+                        <Link
+                            to="/cozumler/sinetamer/la-lm-uniteleri"
+                            className="spd-link-card"
+                        >
+                            <div className="spd-link-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                    <rect x="3" y="3" width="7" height="7" />
+                                    <rect x="14" y="3" width="7" height="7" />
+                                    <rect x="14" y="14" width="7" height="7" />
+                                    <rect x="3" y="14" width="7" height="7" />
+                                </svg>
+                            </div>
+                            <div className="spd-link-text">
+                                <h4>Ürün Sayfaları</h4>
+                                <p>Tüm SineTamer ürünlerini inceleyin</p>
+                            </div>
+                            <svg className="spd-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </Link>
                     </div>
 
-                    {/* ================= INTRODUCTION GRID ================= */}
-                    <div
-                        style={{
-                            display: 'grid',
-                            gridTemplateColumns: '1fr 1.1fr',
-                            gap: '3rem',
-                            alignItems: 'center',
-                            marginBottom: '2rem',
-                        }}
-                    >
-                        {/* TEXT */}
-                        <div>
-                            <ul
-                                style={{
-                                    fontSize: '1.05rem',
-                                    lineHeight: '1.85',
-                                    color: '#555',
-                                    marginBottom: '2.5rem',
-                                    paddingLeft: '1.5rem',
-                                    listStyle: 'disc',
-                                    maxWidth: '680px',
-                                }}
-                            >
-                                <li>Üretim kesintilerinden kaynaklanan stres ve zaman kaybını azaltır</li>
-                                <li>Rastgele oluşan elektronik arızaların önüne geçer</li>
-                                <li>VFD ve PLC kilitlenmelerini proaktif olarak engeller</li>
-                                <li>Plansız duruşları minimize ederek operasyonel süreklilik sağlar</li>
-                                <li>Elektronik bakım maliyetlerini %50’ye varan oranlarda düşürür</li>
-                                <li>
-                                    Daha fazla teknik detay için{' '}
-                                    <Link
-                                        to="#"
-                                        style={{
-                                            color: 'var(--primary)',
-                                            fontWeight: '700',
-                                            textDecoration: 'none',
-                                            borderBottom: '1px solid var(--primary)',
-                                        }}
-                                    >
-                                        makaleler sayfamıza
-                                    </Link>{' '}
-                                    göz atabilir, size uygun çözümler için{' '}
-                                    <Link
-                                        to="/cozumler/sinetamer/la-lm-uniteleri"
-                                        style={{
-                                            color: 'var(--primary)',
-                                            fontWeight: '700',
-                                            textDecoration: 'none',
-                                            borderBottom: '1px solid var(--primary)',
-                                        }}
-                                    >
-                                        ürün sayfalarımızı
-                                    </Link>{' '}
-                                    inceleyebilirsiniz.
-                                </li>
-                            </ul>
-                        </div>
-
-                        {/* IMAGE */}
-                        <div style={{ display: 'flex', justifyContent: 'center' }}>
-                            <img
-                                src="/images/Sinetimer2-637x242.jpg"
-                                alt="SPD Technology"
-                                style={{
-                                    width: '100%',
-                                    maxWidth: '580px',
-                                    height: 'auto',
-                                    borderRadius: '12px',
-                                    boxShadow: 'var(--shadow-lg)',
-                                }}
-                            />
-                        </div>
-
-                    </div>
-
-                    {/* ================= RESOURCES SECTION ================= */}
-                    <div
-                        className="resources-footer-section"
-                        style={{
-                            borderTop: '1px solid #eee',
-                            paddingTop: '6rem',
-                        }}
-                    >
-                        <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-                            <h2
-                                style={{
-                                    fontSize: '2.5rem',
-                                    color: 'var(--primary)',
-                                    marginBottom: '1.5rem',
-                                    fontWeight: '800',
-                                }}
-                            >
-                                Sinetamer'a ihtiyacınız var!
-                            </h2>
-
+                    {/* Resources Section */}
+                    <div className="spd-resources-section">
+                        <div className="spd-resources-header">
+                            <h2>Sinetamer'a İhtiyacınız Var!</h2>
                             <Link
                                 to="https://www.ecsintl.com/technical-articles/#el-440fe677"
                                 target="_blank"
-                                style={{
-                                    fontSize: '1.2rem',
-                                    color: 'var(--accent)',
-                                    textDecoration: 'none',
-                                    fontWeight: '700',
-                                    borderBottom: '2px solid var(--accent)',
-                                    paddingBottom: '4px',
-                                }}
+                                className="spd-articles-link"
                             >
                                 Teknik Makalelerimizi İnceleyin →
                             </Link>
+                        </div>
 
-                            <div style={{ marginTop: '4rem' }}>
-                                <p
-                                    style={{
-                                        color: '#888',
-                                        textTransform: 'uppercase',
-                                        letterSpacing: '2px',
-                                        fontWeight: '700',
-                                        fontSize: '0.9rem',
-                                        marginBottom: '1.5rem',
-                                    }}
-                                >
-                                    Global Sitelerimizi Ziyaret Edin
-                                </p>
-
-                                <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem' }}>
+                        <div className="spd-global-sites">
+                            <p className="spd-global-title">Global Sitelerimizi Ziyaret Edin</p>
+                            <div className="spd-sites-grid">
+                                {globalSites.map((site, index) => (
                                     <a
-                                        href="https://www.sinetamer.com"
+                                        key={index}
+                                        href={site.url}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        style={{
-                                            padding: '0.8rem 2rem',
-                                            borderRadius: '8px',
-                                            border: '1px solid #ddd',
-                                            textDecoration: 'none',
-                                            color: '#555',
-                                            fontWeight: '600',
-                                        }}
+                                        className="spd-site-btn"
                                     >
-                                        sinetamer.com
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                            <circle cx="12" cy="12" r="10" />
+                                            <line x1="2" y1="12" x2="22" y2="12" />
+                                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                                        </svg>
+                                        {site.name}
                                     </a>
-
-                                    <a
-                                        href="https://sinetamer.lat/"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        style={{
-                                            padding: '0.8rem 2rem',
-                                            borderRadius: '8px',
-                                            border: '1px solid #ddd',
-                                            textDecoration: 'none',
-                                            color: '#555',
-                                            fontWeight: '600',
-                                        }}
-                                    >
-                                        sinetamer.lat
-                                    </a>
-
-                                    <a
-                                        href="https://sinetamer.br.com/"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        style={{
-                                            padding: '0.8rem 2rem',
-                                            borderRadius: '8px',
-                                            border: '1px solid #ddd',
-                                            textDecoration: 'none',
-                                            color: '#555',
-                                            fontWeight: '600',
-                                        }}
-                                    >
-                                        sinetamer.br.com
-                                    </a>
-
-                                    <a
-                                        href="https://www.ecsintl.com"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        style={{
-                                            padding: '0.8rem 2rem',
-                                            borderRadius: '8px',
-                                            border: '1px solid #ddd',
-                                            textDecoration: 'none',
-                                            color: '#555',
-                                            fontWeight: '600',
-                                        }}
-                                    >
-                                        ecsintl.com
-                                    </a>
-                                </div>
+                                ))}
                             </div>
                         </div>
-                    </div>
-                    {/* ================= BOTTOM INFO SECTION ================= */}
-                    <div
-                        style={{
-                            paddingTop: '4rem',
-                            borderTop: '1px solid #eee',
-                            textAlign: 'center',
-                            maxWidth: '900px',
-                            marginInline: 'auto',
-                        }}
-                    >
-                        <h3
-                            style={{
-                                fontSize: '2.2rem',
-                                color: 'var(--primary)',
-                                fontWeight: '800',
-                                marginBottom: '1rem',
-                            }}
-                        >
-                            SINETAMER AŞIRI GERİLİM KORUMA CİHAZLARI
-                        </h3>
-
-                        <p
-                            style={{
-                                fontSize: '1.15rem',
-                                lineHeight: '1.9',
-                                color: '#666',
-                            }}
-                        >
-                            SINETAMER® ÇÖZÜMÜ, 4. NESİL TEKNOLOJİYE SAHİP BİR AŞIRI GERİLİM VE GEÇİCİ GERİLİM KORUMA SİSTEMİNİN KULLANIMINI KAPSAMAKTADIR. DÜNYA ÇAPINDA ELEKTRİK PANOLARINDA BULUNAN TIPİK BİR YILDIRIM KORUYUCUSUNDAN ÇOK DAHA FAZLASIYIZ. SINETAMER®, MİKROİŞLEMCİ TABANLI CİHAZLARIN TÜM ÇEŞİTLERİNİN ULTRA HASSAS YAPISI İÇİN TASARLANMIŞ BİR MÜHENDİSLİK ÇÖZÜMÜDÜR.
-                        </p>
                     </div>
 
                 </div>
