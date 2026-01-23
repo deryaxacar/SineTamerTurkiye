@@ -25,6 +25,7 @@ const Footer = () => {
                                     src={logo2}
                                     alt="Wömner"
                                     className="footer-logo-image footer-logo-womner"
+                                    loading="lazy"
                                 />
                             </a>
 
@@ -38,6 +39,7 @@ const Footer = () => {
                                     src={logo}
                                     alt="SineTamer"
                                     className="footer-logo-image footer-logo-sinetamer"
+                                    loading="lazy"
                                 />
                             </a>
                         </div>
@@ -96,6 +98,7 @@ const Footer = () => {
                                     src={logo3}
                                     alt="ECS"
                                     className="footer-logo-ecs"
+                                    loading="lazy"
                                 />
                             </a>
 

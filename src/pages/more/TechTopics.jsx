@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import Hero from "../../components/Hero";
+import YouTubeFacade from "../../components/YouTubeFacade";
 import "./MoreCategory.css";
 import "../solutions/SolutionCategory.css";
 
@@ -44,14 +44,9 @@ const TechTopics = () => {
                         {videos.map((v) => (
                             <div className="video-card-embed" key={v.id}>
                                 <div className="youtube-embed">
-                                    <iframe
-                                        src={`https://www.youtube.com/embed/${v.youtubeId}?rel=0&modestbranding=1`}
-                                        title={v.title}
-                                        frameBorder="0"
-                                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowFullScreen
-                                        loading="lazy"
-                                        referrerPolicy="strict-origin-when-cross-origin"
+                                    <YouTubeFacade
+                                        youtubeId={v.youtubeId}
+                                        customThumbnail={v.customThumbnail}
                                     />
                                 </div>
                             </div>
@@ -78,3 +73,4 @@ const TechTopics = () => {
 };
 
 export default TechTopics;
+

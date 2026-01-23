@@ -699,7 +699,7 @@
     position: relative;
     width: 100%;
     aspect-ratio: 16 / 9;
-    border-radius: 0;
+    border-radius: 10px;
     overflow: hidden;
     background: #000;
     box-shadow: var(--shadow-md);
@@ -1112,4 +1112,34 @@
     .warranty-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* ===== YOUTUBE FACADE (Performance Optimization) ===== */
+.youtube-facade {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.youtube-facade:hover {
+    transform: scale(1.02);
+}
+
+.youtube-facade:hover .youtube-play-btn {
+    transform: scale(1.1);
+}
+
+.youtube-play-btn {
+    transition: transform 0.2s ease;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
 }

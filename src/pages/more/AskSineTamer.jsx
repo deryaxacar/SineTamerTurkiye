@@ -1,6 +1,5 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import Hero from "../../components/Hero";
+import YouTubeFacade from "../../components/YouTubeFacade";
 import "./MoreCategory.css";
 import "../solutions/SolutionCategory.css";
 
@@ -28,12 +27,11 @@ const AskSineTamer = () => {
         { id: 14, youtubeId: "jsgA-lUzkPQ" },
         { id: 15, youtubeId: "rNy7GJirL6o" },
         { id: 16, youtubeId: "OJixfFMtK9A" },
-        { id: 17, youtubeId: "2Ib9UaWKtSE" },
+        { id: 17, youtubeId: "2Ib9UaWKtSE", customThumbnail: "https://i.ytimg.com/vi/2Ib9UaWKtSE/hqdefault.jpg" },
         { id: 18, youtubeId: "Zf5VWXvpZqk" },
         { id: 19, youtubeId: "tmMKLWW28jE" },
         { id: 20, youtubeId: "nxrsW22kM3c" },
         { id: 21, youtubeId: "wHEW9zYv24Q" },
-
     ];
 
     return (
@@ -55,14 +53,9 @@ const AskSineTamer = () => {
                         {videos.map((v) => (
                             <div className="video-card-embed" key={v.id}>
                                 <div className="youtube-embed">
-                                    <iframe
-                                        src={`https://www.youtube.com/embed/${v.youtubeId}?rel=0&modestbranding=1`}
-                                        title={v.title}
-                                        frameBorder="0"
-                                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowFullScreen
-                                        loading="lazy"
-                                        referrerPolicy="strict-origin-when-cross-origin"
+                                    <YouTubeFacade
+                                        youtubeId={v.youtubeId}
+                                        customThumbnail={v.customThumbnail}
                                     />
                                 </div>
                             </div>
@@ -89,3 +82,4 @@ const AskSineTamer = () => {
 };
 
 export default AskSineTamer;
+
