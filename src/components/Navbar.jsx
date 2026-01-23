@@ -80,43 +80,13 @@ const Navbar = () => {
       mainPath: '/urunler',
       categories: [
         {
-          id: 'panels',
-          label: 'Güneş Panelleri',
-          path: '/urunler?cat=solar',
+          id: 'sinetamer-products',
+          label: 'SineTamer Ürünleri',
+          path: '/urunler',
           items: [
-            { path: '/urunler/1', label: 'Monokristal Panel 400W' },
-            { path: '/urunler/2', label: 'Polikristal Panel 330W' },
-            { path: '/urunler/3', label: 'Bifacial Panel 450W' },
-          ]
-        },
-        {
-          id: 'inverters',
-          label: 'İnverterler',
-          path: '/urunler?cat=inverter',
-          items: [
-            { path: '/urunler/4', label: 'Hibrit İnverter 5kW' },
-            { path: '/urunler/5', label: 'String İnverter 10kW' },
-            { path: '/urunler/6', label: 'Mikro İnverter 300W' },
-          ]
-        },
-        {
-          id: 'batteries',
-          label: 'Bataryalar',
-          path: '/urunler?cat=battery',
-          items: [
-            { path: '/urunler/7', label: 'Lityum Batarya 10kWh' },
-            { path: '/urunler/8', label: 'Ev Tipi Batarya 5kWh' },
-          ]
-        },
-        {
-          id: 'accessories',
-          label: 'Aksesuarlar',
-          path: '/urunler?cat=accessories',
-          items: [
-            { path: '/urunler/9', label: 'Montaj Sistemi' },
-            { path: '/urunler/10', label: 'Solar Kablo' },
-            { path: '/urunler/11', label: 'MC4 Konnektör' },
-            { path: '/urunler/12', label: 'İzleme Sistemi' },
+            { path: '/urunler/tek-faz', label: 'SineTamer Tek Faz' },
+            { path: '/urunler/uc-faz', label: 'SineTamer AC Üç Faz' },
+            { path: '/urunler/dc', label: 'SineTamer DC' },
           ]
         },
       ]
@@ -135,9 +105,9 @@ const Navbar = () => {
   ];
 
   const productsDropdown = [
-    { path: '/urunler/1', label: 'Monokristal Panel 400W' },
-    { path: '/urunler/2', label: 'Polikristal Panel 330W' },
-    { path: '/urunler/3', label: 'Bifacial Panel 450W' },
+    { path: '/urunler/tek-faz', label: 'SineTamer Tek Faz' },
+    { path: '/urunler/uc-faz', label: 'SineTamer AC Üç Faz' },
+    { path: '/urunler/dc', label: 'SineTamer DC' },
   ];
 
   const navLinks = [

@@ -1,0 +1,698 @@
+/* ==========================================
+   PRODUCT DETAIL PAGE - ADF STYLE DESIGN
+   ========================================== */
+
+.product-detail-page {
+    padding-top: 80px;
+    background: var(--white);
+}
+
+@media (max-width: 968px) {
+    .product-detail-page {
+        padding-top: 57px;
+    }
+}
+
+/* Hero Uyumlaştırma (Hero bileşeni SolutionCategory.css kullanıyor) */
+/* Gerekirse buraya özel override eklenebilir */
+
+/* Intro Section (Metin - Görsel Split) */
+.product-intro-section {
+    padding: 3rem 0;
+    background: var(--white);
+}
+
+.product-intro-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.product-intro-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+/* Sol Metin Bölümü */
+.product-info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.product-header-card {
+    background: rgba(13, 27, 76, 0.03);
+    /* Hafif lacivertimsi */
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    border-left: 6px solid var(--primary);
+    box-shadow: var(--shadow-md);
+}
+
+.product-header-card h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 0.4rem;
+    line-height: 1.2;
+}
+
+.product-header-card p {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Sağ Görsel Bölümü */
+.product-image-box {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--gray-light);
+    background: var(--gray-light);
+}
+
+.product-image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Özellikler (Benefits Style) */
+.product-features-section {
+    padding: 3rem 0;
+    background: var(--gray-light);
+}
+
+.product-section-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.product-section-header h2 {
+    font-size: 1.85rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.product-section-header p {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    line-height: 1.5;
+}
+
+.product-features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.product-benefit-card {
+    background: var(--white);
+    padding: 1.25rem 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    border: 1px solid var(--gray);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.product-benefit-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary);
+}
+
+.benefit-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 10px rgba(13, 27, 76, 0.15);
+}
+
+.benefit-icon svg {
+    width: 22px;
+    height: 22px;
+    color: var(--white);
+}
+
+.benefit-content h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+/* Teknik Özellikler (Specs) */
+.product-specs-section {
+    padding: 6rem 0;
+    background: var(--white);
+}
+
+.product-specs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.specs-promo-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+@media (max-width: 1024px) {
+    .specs-promo-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+.product-specs-card {
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border-top: 5px solid var(--primary);
+}
+
+/* Promosyon Kartı Styles */
+.promo-product-card {
+    background: #f9fafb;
+    border-radius: 20px;
+    padding: 1.5rem;
+    border: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.promo-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.06);
+    border-color: var(--primary);
+}
+
+.promo-tag {
+    display: inline-block;
+    color: var(--primary);
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.promo-image {
+    width: 100%;
+    height: 140px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--white);
+    border: 1px solid #f1f5f9;
+}
+
+.promo-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 1rem;
+}
+
+.promo-content h3 {
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+}
+
+.promo-content p {
+    font-size: 0.95rem;
+    color: #4b5563;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.btn-promo-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.85rem 1.75rem;
+    background: var(--primary);
+    color: #ffffff;
+    border: 2px solid var(--primary);
+    border-radius: 12px;
+    font-weight: 800;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(13, 27, 76, 0.15);
+}
+
+.btn-promo-action svg {
+    transition: transform 0.3s ease;
+    stroke: #ffffff;
+}
+
+.btn-promo-action:hover {
+    background: #1a2f6e;
+    border-color: #1a2f6e;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: none;
+}
+
+.btn-promo-action:hover svg {
+    transform: translateX(5px);
+}
+
+.specs-table {
+    width: 100%;
+}
+
+.spec-row {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    /* Oranlar ayarlandı */
+    border-bottom: 1px solid #edf2f7;
+    transition: all 0.2s ease;
+}
+
+.spec-row:last-child {
+    border-bottom: none;
+}
+
+.spec-row:nth-child(even) {
+    background: #f9fafb;
+}
+
+.spec-row:hover {
+    background: #f3f4f6;
+}
+
+.spec-label {
+    padding: 1.25rem 2.5rem;
+    font-size: 0.95rem;
+    color: #4a5568;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #edf2f7;
+}
+
+.spec-value {
+    padding: 1.25rem 2.5rem;
+    font-size: 1.1rem;
+    color: var(--primary);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+/* Back Button */
+.back-actions {
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.product-actions {
+    margin-top: 1.75rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-adf-back,
+.btn-primary-adf {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.btn-adf-back {
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btn-primary-adf {
+    background: var(--primary);
+    color: var(--white);
+    border: 2px solid var(--primary);
+    box-shadow: none;
+}
+
+.btn-adf-back:hover,
+.btn-primary-adf:hover {
+    transform: translateY(-2px);
+}
+
+.btn-adf-back:hover {
+    background: rgba(13, 27, 76, 0.05);
+}
+
+.btn-primary-adf:hover {
+    box-shadow: none;
+    background: #1a2f6e;
+    /* Biraz daha koyu navy */
+    border-color: #1a2f6e;
+    color: var(--white);
+}
+
+.btn-adf-back svg,
+.btn-primary-adf svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Series Section */
+.product-series-section {
+    padding: 5rem 0;
+    border-top: 1px solid #e2e8f0;
+}
+
+.series-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.series-card {
+    background: var(--white);
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    border-top: 4px solid var(--primary);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.series-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.series-header {
+    padding: 1.75rem 2.5rem;
+    background: #fcfcfd;
+    border-bottom: 1px solid #edf2f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.series-header h3 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.series-warranty-badge {
+    background: var(--primary);
+    color: var(--white);
+    padding: 0.5rem 1.25rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(13, 27, 76, 0.15);
+}
+
+.series-body {
+    padding: 2.5rem;
+}
+
+.series-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4a5568;
+    margin-bottom: 2.5rem;
+    padding-left: 1.5rem;
+    border-left: 3px solid #e2e8f0;
+}
+
+.series-details-box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #edf2f7;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.s-detail {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    border-bottom: 1px solid #edf2f7;
+    background: var(--white);
+}
+
+.s-detail:last-child {
+    border-bottom: none;
+}
+
+.s-detail:nth-child(even) {
+    background: #f9fafb;
+}
+
+.s-detail strong {
+    padding: 1rem 1.75rem;
+    font-size: 0.8rem;
+    color: #718096;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-right: 1px solid #edf2f7;
+    display: flex;
+    align-items: center;
+}
+
+.s-detail span {
+    padding: 1rem 1.75rem;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.s-attr {
+    font-style: italic;
+    background: rgba(13, 27, 76, 0.02) !important;
+}
+
+.s-features-inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 1.75rem;
+    background: #fcfcfd;
+    border-top: 1px solid #edf2f7;
+}
+
+.s-tag {
+    background: var(--white);
+    color: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    border: 1px solid #e2e8f0;
+    box-shadow: var(--shadow-sm);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.s-tag::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: var(--accent);
+    border-radius: 50%;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN & MOBILE OPTIMIZATION
+   ========================================== */
+
+@media (max-width: 1024px) {
+    .specs-promo-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .product-specs-container {
+        padding: 0 1.5rem;
+    }
+}
+
+@media (max-width: 968px) {
+    .product-detail-page {
+        padding-top: 60px;
+    }
+
+    .product-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        text-align: center;
+    }
+
+    .product-image-box {
+        order: -1;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .product-header-card {
+        padding: 1.5rem;
+        border-left: none;
+        border-top: 4px solid var(--primary);
+    }
+
+    .product-actions {
+        justify-content: center;
+    }
+
+    .product-features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-section-header {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-header-card h2 {
+        font-size: 1.75rem;
+    }
+
+    .series-header {
+        padding: 1.25rem 1.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .series-body {
+        padding: 1.5rem;
+    }
+
+    .series-content {
+        padding-left: 1rem;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .s-detail {
+        grid-template-columns: 1fr;
+    }
+
+    .s-detail strong {
+        border-right: none;
+        border-bottom: 1px solid #edf2f7;
+        padding: 0.75rem 1.25rem;
+    }
+
+    .s-detail span {
+        padding: 0.75rem 1.25rem;
+    }
+}
+
+/* Mobil Cihazlar (Telefonlar) */
+@media (max-width: 600px) {
+    .product-intro-section {
+        padding: 2rem 0;
+    }
+
+    .product-header-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .product-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-adf-back,
+    .btn-primary-adf,
+    .btn-promo-action {
+        width: 100%;
+        padding: 0.85rem 1.25rem;
+    }
+
+    /* Teknik Özellikler Tablosunun Mobilde Dikey Olması */
+    .spec-row {
+        grid-template-columns: 1fr;
+    }
+
+    .spec-label {
+        border-right: none;
+        border-bottom: 1px solid #edf2f7;
+        padding: 0.75rem 1.25rem;
+        background: #fcfcfd;
+        font-size: 0.8rem;
+    }
+
+    .spec-value {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.95rem;
+    }
+
+    .product-specs-section {
+        padding: 4rem 0;
+    }
+
+    .promo-product-card {
+        padding: 1.25rem;
+    }
+
+    .promo-content h3 {
+        font-size: 1.15rem;
+    }
+
+    .promo-image {
+        height: 120px;
+    }
+
+    .series-header h3 {
+        font-size: 1.3rem;
+    }
+}

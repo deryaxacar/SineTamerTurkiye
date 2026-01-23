@@ -4,7 +4,9 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Solutions from './pages/Solutions';
 
-import ProductDetail from './pages/ProductDetail';
+import Product1 from './pages/products/Product1';
+import Product2 from './pages/products/Product2';
+import Product3 from './pages/products/Product3';
 
 import More from './pages/More';
 
@@ -43,10 +45,10 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/cozumler" element={<Solutions />} />
 
-            <Route path="/urunler/:id" element={<ProductDetail />} />
-
-            <Route path="/daha-fazlasi" element={<More />} />
-
+            {/* Ürünler */}
+            <Route path="/urunler/tek-faz" element={<Product1 />} />
+            <Route path="/urunler/uc-faz" element={<Product2 />} />
+            <Route path="/urunler/dc" element={<Product3 />} />
             {/* Services (Çözümler) */}
             <Route path="/cozumler/hizmetler/guc-kalitesi-analizi" element={<PowerQualityAnalysis />} />
             <Route path="/cozumler/hizmetler/guc-faktoru-duzeltme" element={<PowerFactorCorrection />} />
@@ -63,6 +65,7 @@ function App() {
             <Route path="/cozumler/sinetamer/asiri-gerilim-koruma-cihazi" element={<SurgeProtectionDevice />} />
             <Route path="/cozumler/sinetamer/kurulum-sayfalari" element={<InstallationPages />} />
             {/* More Categories */}
+            <Route path="/daha-fazlasi" element={<More />} />
             <Route path="/daha-fazlasi/teknoloji-konulari" element={<TechTopics />} />
             <Route path="/daha-fazlasi/brosurler" element={<BrochuresPage />} />
             <Route path="/daha-fazlasi/videolar" element={<VideosPage />} />
