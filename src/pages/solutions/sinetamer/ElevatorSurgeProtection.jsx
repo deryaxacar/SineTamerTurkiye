@@ -117,7 +117,8 @@ const ElevatorSurgeProtection = () => {
                         <h3 style={{ fontSize: '1.8rem', color: 'var(--primary)', marginBottom: '2rem' }}>Teknik Dökümanlar</h3>
                         <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                             <a
-                                href="/pdf/sinetamer-asansor-brosur.pdf"
+                                href="https://www.ecsintl.com/wp-content/uploads/2023/12/Elevadores2020_Esp.pdf"
+                                target="_blank"
                                 className="btn btn-primary"
                                 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}
                             >
@@ -129,7 +130,8 @@ const ElevatorSurgeProtection = () => {
                                 Asansör Koruma Broşürü (PDF)
                             </a>
                             <a
-                                href="/pdf/sinetamer-teknik-spesifikasyonlar.pdf"
+                                href="https://www.ecsintl.com/wp-content/uploads/2023/12/Elevadores2020_Esp.pdf"
+                                target="_blank"
                                 className="btn btn-primary"
                                 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}
                             >
