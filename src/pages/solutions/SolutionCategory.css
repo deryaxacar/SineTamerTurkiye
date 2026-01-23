@@ -3537,3 +3537,187 @@
         height: 22px;
     }
 }
+
+/* SineTamer Müşterileri sayfası */
+
+.customers-section {
+    padding: 4rem 0;
+    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.customers-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.customers-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.customers-header h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.customers-header p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Region Block */
+.region-block {
+    margin-bottom: 3rem;
+}
+
+.region-block:last-child {
+    margin-bottom: 0;
+}
+
+.region-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(13, 27, 76, 0.1);
+}
+
+.region-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    background: linear-gradient(135deg, #0d1b4c 0%, #1a2f6e 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(13, 27, 76, 0.25);
+}
+
+.region-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.region-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+/* Customers Grid */
+.customers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+/* Customer Card */
+.customer-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+}
+
+.customer-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(13, 27, 76, 0.12);
+    border-color: rgba(13, 27, 76, 0.3);
+}
+
+.customer-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    background: linear-gradient(135deg, rgba(13, 27, 76, 0.08) 0%, rgba(26, 47, 110, 0.12) 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    transition: all 0.3s ease;
+}
+
+.customer-card:hover .customer-icon {
+    background: linear-gradient(135deg, #0d1b4c 0%, #1a2f6e 100%);
+    color: #fff;
+}
+
+.customer-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.customer-name {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .customers-section {
+        padding: 3rem 0;
+    }
+
+    .customers-container {
+        padding: 0 1.25rem;
+    }
+
+    .customers-header h2 {
+        font-size: 1.75rem;
+    }
+
+    .customers-header p {
+        font-size: 1rem;
+    }
+
+    .region-header h3 {
+        font-size: 1.25rem;
+    }
+
+    .customers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .customer-card {
+        padding: 1rem 1.25rem;
+    }
+
+    .region-icon {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+    }
+
+    .region-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .customers-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .customer-name {
+        font-size: 0.9rem;
+    }
+}

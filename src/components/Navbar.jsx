@@ -67,7 +67,7 @@ const Navbar = () => {
             { path: 'https://www.ecsintl.com/technical-articles/#el-ba9f3153', label: 'Teknik Makaleler', external: true },
             { path: 'https://www.ecsintl.com/hostpanel/login/webmail', label: 'Web Postası', external: true },
             { path: 'https://www.ecsintl.com/sinetamer-home/', label: 'Sinetamer Ana Sayfa', external: true },
-            { path: '/cozumler/enerji-verimliligi#secenek-15', label: 'Sinetamer Müşterileri ' },
+            { path: '/cozumler/sinetamer/musteriler', label: 'SineTamer Müşterileri' },
             { path: '/daha-fazlasi/teknoloji-konulari', label: 'Teknoloji Konuları' },
             { path: '/cozumler/enerji-verimliligi#secenek-17', label: 'Asansör Altyapınızı Korumak için Asansör Aşırı Gerilim Koruması' },
 

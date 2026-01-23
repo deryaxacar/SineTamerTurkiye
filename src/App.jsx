@@ -32,6 +32,7 @@ import IndividualCircuitUnits from './pages/solutions/sinetamer/IndividualCircui
 import SurgeProtectionDevice from './pages/solutions/sinetamer/SurgeProtectionDevice';
 import InstallationPages from './pages/solutions/sinetamer/InstallationPages';
 import IndividualCircuitDataSheets from './pages/solutions/sinetamer/IndividualCircuitDataSheets';
+import SineTamerCustomers from './pages/solutions/sinetamer/SineTamerCustomers';
 
 import './App.css';
 
@@ -64,6 +65,7 @@ function App() {
             <Route path="/cozumler/sinetamer/bireysel-devre-veri-sayfalari" element={<IndividualCircuitDataSheets />} />
             <Route path="/cozumler/sinetamer/asiri-gerilim-koruma-cihazi" element={<SurgeProtectionDevice />} />
             <Route path="/cozumler/sinetamer/kurulum-sayfalari" element={<InstallationPages />} />
+            <Route path="/cozumler/sinetamer/musteriler" element={<SineTamerCustomers />} />
             {/* More Categories */}
             <Route path="/daha-fazlasi" element={<More />} />
             <Route path="/daha-fazlasi/teknoloji-konulari" element={<TechTopics />} />
