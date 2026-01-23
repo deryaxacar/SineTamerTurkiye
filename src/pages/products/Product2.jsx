@@ -90,7 +90,7 @@ Bağımsız darbe bastırma cihazı olarak tasarlanan ST-SPT, harici muhafaza ge
             <Hero
                 title={product.title}
                 description={product.description}
-                backgroundImage="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920"
+                backgroundImage="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80"
                 breadcrumbItems={breadcrumbItems}
             />
 
@@ -122,7 +122,7 @@ Bağımsız darbe bastırma cihazı olarak tasarlanan ST-SPT, harici muhafaza ge
                             </div>
                         </div>
                         <div className="product-image-box">
-                            <img src={product.image} alt={product.title} />
+                            <img src={product.image} alt={product.title} loading="lazy" />
                         </div>
                     </div>
                 </div>

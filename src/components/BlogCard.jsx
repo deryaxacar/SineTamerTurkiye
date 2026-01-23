@@ -5,7 +5,7 @@ const BlogCard = ({ image, title, excerpt, date, category, link }) => {
     return (
         <article className="blog-card">
             <div className="blog-image">
-                <img src={image} alt={title} />
+                <img src={image} alt={title} loading="lazy" />
                 <span className="blog-category">{category}</span>
             </div>
             <div className="blog-content">
