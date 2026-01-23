@@ -39,7 +39,7 @@ const Product3 = () => {
             <Hero
                 title={product.title}
                 description={product.description}
-                backgroundImage="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80"
+                backgroundImage="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920"
                 breadcrumbItems={breadcrumbItems}
             />
 
@@ -71,7 +71,7 @@ const Product3 = () => {
                             </div>
                         </div>
                         <div className="product-image-box">
-                            <img src={product.image} alt={product.title} loading="lazy" />
+                            <img src={product.image} alt={product.title} />
                         </div>
                     </div>
                 </div>
@@ -128,7 +128,7 @@ const Product3 = () => {
                         <div className="promo-product-card">
                             <span className="promo-tag">İlgili Çözüm</span>
                             <div className="promo-image">
-                                <img src="/product/SineTamer-Tek-Faz.jpg" alt="SineTamer Tek Faz" loading="lazy" />
+                                <img src="/product/SineTamer-Tek-Faz.jpg" alt="SineTamer Tek Faz" />
                             </div>
                             <div className="promo-content">
                                 <h3>SineTamer Tek Faz</h3>

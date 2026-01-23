@@ -4,31 +4,13 @@
 }
 
 /* Hero Section */
-.category-hero {
-    position: relative;
-    overflow: hidden;
-    min-height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
-}
-
-.hero-bg-image {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
 .solutions-hero {
     min-height: 45vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    background: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920') center/cover no-repeat;
 }
 
 .solutions-hero-overlay {

@@ -13,13 +13,10 @@ import PropTypes from 'prop-types';
  */
 const Hero = ({ title, description, backgroundImage, breadcrumbItems }) => {
     return (
-        <section className="category-hero">
-            <img
-                src={backgroundImage}
-                alt=""
-                className="hero-bg-image"
-                loading="lazy"
-            />
+        <section
+            className="category-hero"
+            style={{ backgroundImage: `url(${backgroundImage})` }}
+        >
             <div className="category-hero-overlay"></div>
             <div className="category-hero-content">
                 <h1>{title}</h1>

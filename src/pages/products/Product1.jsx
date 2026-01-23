@@ -42,7 +42,7 @@ Bağımsız darbe bastırma cihazı olarak tasarlanan ST-SPT, harici muhafaza ge
             <Hero
                 title={product.title}
                 description={product.description}
-                backgroundImage="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80"
+                backgroundImage="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920"
                 breadcrumbItems={breadcrumbItems}
             />
 
@@ -74,7 +74,7 @@ Bağımsız darbe bastırma cihazı olarak tasarlanan ST-SPT, harici muhafaza ge
                             </div>
                         </div>
                         <div className="product-image-box">
-                            <img src={product.image} alt={product.title} loading="lazy" />
+                            <img src={product.image} alt={product.title} />
                         </div>
                     </div>
                 </div>
@@ -131,7 +131,7 @@ Bağımsız darbe bastırma cihazı olarak tasarlanan ST-SPT, harici muhafaza ge
                         <div className="promo-product-card">
                             <span className="promo-tag">İlgili Çözüm</span>
                             <div className="promo-image">
-                                <img src="/product/SineTamer-3-faz.jpg" alt="SineTamer Üç Faz" loading="lazy" />
+                                <img src="/product/SineTamer-3-faz.jpg" alt="SineTamer Üç Faz" />
                             </div>
                             <div className="promo-content">
                                 <h3>SineTamer Üç Fazlı Üniteler</h3>

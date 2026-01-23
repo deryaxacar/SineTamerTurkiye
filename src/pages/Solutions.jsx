@@ -129,7 +129,7 @@ const Solutions = () => {
             <Hero
                 title="Çözümlerimiz"
                 description="İhtiyaçlarınıza özel, yenilikçi ve sürdürülebilir enerji çözümleri"
-                backgroundImage="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200&q=80"
+                backgroundImage="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920"
                 breadcrumbItems={breadcrumbItems}
             />
 
@@ -142,7 +142,7 @@ const Solutions = () => {
                             key={solution.id}
                         >
                             <div className="solution-image">
-                                <img src={solution.image + '&q=80'} alt={solution.title} loading="lazy" />
+                                <img src={solution.image} alt={solution.title} />
                             </div>
                             <div className="solution-content">
                                 <div className="solution-icon-large">
