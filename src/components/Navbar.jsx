@@ -134,10 +134,16 @@ const Navbar = () => {
     { path: 'https://www.ecsintl.com/newsletter/', label: 'Haber bülteni', external: true },
   ];
 
+  const productsDropdown = [
+    { path: '/urunler/1', label: 'Monokristal Panel 400W' },
+    { path: '/urunler/2', label: 'Polikristal Panel 330W' },
+    { path: '/urunler/3', label: 'Bifacial Panel 450W' },
+  ];
+
   const navLinks = [
     { path: '/', label: 'Ana Sayfa' },
     { path: '/cozumler', label: 'Çözümler', megaMenu: 'solutions' },
-    { path: '/urunler', label: 'Ürünler', megaMenu: 'products' },
+    { path: '/urunler', label: 'Ürünler', dropdown: productsDropdown },
     { path: '/daha-fazlasi', label: 'Daha Fazlası', dropdown: moreDropdown },
   ];
 
@@ -313,7 +319,7 @@ const Navbar = () => {
         </div>
       </nav >
 
-      {(activeMegaMenu === 'solutions' || activeMegaMenu === 'products') && (
+      {activeMegaMenu === 'solutions' && (
         <>
           <div className="mega-menu active">
             <button

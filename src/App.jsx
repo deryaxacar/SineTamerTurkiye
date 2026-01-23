@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Solutions from './pages/Solutions';
-import Products from './pages/Products';
+
 import ProductDetail from './pages/ProductDetail';
 
 import More from './pages/More';
@@ -42,7 +42,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/cozumler" element={<Solutions />} />
-            <Route path="/urunler" element={<Products />} />
+
             <Route path="/urunler/:id" element={<ProductDetail />} />
 
             <Route path="/daha-fazlasi" element={<More />} />

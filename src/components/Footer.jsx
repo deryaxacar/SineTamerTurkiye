@@ -55,8 +55,7 @@ const Footer = () => {
                                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
                                     <circle cx="12" cy="10" r="3" />
                                 </svg>
-                                <span>Sanayi Mah. Teknopark Bulvarı No:1/9A
-                                    34906 Pendik / İstanbul, Türkiye</span>
+                                <span>İstanbul Teknoloji Geliştirme Bölgesi, Teknopark İstanbul No:1/4C 322, 34906 Pendik/İstanbul</span>
                             </li>
                             <li>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
