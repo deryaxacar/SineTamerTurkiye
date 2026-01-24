@@ -103,6 +103,24 @@ const Home = () => {
                     </svg>
                 </div>
             </section>
+            {/* Solutions Preview */}
+            <section className="solutions-preview section bg-light">
+                <div className="container">
+                    <h2 className="section-title">Çözümlerimiz</h2>
+                    <p className="section-subtitle">
+                        İhtiyaçlarınıza özel, yenilikçi ve sürdürülebilir enerji çözümleri sunuyoruz.
+                    </p>
+                    <div className="solutions-grid">
+                        {solutions.map((solution, index) => (
+                            <Link to={solution.link} className="solution-card" key={index}>
+                                <div className="solution-icon">{solution.icon}</div>
+                                <h3 className="solution-title">{solution.title}</h3>
+                                <p className="solution-description">{solution.description}</p>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
             {/* Solutions Preview */}
             <section className="solutions-preview">
