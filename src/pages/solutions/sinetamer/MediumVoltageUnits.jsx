@@ -42,9 +42,6 @@ const MediumVoltageUnits = () => {
                         <div className="mv-split-content">
                             <h2>SineTamer Orta Gerilim Üniteleri</h2>
                             <p>
-                                Lütfen bu sitenin Mozilla Firefox ve Google Chrome tarayıcıları için optimize edildiğini unutmayın. Microsoft Internet Explorer kullanıyorsanız, siteye giriş yaptıktan sonra korumalı içeriğe erişimde sorun yaşayabilirsiniz. Firefox'u indirmek için bu bağlantıyı veya Chrome'u indirmek için bu bağlantıyı ziyaret edin.
-                            </p>
-                            <p>
                                 ST-CMV-AC, orta gerilim aşırı gerilim korumasında en yeni teknolojiyi sunuyor! Daha küçük kasa, ekonomik sigortalama ve daha uzun garanti süresi!
                             </p>
                         </div>
