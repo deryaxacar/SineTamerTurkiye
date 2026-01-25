@@ -204,7 +204,7 @@
 
 /* Features CTA Section */
 .features-cta {
-    background: linear-gradient(135deg, #0d1b4c 0%, #1e3a8a 100%);
+    background: var(--primary);
     padding: 3rem 0;
     margin-top: 1rem;
     color: var(--white);
@@ -255,12 +255,12 @@
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
     transition: background 0.3s ease;
 }
 
 .feature-cta-item:hover .feature-cta-icon {
     background: rgba(255, 255, 255, 0.2);
+
 }
 
 .feature-cta-icon svg {
