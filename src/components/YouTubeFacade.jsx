@@ -48,6 +48,7 @@ const YouTubeFacade = ({ youtubeId, customThumbnail }) => {
             <img
                 src={thumbnailUrl}
                 alt=""
+                loading="lazy"
                 style={{ display: 'none' }}
                 onError={handleThumbnailError}
             />

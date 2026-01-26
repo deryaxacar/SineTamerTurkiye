@@ -131,6 +131,7 @@ const VideosPage = () => {
                 </section>
 
             ))}
+
             {/* CTA Section */}
             <section className="more-cta-section">
                 <h2>Daha Fazla Video İçin</h2>

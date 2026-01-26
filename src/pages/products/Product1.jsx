@@ -136,7 +136,6 @@ Bağımsız darbe bastırma cihazı olarak tasarlanan ST-SPT, harici muhafaza ge
                             <div className="promo-content">
                                 <h3>SineTamer Üç Fazlı Üniteler</h3>
                                 <p>Tek fazlı devreler için gelişmiş geçici voltaj darbe bastırıcı.</p>
-                                <br />
                                 <Link to="/urunler/uc-faz" className="btn-promo-action">
                                     Ürünü İncele
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
