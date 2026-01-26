@@ -151,7 +151,7 @@ const SurgeProtectionDevice = () => {
                         </Link>
 
                         <Link
-                            to="/cozumler/sinetamer/la-lm-uniteleri"
+                            to="/cozumler/sinetamer/la-rm-uniteleri"
                             className="spd-link-card"
                         >
                             <div className="spd-link-icon">

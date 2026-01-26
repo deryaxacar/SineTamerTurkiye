@@ -1,30 +1,30 @@
 import Hero from '../../../components/Hero';
 import '../SolutionCategory.css';
 
-const LALMUnits = () => {
+const LARMUnits = () => {
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
         { label: 'Çözümler' },
         { label: 'SineTamer' },
-        { label: 'LA & LM Üniteleri' }
+        { label: 'LA & RM Üniteleri' }
     ];
 
     return (
         <div className="solution-category-page">
             <Hero
-                title="LA & LM Üniteleri"
-                description="SineTamer LA ve LM serisi güç koruma çözümleri."
+                title="LA & RM Üniteleri"
+                description="SineTamer LA ve RM serisi güç koruma çözümleri."
                 backgroundImage="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920"
                 breadcrumbItems={breadcrumbItems}
             />
 
             {/* YouTube Video Section */}
-            <section className="lalm-video-section">
-                <div className="lalm-video-container">
-                    <div className="lalm-video-wrapper">
+            <section className="larm-video-section">
+                <div className="larm-video-container">
+                    <div className="larm-video-wrapper">
                         <iframe
                             src="https://www.youtube.com/embed/KC4r8f9HoL8"
-                            title="LA & LM Üniteleri Tanıtım"
+                            title="LA & RM Üniteleri Tanıtım"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
@@ -34,12 +34,12 @@ const LALMUnits = () => {
             </section>
 
             {/* Split Content Section */}
-            <section className="lalm-split-section">
-                <div className="lalm-split-container">
+            <section className="larm-split-section">
+                <div className="larm-split-container">
                     {/* Left - Title and List */}
-                    <div className="lalm-split-left">
+                    <div className="larm-split-left">
                         <h2>SINETAMER LA VE RM ÜNİTELERİ</h2>
-                        <ul className="lalm-feature-list">
+                        <ul className="larm-feature-list">
                             <li>LA ve RM üniteleri frekans zayıflatmalı, dahili akım ve termal olarak sigortalı ve UL94V sertifikalıdır.</li>
                             <li>LA modeli gerçek bir 10 modlu cihaz iken, RM modeli yedi modlu bir ünitedir.</li>
                             <li>Çeşitli seçenekler ve çeşitli tepe akım değerleri mevcuttur.</li>
@@ -53,10 +53,11 @@ const LALMUnits = () => {
                         </ul>
                     </div>
                     {/* Right - Image */}
-                    <div className="lalm-split-right">
+                    <div className="larm-split-right">
                         <img
-                            src="https://www.ecsintl.com/wp-content/uploads/2024/01/la-rm-700x178.jpg"
-                            alt="LA & LM Üniteleri"
+                            src="/images/sinetamer/larmunits1.jpg"
+                            loading='lazy'
+                            alt="LA & RM Üniteleri"
                         />
                     </div>
                 </div>
@@ -67,7 +68,7 @@ const LALMUnits = () => {
                 <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
                     <div className="cta-container">
                         <h2>Detaylı Bilgi ve Teklif İçin</h2>
-                        <p>LA & LM üniteleri hakkında detaylı bilgi almak için bizimle iletişime geçin.</p>
+                        <p>LA & RM üniteleri hakkında detaylı bilgi almak için bizimle iletişime geçin.</p>
                         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '2rem', flexWrap: 'wrap' }}>
                             <a
                                 href="https://www.ecsintl.com/contact-us/"
@@ -85,4 +86,4 @@ const LALMUnits = () => {
     );
 };
 
-export default LALMUnits;
+export default LARMUnits;

@@ -35,7 +35,8 @@ const MediumVoltageUnits = () => {
                     <div className="mv-split-grid">
                         <div className="mv-split-image">
                             <img
-                                src="https://www.ecsintl.com/wp-content/uploads/2023/12/TVSS-ENC7-Medium-225x300-1-225x300.jpg"
+                                src="/images/sinetamer/mediumvoltage1.jpg"
+                                loading='lazy'
                                 alt="Orta Gerilim Üniteleri"
                             />
                         </div>

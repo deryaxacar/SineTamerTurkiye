@@ -1778,20 +1778,20 @@
 }
 
 /* =========================================================
-   LA & LM Units Page Styles
+   LA & RM Units Page Styles
    ========================================================= */
-.lalm-video-section {
+.larm-video-section {
     padding: 3rem 0;
     background: var(--gray-light);
 }
 
-.lalm-video-container {
+.larm-video-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
-.lalm-video-wrapper {
+.larm-video-wrapper {
     position: relative;
     padding-bottom: 56.25%;
     /* 16:9 aspect ratio */
@@ -1801,7 +1801,7 @@
     box-shadow: var(--shadow-xl);
 }
 
-.lalm-video-wrapper iframe {
+.larm-video-wrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -1810,12 +1810,12 @@
     border-radius: var(--radius-lg);
 }
 
-.lalm-split-section {
+.larm-split-section {
     padding: 4rem 0;
     background: var(--white);
 }
 
-.lalm-split-container {
+.larm-split-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
@@ -1825,20 +1825,20 @@
     align-items: center;
 }
 
-.lalm-split-left h2 {
+.larm-split-left h2 {
     font-size: 2rem;
     font-weight: 800;
     color: var(--primary);
     margin-bottom: 1.5rem;
 }
 
-.lalm-feature-list {
+.larm-feature-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.lalm-feature-list li {
+.larm-feature-list li {
     position: relative;
     padding-left: 1.5rem;
     margin-bottom: 1rem;
@@ -1847,7 +1847,7 @@
     color: var(--text-light);
 }
 
-.lalm-feature-list li::before {
+.larm-feature-list li::before {
     content: "";
     position: absolute;
     left: 0;
@@ -1858,29 +1858,29 @@
     border-radius: 50%;
 }
 
-.lalm-split-right {
+.larm-split-right {
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-lg);
 }
 
-.lalm-split-right img {
+.larm-split-right img {
     width: 100%;
     height: auto;
     display: block;
 }
 
 @media (max-width: 768px) {
-    .lalm-split-container {
+    .larm-split-container {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
 
-    .lalm-split-left h2 {
+    .larm-split-left h2 {
         font-size: 1.75rem;
     }
 
-    .lalm-split-right {
+    .larm-split-right {
         order: -1;
     }
 }

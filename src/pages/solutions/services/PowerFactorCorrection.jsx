@@ -1,11 +1,11 @@
 import Hero from '../../../components/Hero';
 import '../SolutionCategory.css';
 
-const img1 = "https://www.ecsintl.com/wp-content/uploads/2023/12/g1-300x223-1-300x223.jpg";
-const img2 = "https://www.ecsintl.com/wp-content/uploads/2023/12/pf_meter-225x300-1-225x300.jpg";
-const img3 = "https://www.ecsintl.com/wp-content/uploads/2023/12/g2-267x300-1-267x300.jpg";
-const img4 = "https://www.ecsintl.com/wp-content/uploads/2023/12/11-288x258.jpg";
-const img5 = "https://www.ecsintl.com/wp-content/uploads/2023/12/g3-288x258.jpg";
+const img1 = "/images/solutions/powerfactor1.jpg";
+const img2 = "/images/solutions/powerfactor2.jpg";
+const img3 = "/images/solutions/powerfactor3.jpg";
+const img4 = "/images/solutions/powerfactor4.jpg";
+const img5 = "/images/solutions/powerfactor5.jpg";
 
 const PowerFactorCorrection = () => {
     const breadcrumbItems = [
@@ -37,7 +37,7 @@ const PowerFactorCorrection = () => {
             <section className="split-layout-section" style={{ padding: '1rem 0' }}>
                 <div className="split-top image-left">
                     <div className="split-side-image small">
-                        <img src={img1} alt="Güç Faktörü Kontrol Ünitesi" />
+                        <img src={img1} loading="lazy" alt="Güç Faktörü Kontrol Ünitesi" />
                     </div>
                     <div className="split-main-text">
                         <p>
@@ -62,8 +62,8 @@ const PowerFactorCorrection = () => {
                             Güç Faktörü Düzeltme (PFC) yatırımının geri dönüş süresi 6 ay ile 3 yıl arasında değişebilir, ancak 18 aydan daha uzun sürdüğünü nadiren gördük. En iyi yanı ise, ekipman kendini amorti ettikten sonra, tasarruflar doğrudan işletmenizin karlılığını artırmaya yöneliktir… Hem de ömür boyu.
                         </p>
                     </div>
-                    <div className="split-side-image" style={{ maxWidth: '450px' }}>
-                        <img src={img2} alt="Güç Faktörü Ölçer" />
+                    <div className="split-side-image" style={{ maxWidth: '450px', borderRadius: '10px' }}>
+                        <img src={img2} loading="lazy" alt="Güç Faktörü Ölçer" />
                     </div>
                 </div>
             </section>
@@ -71,13 +71,13 @@ const PowerFactorCorrection = () => {
             {/* Image Grid: img3, img4, img5 */}
             <section className="pfc-image-grid">
                 <div className="pfc-grid-item">
-                    <img src={img3} alt="Kompanzasyon Panosu" />
+                    <img src={img3} loading="lazy" alt="Kompanzasyon Panosu" />
                 </div>
                 <div className="pfc-grid-item">
-                    <img src={img4} alt="Güç Elektroniği Bileşenleri" />
+                    <img src={img4} loading="lazy" alt="Güç Elektroniği Bileşenleri" />
                 </div>
                 <div className="pfc-grid-item">
-                    <img src={img5} alt="Teknik Analiz Grafiği" />
+                    <img src={img5} loading="lazy" alt="Teknik Analiz Grafiği" />
                 </div>
             </section>
 

@@ -139,7 +139,8 @@ const AdvantageUnits = () => {
                         </div>
                         <div className="adv-intro-image">
                             <img
-                                src="https://www.ecsintl.com/wp-content/uploads/2023/12/14094145-600x520.jpg"
+                                src="/images/sinetamer/advantageunits1.jpg"
+                                loading="lazy"
                                 alt="SineTamer Avantaj Üniteleri"
                             />
                         </div>

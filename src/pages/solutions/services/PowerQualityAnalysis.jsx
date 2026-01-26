@@ -64,7 +64,7 @@ const PowerQualityAnalysis = () => {
                             </div>
                         </div>
                         <div className="pqa-intro-image">
-                            <img src="https://www.ecsintl.com/wp-content/uploads/2023/12/wpa7722ee5_0f-240x300-1-240x300.jpg" alt="Güç Kalitesi Ölçümü" />
+                            <img src="/images/solutions/powerquality1.jpg" loading="lazy" alt="Güç Kalitesi Ölçümü" />
                         </div>
                     </div>
                 </div>

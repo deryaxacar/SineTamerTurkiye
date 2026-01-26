@@ -23,7 +23,7 @@ import TurnkeyTechSolutions from './pages/solutions/services/TurnkeyTechSolution
 import ADFPowerSetting from './pages/solutions/services/ADFPowerSetting';
 
 // SineTamer
-import LALMUnits from './pages/solutions/sinetamer/LALMUnits';
+import LARMUnits from './pages/solutions/sinetamer/LARMUnits';
 import AdvantageUnits from './pages/solutions/sinetamer/AdvantageUnits';
 import MediumVoltageUnits from './pages/solutions/sinetamer/MediumVoltageUnits';
 import MVDetails from './pages/solutions/sinetamer/MVDetails';
@@ -57,7 +57,7 @@ function App() {
             <Route path="/cozumler/hizmetler/anahtar-teslimi-teknoloji-cozumleri" element={<TurnkeyTechSolutions />} />
             <Route path="/cozumler/hizmetler/adf-guc-ayari" element={<ADFPowerSetting />} />
             {/* SineTamer */}
-            <Route path="/cozumler/sinetamer/la-lm-uniteleri" element={<LALMUnits />} />
+            <Route path="/cozumler/sinetamer/la-rm-uniteleri" element={<LARMUnits />} />
             <Route path="/cozumler/sinetamer/avantaj-uniteleri" element={<AdvantageUnits />} />
             <Route path="/cozumler/sinetamer/orta-gerilim-uniteleri" element={<MediumVoltageUnits />} />
             <Route path="/cozumler/sinetamer/mv-detaylari" element={<MVDetails />} />

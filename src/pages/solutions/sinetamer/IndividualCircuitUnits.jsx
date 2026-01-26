@@ -104,14 +104,15 @@ const IndividualCircuitUnits = () => {
                             <p>
                                 Ürünlerimizin detaylı teknik özelliklerini ve uygulama şemalarını içeren dökümanları inceleyebilirsiniz.
                             </p>
-                            <a href="/cozumler/sinetamer/bireysel-devre-veri-sayfalari" className="units-pdf-btn">
+                            <Link to="/cozumler/sinetamer/bireysel-devre-veri-sayfalari" className="btn btn-primary" style={{ padding: '1rem 2.5rem', display: 'inline-block' }}>
                                 Bireysel Veri Sayfası Detay
-                            </a>
+                            </Link>
                         </div>
                         <div className="units-cta-image-wrapper">
                             <img
-                                src="/images/Sinetimer2-637x242.jpg"
-                                alt="SineTamer Application Area"
+                                src="/images/sinetamer/individualcircuit1.jpg"
+                                loading='lazy'
+                                alt="Bireysel Devre Üniteleri"
                             />
                         </div>
                     </div>

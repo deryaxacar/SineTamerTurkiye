@@ -1,8 +1,8 @@
 import Hero from '../../../components/Hero';
 import '../SolutionCategory.css';
 
-const img1 = "https://www.ecsintl.com/wp-content/uploads/2023/12/datacenter-1024x228.jpg";
-const img3 = "https://www.ecsintl.com/wp-content/uploads/2025/07/ADF-product-range_XL-700x377-1-700x377.jpg";
+const img1 = "/images/solutions/adfpower1.jpg";
+const img2 = "/images/solutions/adfpower2.jpg";
 
 const ADFPowerSetting = () => {
     const breadcrumbItems = [
@@ -24,7 +24,7 @@ const ADFPowerSetting = () => {
             <section className="split-layout-section">
                 <div className="split-top image-left">
                     <div className="split-side-image">
-                        <img src={img1} alt="ADF Ünitesi" />
+                        <img src={img1} loading="lazy" style={{ borderRadius: '10px' }} alt="ADF Ünitesi" />
                     </div>
                     <div className="split-main-text">
                         <h2>Güç Kusursuz Değildir.</h2>
@@ -163,7 +163,7 @@ const ADFPowerSetting = () => {
                             </p>
                         </div>
                         <div className="adf-info-image">
-                            <img src={img3} alt="ADF Teknolojisi" />
+                            <img src={img2} loading="lazy" alt="ADF Teknolojisi" />
                         </div>
                     </div>
                 </div>

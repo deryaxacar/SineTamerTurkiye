@@ -17,7 +17,6 @@ const YouTubeFacade = ({ youtubeId, customThumbnail }) => {
         } else if (quality === 'hqdefault') {
             setQuality('default');
         }
-        // 'default' her zaman var, daha fazla fallback gerekmez
     };
 
     if (isLoaded) {

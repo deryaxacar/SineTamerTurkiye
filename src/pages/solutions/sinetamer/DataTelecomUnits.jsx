@@ -74,7 +74,8 @@ const DataTelecomUnits = () => {
                         <div className="category-visual">
                             <div style={{ position: 'relative', width: '100%' }}>
                                 <img
-                                    src="https://www.ecsintl.com/wp-content/uploads/2023/12/solutionbanner-700x178-1-700x178.jpg"
+                                    src="/images/sinetamer/datatelecom1.jpg"
+                                    loading='lazy'
                                     alt="Modern Veri Merkezi"
                                     style={{ width: '100%', borderRadius: '10px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}
                                 />
@@ -236,7 +237,8 @@ const DataTelecomUnits = () => {
                         <div className="category-visual">
                             <div style={{ position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center' }}>
                                 <img
-                                    src="https://www.ecsintl.com/wp-content/uploads/2023/12/05-07.jpg"
+                                    src="/images/sinetamer/datatelecom2.jpg"
+                                    loading='lazy'
                                     alt="Networking Equipment and Patch Panels"
                                     style={{
                                         width: '100%',

@@ -29,7 +29,8 @@ const ElevatorSurgeProtection = () => {
                     <div style={{ color: 'var(--text-light)', lineHeight: '1.8', fontSize: '1.1rem', marginBottom: '4rem' }}>
                         <div style={{ float: 'left', marginRight: '2rem', marginBottom: '1rem', width: '350px' }}>
                             <img
-                                src="https://www.ecsintl.com/wp-content/uploads/2023/12/1Elevator-1-450x250.jpg"
+                                src="/images/sinetamer/elevatorsurge1.jpg"
+                                loading='lazy'
                                 alt="Asansör Kontrol Sistemleri"
                                 style={{ width: '100%', borderRadius: '12px', boxShadow: 'var(--shadow-lg)', objectFit: 'cover', aspectRatio: '1/1' }}
                             />
@@ -60,7 +61,8 @@ const ElevatorSurgeProtection = () => {
                     <div style={{ color: 'var(--text-light)', lineHeight: '1.8', fontSize: '1.1rem', marginBottom: '4rem' }}>
                         <div style={{ float: 'left', marginRight: '2rem', marginBottom: '1rem', width: '350px' }}>
                             <img
-                                src="https://www.ecsintl.com/wp-content/uploads/2023/12/LA-ST-SPTa-Small-700x467-1-700x467.png"
+                                src="/images/sinetamer/elevatorsurge2.png"
+                                loading='lazy'
                                 alt="Modern Mimari ve Güvenlik"
                                 style={{ width: '100%', borderRadius: '12px', boxShadow: 'var(--shadow-lg)', objectFit: 'cover', aspectRatio: '1/1' }}
                             />
@@ -84,7 +86,8 @@ const ElevatorSurgeProtection = () => {
                     <div style={{ color: 'var(--text-light)', lineHeight: '1.8', fontSize: '1.1rem', marginBottom: '4rem' }}>
                         <div style={{ float: 'left', marginRight: '2rem', marginBottom: '1rem', width: '350px' }}>
                             <img
-                                src="https://www.ecsintl.com/wp-content/uploads/2023/12/1Elevator-1-450x250.jpg"
+                                src="/images/sinetamer/elevatorsurge1.jpg"
+                                loading='lazy'
                                 alt="Elektrik Panosu ve Teknoloji"
                                 style={{ width: '100%', borderRadius: '12px', boxShadow: 'var(--shadow-lg)', objectFit: 'cover', aspectRatio: '1/1' }}
                             />
