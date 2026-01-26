@@ -71,7 +71,7 @@ const YouTubeFacade = ({ youtubeId, customThumbnail }) => {
 const VideosPage = () => {
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
-        { label: 'Daha Fazlası', path: '/daha-fazlasi' },
+        { label: 'Daha Fazlası' },
         { label: 'Videolar' }
     ];
 

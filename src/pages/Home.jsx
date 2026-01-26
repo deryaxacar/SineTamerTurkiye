@@ -71,40 +71,6 @@ const Home = () => {
         }
     ];
 
-    const stats = [
-        { number: '15+', label: 'Yıllık Deneyim' },
-        { number: '500+', label: 'Tamamlanan Proje' },
-        { number: '10K+', label: 'Mutlu Müşteri' },
-        { number: '%98', label: 'Müşteri Memnuniyeti' },
-    ];
-
-    const blogPosts = [
-        {
-            image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600',
-            title: 'Güneş Enerjisi ile Evlerde Tasarruf Nasıl Yapılır?',
-            excerpt: 'Güneş panelleri ile evinizin enerji ihtiyacını karşılayarak faturalarınızı nasıl düşürebileceğinizi öğrenin.',
-            date: '10 Ocak 2026',
-            category: 'Güneş Enerjisi',
-            link: '/daha-fazlasi/blog'
-        },
-        {
-            image: 'https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=600',
-            title: 'Rüzgar Enerjisinin Geleceği: 2026 Trendleri',
-            excerpt: 'Rüzgar enerjisi sektöründeki son gelişmeler ve 2026 yılında bizi bekleyen yenilikler.',
-            date: '8 Ocak 2026',
-            category: 'Rüzgar Enerjisi',
-            link: '/daha-fazlasi/blog'
-        },
-        {
-            image: 'https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?w=600',
-            title: 'Enerji Depolama Sistemleri: Kapsamlı Rehber',
-            excerpt: 'Ev ve işletmeler için en uygun enerji depolama çözümlerini karşılaştırmalı olarak inceliyoruz.',
-            date: '5 Ocak 2026',
-            category: 'Depolama',
-            link: '/daha-fazlasi/blog'
-        },
-    ];
-
     return (
         <div className="home">
             {/* Hero Section */}

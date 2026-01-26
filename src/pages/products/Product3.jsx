@@ -30,7 +30,7 @@ const Product3 = () => {
 
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
-        { label: 'Ürünler', path: '/urunler' },
+        { label: 'Ürünler' },
         { label: product.title }
     ];
 

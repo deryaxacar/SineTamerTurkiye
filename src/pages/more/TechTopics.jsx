@@ -6,7 +6,7 @@ import "../solutions/SolutionCategory.css";
 const TechTopics = () => {
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
-        { label: 'Daha Fazlası', path: '/daha-fazlasi' },
+        { label: 'Daha Fazlası' },
         { label: 'Teknoloji Konuları' }
     ];
 

@@ -4,8 +4,8 @@ import '../SolutionCategory.css';
 const ElevatorSurgeProtection = () => {
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
-        { label: 'Çözümler', path: '/cozumler' },
-        { label: 'SineTamer', path: '/cozumler/enerji-verimliligi' },
+        { label: 'Çözümler' },
+        { label: 'SineTamer' },
         { label: 'Asansör Aşırı Gerilim Koruması' }
     ];
 

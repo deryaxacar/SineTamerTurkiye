@@ -81,7 +81,7 @@ Bağımsız darbe bastırma cihazı olarak tasarlanan ST-SPT, harici muhafaza ge
 
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
-        { label: 'Ürünler', path: '/urunler' },
+        { label: 'Ürünler' },
         { label: product.title }
     ];
 

@@ -6,7 +6,7 @@ import "../solutions/SolutionCategory.css";
 const AskSineTamer = () => {
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
-        { label: 'Daha Fazlası', path: '/daha-fazlasi' },
+        { label: 'Daha Fazlası' },
         { label: 'SineTamer\'a Sorun' }
     ];
 
