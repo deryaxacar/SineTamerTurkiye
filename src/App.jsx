@@ -15,6 +15,9 @@ import TechTopics from './pages/more/TechTopics';
 import BrochuresPage from './pages/more/Brochures';
 import VideosPage from './pages/more/VideosPage';
 import AskSineTamer from './pages/more/AskSineTamer';
+import BlogPage from './pages/more/BlogPage';
+import BlogDetail from './pages/more/BlogDetail';
+
 
 // Services (Çözümler)
 import PowerQualityAnalysis from './pages/solutions/services/PowerQualityAnalysis';
@@ -74,6 +77,9 @@ function App() {
             <Route path="/daha-fazlasi/brosurler" element={<BrochuresPage />} />
             <Route path="/daha-fazlasi/videolar" element={<VideosPage />} />
             <Route path="/daha-fazlasi/sinetamer-a-sorun" element={<AskSineTamer />} />
+            <Route path="/daha-fazlasi/blog" element={<BlogPage />} />
+            <Route path="/daha-fazlasi/blog/:id" element={<BlogDetail />} />
+
           </Routes>
         </main>
         <Footer />

@@ -100,7 +100,7 @@ const Navbar = () => {
     { path: '/daha-fazlasi/teknoloji-konulari', label: 'Teknoloji Konuları' },
     { path: '/daha-fazlasi/brosurler', label: 'Broşürler' },
     { path: '/daha-fazlasi/videolar', label: 'Videolar' },
-    { path: 'https://www.ecsintl.com/blog/', label: 'Blog', external: true },
+    { path: '/daha-fazlasi/blog', label: 'Blog' },
     { path: 'https://www.ecsintl.com/newsletter/', label: 'Haber bülteni', external: true },
   ];
 

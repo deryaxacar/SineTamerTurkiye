@@ -284,10 +284,6 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
-
-    .feature-cta-item:last-child {
-        grid-column: span 2;
-    }
 }
 
 /* Stats Section */
