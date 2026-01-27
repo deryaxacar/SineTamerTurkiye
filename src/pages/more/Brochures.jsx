@@ -19,7 +19,7 @@ const BrochuresPage = () => {
             size: '467 KB',
             pages: 2,
             image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400',
-            url: '/pdfs/GlobalTechnologyRev7.pdf',
+            url: '/brochures/GlobalTechnologyRev7.pdf',
             color: '#1a2f6e',
         },
         {
@@ -29,7 +29,7 @@ const BrochuresPage = () => {
             size: '1.264 KB',
             pages: 2,
             image: 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=400',
-            url: '/pdfs/ecsbrochure12-1.pdf',
+            url: '/brochures/ecsbrochure12-1.pdf',
             color: '#1a2f6e',
         },
         {
@@ -39,7 +39,7 @@ const BrochuresPage = () => {
             size: '460 KB',
             pages: 4,
             image: 'https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?w=400',
-            url: '/pdfs/ssi-prodbrochure.pdf',
+            url: '/brochures/ssi-prodbrochure.pdf',
             color: '#1a2f6e',
         },
         {
@@ -49,7 +49,7 @@ const BrochuresPage = () => {
             size: '1.126 KB',
             pages: 4,
             image: 'https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=400',
-            url: '/pdfs/sinetamerpetroleum-1.pdf',
+            url: '/brochures/sinetamerpetroleum-1.pdf',
             color: '#1a2f6e',
         },
         {
@@ -59,7 +59,7 @@ const BrochuresPage = () => {
             size: '1.908 KB',
             pages: 2,
             image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400',
-            url: '/pdfs/portuguese-web.pdf',
+            url: '/brochures/portuguese-web.pdf',
             color: '#1a2f6e',
         },
         {
@@ -69,7 +69,7 @@ const BrochuresPage = () => {
             size: '1.624 KB',
             pages: 2,
             image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=400',
-            url: '/pdfs/ssiproductinsert.pdf',
+            url: '/brochures/ssiproductinsert.pdf',
             color: '#1a2f6e',
         },
         {
@@ -79,7 +79,7 @@ const BrochuresPage = () => {
             size: '4.5 MB',
             pages: 12,
             image: 'https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=400',
-            url: '/pdfs/sinetamer-catalog-brochure-2012.pdf',
+            url: '/brochures/sinetamer-catalog-brochure-2012.pdf',
             color: '#1a2f6e',
         },
         {
@@ -89,7 +89,7 @@ const BrochuresPage = () => {
             size: '1.444 KB',
             pages: 4,
             image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400',
-            url: '/pdfs/ECS_2020.pdf',
+            url: '/brochures/ECS_2020.pdf',
             color: '#1a2f6e',
         },
     ];
