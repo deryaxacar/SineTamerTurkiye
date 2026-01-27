@@ -7,11 +7,11 @@ import '../SolutionCategory.css';
 
 const MVDetails = () => {
     const pdfs = [
-        { title: 'ST-CMV-AC', size: '134 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2017/12/st-cmv-acrevaug2014CC88D50383FC.pdf' },
-        { title: 'ST-SILA MV-AC', size: '73,8 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2017/12/ST-SILAMV-D1F.pdf' },
-        { title: 'ST-SHLA MV-AC', size: '73,8 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2017/12/ST-SHLAMV-D1F.pdf' },
-        { title: 'ST-MV-AC7200', size: '71,5 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2017/12/st-mv-ac7200-rev-date-09-19-2008.pdf' },
-        { title: 'ST-LSEA MV-AC', size: '75,2 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2017/12/ST-LSEA-MV_RevAug2014.pdf' },
+        { title: 'ST-CMV-AC', size: '134 KB', path: '/mvdetails/st-cmv-ac.pdf' },
+        { title: 'ST-SILA MV-AC', size: '73,8 KB', path: '/mvdetails/st-sila-mv-ac.pdf' },
+        { title: 'ST-SHLA MV-AC', size: '73,8 KB', path: '/mvdetails/st-shla-mv-ac.pdf' },
+        { title: 'ST-MV-AC7200', size: '71,5 KB', path: '/mvdetails/st-mv-ac7200.pdf' },
+        { title: 'ST-LSEA MV-AC', size: '75,2 KB', path: '/mvdetails/st-lsea-mv-ac.pdf' },
     ];
 
     const breadcrumbItems = [
