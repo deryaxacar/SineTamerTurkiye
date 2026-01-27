@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Hero from '../../../components/Hero';
+import { downloadFile } from '../../../utils/downloadHelper';
 import '../../more/MoreCategory.css';
 import '../SolutionCategory.css';
 
@@ -266,13 +267,7 @@ const TechnicalArticles = () => {
     ];
 
     const downloadArticle = (url) => {
-        if (url === '#') {
-            alert('Bu döküman yakında eklenecektir.');
-            return;
-        }
-
-        // Open PDF in new tab
-        window.open(url, '_blank');
+        downloadFile(url);
     };
 
     return (

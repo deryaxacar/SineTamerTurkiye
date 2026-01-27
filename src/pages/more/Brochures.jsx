@@ -1,6 +1,7 @@
 // BrochuresPage.jsx
 import { Link } from 'react-router-dom';
 import Hero from '../../components/Hero';
+import { downloadFile } from '../../utils/downloadHelper';
 import './MoreCategory.css';
 import '../solutions/SolutionCategory.css';
 
@@ -95,12 +96,7 @@ const BrochuresPage = () => {
     ];
 
     const downloadBrochure = (url) => {
-        const link = document.createElement('a');
-        link.href = url;
-        link.download = '';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+        downloadFile(url);
     };
 
     return (
