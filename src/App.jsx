@@ -37,6 +37,7 @@ import InstallationPages from './pages/solutions/sinetamer/InstallationPages';
 import IndividualCircuitDataSheets from './pages/solutions/sinetamer/IndividualCircuitDataSheets';
 import SineTamerCustomers from './pages/solutions/sinetamer/SineTamerCustomers';
 import ElevatorSurgeProtection from './pages/solutions/sinetamer/ElevatorSurgeProtection';
+import TechnicalArticles from './pages/solutions/TechnicalArticles';
 
 import './App.css';
 
@@ -71,6 +72,7 @@ function App() {
             <Route path="/cozumler/sinetamer/kurulum-sayfalari" element={<InstallationPages />} />
             <Route path="/cozumler/sinetamer/musteriler" element={<SineTamerCustomers />} />
             <Route path="/cozumler/sinetamer/asansor-korumasi" element={<ElevatorSurgeProtection />} />
+            <Route path="/cozumler/teknik-makaleler" element={<TechnicalArticles />} />
             {/* More Categories */}
             <Route path="/daha-fazlasi" element={<More />} />
             <Route path="/daha-fazlasi/teknoloji-konulari" element={<TechTopics />} />

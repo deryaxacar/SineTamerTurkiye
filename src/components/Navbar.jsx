@@ -64,7 +64,7 @@ const Navbar = () => {
             { path: '/cozumler/sinetamer/bireysel-devre-uniteleri', label: 'Bireysel Devre Üniteleri' },
             { path: '/cozumler/sinetamer/kurulum-sayfalari', label: 'Kurulum Sayfaları' },
 
-            { path: 'https://www.ecsintl.com/technical-articles/#el-ba9f3153', label: 'Teknik Makaleler', external: true },
+            { path: '/cozumler/teknik-makaleler', label: 'Teknik Makaleler' },
             { path: 'https://www.ecsintl.com/hostpanel/login/webmail', label: 'Web Postası', external: true },
             { path: 'https://www.ecsintl.com/sinetamer-home/', label: 'Sinetamer Global', external: true },
             { path: '/cozumler/sinetamer/musteriler', label: 'SineTamer Müşterileri' },

@@ -305,6 +305,7 @@
     border: 1px solid var(--gray);
     display: flex;
     flex-direction: column;
+    isolation: isolate;
 }
 
 .brochure-card-new:hover {
@@ -316,6 +317,7 @@
     position: relative;
     height: 180px;
     overflow: hidden;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
 }
 
 .brochure-image-new img {
@@ -332,6 +334,7 @@
     align-items: center;
     justify-content: center;
     gap: 0.75rem;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
 }
 
 .pdf-icon {
