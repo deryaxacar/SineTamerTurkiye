@@ -108,10 +108,11 @@ const Footer = () => {
                         <h3 className="footer-title">Hızlı Linkler</h3>
                         <ul className="footer-links">
                             <li><Link to="/">Ana Sayfa</Link></li>
-                            <li><span>Çözümler</span></li>
-                            <li><Link to="/urunler">Ürünler</Link></li>
-                            <li><Link to="/daha-fazlasi/blog">Blog</Link></li>
-
+                            <li><Link to="/#solutions">Çözümler</Link></li>
+                            <li><Link to="/#products">Ürünler</Link></li>
+                            <li><Link to="/daha-fazlasi/brosurler">Broşürler</Link></li>
+                            <li><Link to="/daha-fazlasi/videolar">Videolar</Link></li>
+                            <li><Link to="/cozumler/teknik-makaleler">Teknik Makaleler</Link></li>
                         </ul>
                     </div>
 
