@@ -7,7 +7,7 @@ const img2 = "/images/solutions/adfpower2.jpg";
 const ADFPowerSetting = () => {
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
-        { label: 'Çözümler' },
+        { label: 'Çözümler', path: '/#solutions' },
         { label: 'ADF Güç Ayarı' }
     ];
 

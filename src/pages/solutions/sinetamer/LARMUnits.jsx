@@ -4,7 +4,7 @@ import '../SolutionCategory.css';
 const LARMUnits = () => {
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
-        { label: 'Çözümler' },
+        { label: 'Çözümler', path: '/#solutions' },
         { label: 'LA & RM Üniteleri' }
     ];
 

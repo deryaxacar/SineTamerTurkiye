@@ -10,7 +10,7 @@ const img5 = "/images/solutions/powerfactor5.jpg";
 const PowerFactorCorrection = () => {
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
-        { label: 'Çözümler' },
+        { label: 'Çözümler', path: '/#solutions' },
         { label: 'Güç Faktörü Düzeltme' }
     ];
 

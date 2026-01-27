@@ -4,7 +4,7 @@ import '../SolutionCategory.css';
 const TurnkeyTechSolutions = () => {
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
-        { label: 'Çözümler' },
+        { label: 'Çözümler', path: '/#solutions' },
         { label: 'Anahtar Teslimi Teknoloji Çözümleri' }
     ];
 

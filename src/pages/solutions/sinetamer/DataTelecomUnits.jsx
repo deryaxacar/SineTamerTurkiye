@@ -5,7 +5,7 @@ import '../SolutionCategory.css';
 const DataTelecomUnits = () => {
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
-        { label: 'Çözümler' },
+        { label: 'Çözümler', path: '/#solutions' },
         { label: 'Veri/Telekom Üniteleri' }
     ];
 

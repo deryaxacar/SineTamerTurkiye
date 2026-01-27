@@ -6,7 +6,7 @@ import '../SolutionCategory.css';
 const TechnicalArticles = () => {
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
-        { label: 'Çözümler' },
+        { label: 'Çözümler', path: '/#solutions' },
         { label: 'Teknik Makaleler' }
     ];
 

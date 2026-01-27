@@ -5,7 +5,7 @@ import '../SolutionCategory.css';
 const InstallationPages = () => {
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
-        { label: 'Çözümler' },
+        { label: 'Çözümler', path: '/#solutions' },
         { label: 'Kurulum Sayfaları' }
     ];
 

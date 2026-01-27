@@ -7,7 +7,7 @@ import './solutions/SolutionCategory.css';
 const Solutions = () => {
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
-        { label: 'Çözümler' }
+        { label: 'Çözümler', path: '/#solutions' }
     ];
 
     const solutions = [

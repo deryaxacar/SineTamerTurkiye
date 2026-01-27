@@ -8,7 +8,7 @@ const IndividualCircuitUnits = () => {
 
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
-        { label: 'Çözümler' },
+        { label: 'Çözümler', path: '/#solutions' },
         { label: 'Bireysel Devre Üniteleri' }
     ];
 

@@ -5,7 +5,7 @@ import '../SolutionCategory.css';
 const SurgeProtectionDevice = () => {
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
-        { label: 'Çözümler' },
+        { label: 'Çözümler', path: '/#solutions' },
         { label: 'Aşırı Gerilim Koruma Cihazı' },
     ];
 

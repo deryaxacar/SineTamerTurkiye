@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ScrollToHash from './components/ScrollToHash';
 import Home from './pages/Home';
 import Solutions from './pages/Solutions';
 
@@ -44,6 +45,7 @@ import './App.css';
 function App() {
   return (
     <Router>
+      <ScrollToHash />
       <div className="app">
         <Navbar />
         <main className="main-content">

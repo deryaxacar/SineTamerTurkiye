@@ -96,7 +96,7 @@ const Home = () => {
                 </div>
             </section>
             {/* Solutions Preview */}
-            <section className="solutions-preview section bg-light">
+            <section id="solutions" className="solutions-preview section bg-light">
                 <div className="container">
                     <h2 className="section-title">Çözümlerimiz</h2>
                     <p className="section-subtitle">
@@ -181,7 +181,7 @@ const Home = () => {
             </section>
 
             {/* Products Preview */}
-            <section className="products-preview section">
+            <section id="products" className="products-preview section">
                 <div className="container">
                     <h2 className="section-title">Ürünlerimiz</h2>
                     <p className="section-subtitle">
