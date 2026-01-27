@@ -17,7 +17,6 @@ const MVDetails = () => {
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
         { label: 'Çözümler' },
-        { label: 'SineTamer' },
         { label: 'MV Detayları' }
     ];
 

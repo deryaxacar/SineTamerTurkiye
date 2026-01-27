@@ -6,7 +6,6 @@ const DataTelecomUnits = () => {
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
         { label: 'Çözümler' },
-        { label: 'SineTamer' },
         { label: 'Veri/Telekom Üniteleri' }
     ];
 

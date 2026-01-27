@@ -5,7 +5,6 @@ const AdvantageUnits = () => {
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
         { label: 'Çözümler' },
-        { label: 'SineTamer' },
         { label: 'Avantaj Üniteleri' }
     ];
 

@@ -5,7 +5,6 @@ const SineTamerCustomers = () => {
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
         { label: 'Çözümler' },
-        { label: 'SineTamer' },
         { label: 'SineTamer Müşterileri' }
     ];
 

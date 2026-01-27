@@ -29,7 +29,6 @@ const IndividualCircuitDataSheets = () => {
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
         { label: 'Çözümler' },
-        { label: 'SineTamer' },
         { label: 'Bireysel Devre', path: '/cozumler/sinetamer/bireysel-devre-uniteleri' },
         { label: 'Veri' }
     ];

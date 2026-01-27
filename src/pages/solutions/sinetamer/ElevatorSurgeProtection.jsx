@@ -5,7 +5,6 @@ const ElevatorSurgeProtection = () => {
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
         { label: 'Çözümler' },
-        { label: 'SineTamer' },
         { label: 'Asansör Aşırı Gerilim Koruması' }
     ];
 

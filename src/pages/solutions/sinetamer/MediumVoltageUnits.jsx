@@ -16,7 +16,6 @@ const MediumVoltageUnits = () => {
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
         { label: 'Çözümler' },
-        { label: 'SineTamer' },
         { label: 'Orta Gerilim Üniteleri' }
     ];
 

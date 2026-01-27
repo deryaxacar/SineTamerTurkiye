@@ -1,13 +1,12 @@
 import { Link } from 'react-router-dom';
-import Hero from '../../components/Hero';
-import '../more/MoreCategory.css';
-import '../solutions/SolutionCategory.css';
+import Hero from '../../../components/Hero';
+import '../../more/MoreCategory.css';
+import '../SolutionCategory.css';
 
 const TechnicalArticles = () => {
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
         { label: 'Çözümler' },
-        { label: 'SineTamer' },
         { label: 'Teknik Makaleler' }
     ];
 

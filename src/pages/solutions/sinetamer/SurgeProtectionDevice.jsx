@@ -6,7 +6,6 @@ const SurgeProtectionDevice = () => {
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
         { label: 'Çözümler' },
-        { label: 'SineTamer' },
         { label: 'Aşırı Gerilim Koruma Cihazı' },
     ];
 

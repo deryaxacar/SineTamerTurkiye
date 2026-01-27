@@ -37,7 +37,7 @@ import InstallationPages from './pages/solutions/sinetamer/InstallationPages';
 import IndividualCircuitDataSheets from './pages/solutions/sinetamer/IndividualCircuitDataSheets';
 import SineTamerCustomers from './pages/solutions/sinetamer/SineTamerCustomers';
 import ElevatorSurgeProtection from './pages/solutions/sinetamer/ElevatorSurgeProtection';
-import TechnicalArticles from './pages/solutions/TechnicalArticles';
+import TechnicalArticles from './pages/solutions/sinetamer/TechnicalArticles';
 
 import './App.css';
 
