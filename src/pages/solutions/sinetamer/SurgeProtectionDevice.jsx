@@ -127,8 +127,7 @@ const SurgeProtectionDevice = () => {
                     {/* Quick Links Section */}
                     <div className="spd-quick-links">
                         <Link
-                            to="https://www.ecsintl.com/technical-articles/"
-                            target="_blank"
+                            to="/cozumler/teknik-makaleler"
                             className="spd-link-card"
                         >
                             <div className="spd-link-icon">
@@ -177,8 +176,7 @@ const SurgeProtectionDevice = () => {
                         <div className="spd-resources-header">
                             <h2>Sinetamer'a İhtiyacınız Var!</h2>
                             <Link
-                                to="https://www.ecsintl.com/technical-articles/#el-440fe677"
-                                target="_blank"
+                                to="/cozumler/teknik-makaleler"
                                 className="spd-articles-link"
                             >
                                 Teknik Makalelerimizi İnceleyin →

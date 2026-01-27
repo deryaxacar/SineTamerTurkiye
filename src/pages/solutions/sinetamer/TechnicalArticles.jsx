@@ -279,7 +279,7 @@ const TechnicalArticles = () => {
         <div className="more-category-page">
             <Hero
                 title="Teknik Makaleler"
-                description="Güç kalitesi ve aşırı gerilim koruma üzerine derinlemesine mühendislik dökümanları"
+                description="Güç kalitesi ve aşırı gerilim koruma üzerine dökümanlarımız"
                 backgroundImage="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1920"
                 breadcrumbItems={breadcrumbItems}
             />
@@ -287,7 +287,7 @@ const TechnicalArticles = () => {
             <section className="more-content-section">
                 <div className="content-container" style={{ maxWidth: '1400px' }}>
                     <div className="content-header">
-                        <h2>Bilgi Merkezi</h2>
+                        <h2>Teknik Makaleler</h2>
                         <p>Teknik bilgi birikimimizi ve saha tecrübelerimizi paylaştığımız dökümanlar</p>
                     </div>
 
