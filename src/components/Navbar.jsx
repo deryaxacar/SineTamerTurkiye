@@ -204,6 +204,7 @@ const Navbar = () => {
                 src={logo}
                 alt="SineTamer"
                 className="navbar-logo-image logo-sinetamer"
+                fetchpriority="high"
               />
             </Link>
           </div>

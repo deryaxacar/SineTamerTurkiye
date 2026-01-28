@@ -61,3 +61,27 @@ select:focus-visible {
     display: none;
   }
 }
+
+/* Page Loader for Suspense */
+.page-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  width: 100%;
+}
+
+.loader-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(26, 47, 110, 0.1);
+  border-radius: 50%;
+  border-top-color: #1a2f6e;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

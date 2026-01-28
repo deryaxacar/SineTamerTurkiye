@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
+import './Pages.css';
+import './Solutions.css';
 
 const Home = () => {
     const solutions = [
@@ -198,7 +200,7 @@ const Home = () => {
                             <div className="promo-product-card" key={index}>
                                 <span className="promo-tag">ÖNE ÇIKAN ÜRÜN</span>
                                 <div className="promo-image">
-                                    <img src={product.image} alt={product.title} />
+                                    <img src={product.image} alt={product.title} loading="lazy" />
                                 </div>
                                 <div className="promo-content">
                                     <h3>{product.title}</h3>
