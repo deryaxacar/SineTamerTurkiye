@@ -1,5 +1,8 @@
+import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import YouTubeFacade from '../../components/YouTubeFacade';
+import { shareOnTwitter, shareOnFacebook, shareOnLinkedIn } from '../../utils/shareHelper';
+import { copyToClipboard } from '../../utils/clipboardHelper';
 import './MoreCategory.css';
 
 const BlogDetail = () => {
@@ -223,37 +226,18 @@ const BlogDetail = () => {
         .filter(p => p.id !== parseInt(id) && p.category === post?.category)
         .slice(0, 3);
 
-    // Share functions
+    // Share handlers using utility functions
     const getShareUrl = () => window.location.href;
+    const [isCopied, setIsCopied] = useState(false);
 
-    const shareOnTwitter = () => {
-        const url = `https://twitter.com/intent/tweet?url=${encodeURIComponent(getShareUrl())}&text=${encodeURIComponent(post?.title || '')}`;
-        window.open(url, '_blank', 'width=600,height=400');
-    };
-
-    const shareOnFacebook = () => {
-        const url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(getShareUrl())}`;
-        window.open(url, '_blank', 'width=600,height=400');
-    };
-
-    const shareOnLinkedIn = () => {
-        const url = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(getShareUrl())}`;
-        window.open(url, '_blank', 'width=600,height=400');
-    };
-
-    const copyToClipboard = async () => {
-        try {
-            await navigator.clipboard.writeText(getShareUrl());
-            alert('Link kopyalandı!');
-        } catch (err) {
-            // Fallback for older browsers
-            const textArea = document.createElement('textarea');
-            textArea.value = getShareUrl();
-            document.body.appendChild(textArea);
-            textArea.select();
-            document.execCommand('copy');
-            document.body.removeChild(textArea);
-            alert('Link kopyalandı!');
+    const handleShareTwitter = () => shareOnTwitter(getShareUrl(), post?.title || '');
+    const handleShareFacebook = () => shareOnFacebook(getShareUrl());
+    const handleShareLinkedIn = () => shareOnLinkedIn(getShareUrl());
+    const handleCopyLink = async () => {
+        const success = await copyToClipboard(getShareUrl());
+        if (success) {
+            setIsCopied(true);
+            setTimeout(() => setIsCopied(false), 2000);
         }
     };
 
@@ -327,26 +311,32 @@ const BlogDetail = () => {
                         <div className="share-section">
                             <h4>Bu Yazıyı Paylaşın</h4>
                             <div className="share-buttons">
-                                <button className="share-btn twitter" onClick={shareOnTwitter} title="Twitter'da Paylaş">
+                                <button className="share-btn twitter" onClick={handleShareTwitter} title="Twitter'da Paylaş">
                                     <svg viewBox="0 0 24 24" fill="currentColor">
                                         <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
                                     </svg>
                                 </button>
-                                <button className="share-btn facebook" onClick={shareOnFacebook} title="Facebook'ta Paylaş">
+                                <button className="share-btn facebook" onClick={handleShareFacebook} title="Facebook'ta Paylaş">
                                     <svg viewBox="0 0 24 24" fill="currentColor">
                                         <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
                                     </svg>
                                 </button>
-                                <button className="share-btn linkedin" onClick={shareOnLinkedIn} title="LinkedIn'de Paylaş">
+                                <button className="share-btn linkedin" onClick={handleShareLinkedIn} title="LinkedIn'de Paylaş">
                                     <svg viewBox="0 0 24 24" fill="currentColor">
                                         <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z" />
                                     </svg>
                                 </button>
-                                <button className="share-btn copy" onClick={copyToClipboard} title="Linki Kopyala">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
-                                        <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" />
-                                    </svg>
+                                <button className={`share-btn copy ${isCopied ? 'copied' : ''}`} onClick={handleCopyLink} title="Linki Kopyala">
+                                    {isCopied ? (
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                    ) : (
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                                            <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" />
+                                        </svg>
+                                    )}
                                 </button>
                             </div>
                         </div>

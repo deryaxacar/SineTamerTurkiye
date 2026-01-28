@@ -957,6 +957,11 @@
 
 .share-btn.copy {
     background: var(--text-light);
+    transition: background-color 0.3s ease;
+}
+
+.share-btn.copy.copied {
+    background: #10B981;
 }
 
 .related-posts {
