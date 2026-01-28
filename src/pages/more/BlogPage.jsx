@@ -172,8 +172,8 @@ const BlogPage = () => {
                             {/* <button className="pagination-btn">2</button>
                             <button className="pagination-btn">3</button>
                             <button className="pagination-btn">4</button>
-                            <button className="pagination-btn">5</button>
-                            <button className="pagination-btn next">
+                            <button className="pagination-btn">5</button> */}
+                            {/* <button className="pagination-btn next">
                                 Sonraki
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                     <path d="M9 18l6-6-6-6" />
