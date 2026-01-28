@@ -10,30 +10,30 @@ const InstallationPages = () => {
     ];
 
     const installationGuides = [
-        { title: 'Bölünmüş Faz 120/240 volt üniteler', size: '44.8 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2023/12/1sx-f-install2013.pdf' },
-        { title: 'Üç Fazlı WYE/STAR bağlantılı üniteler: Tüm Voltajlar3Yx Kurulum Sayfası', size: '44.8 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2023/12/1sx-f-install2013.pdf' },
-        { title: 'Üç fazlı Delta bağlantılı üniteler: Tüm standart gerilimler', size: '272 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2023/12/3nx-installation2013.pdf' },
-        { title: 'ST-(F)SPT üniteleri, seri ünite tipindedir.', size: '71.3 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2023/12/st-spt-install-rev2013.pdf' },
-        { title: 'Tek fazlı üniteler, 120 veya 240 voltluk üniteler.', size: '90.2 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2023/12/1px-f-install2013.pdf' },
-        { title: 'Telefon PDB üniteleri', size: '154 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2023/12/s-pdbn-xx-v-20rev-20date-2001-18-06.pdf' },
-        { title: 'ST-TC üniteleri', size: '71.3 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2023/12/st-spt-install-rev2013.pdf' },
-        { title: 'ST-C(F)Din klima üniteleri', size: '71.3 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2023/12/st-spt-install-rev2013_1.pdf' },
-        { title: 'ST-Koaksiyel üniteler', size: '113 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2023/12/st-n-coax-20-20install-20instructions.pdf' },
-        { title: 'ST-SPT üniteleri', size: '71.3 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2023/12/st-spt-install-rev2013_1-1.pdf' },
-        { title: 'ST-CLCxxnx-B', size: '113 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2023/12/st-20clcxxnx-b-20install-20rev-20date-2003-22-2011.pdf' },
-        { title: 'ST-CLPxxnxDIN-B', size: '146 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2023/12/st-20clpxxnx-b-20install-20rev-20date-2001-14-2011.pdf' },
-        { title: 'ST-CLPxxnx-B', size: '146 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2023/12/st-20clpxxnx-b-20install-20rev-20date-2001-14-2011_1.pdf' },
-        { title: 'ST-S-TD-8-12-16', size: '103 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2023/12/st-20s-tdxx-8-12-16x-20install-20rev-20date-2012-23-2010.pdf' },
-        { title: 'ST-CxxDM4 - Veri Birimi', size: '147 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2023/12/ST-CxxDM4_Install_sheet.pdf' },
-        { title: 'Orta Gerilim, Üç Fazlı Delta, 7200 volt, 3 kablo + topraklama (üç faz ve topraklama): 3N7200', size: '65.4 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2023/12/3n7200-20med-20voltage-20model-20install-20rev-20date-2009-19-2008.pdf' },
-        { title: 'Orta Gerilim, Üç Fazlı Delta, 3 telli + topraklamalı Bastırıcılar (üç faz ve topraklama): 3Nx Orta Gerilim', size: '272 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2023/12/3nx-20med-20voltage-20models-20install-20rev-20date-2009-19-2008.pdf' },
-        { title: 'Sinetamer Seçenekleri Kurulum Talimatları', size: '157 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2023/12/stoptions-20install-20rev-20date-2008-02-2011.pdf' },
-        { title: 'DC Panel Kurulumu', size: '29.9 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2023/12/dc-panel-install-rev-7-29-2013-1.pdf' },
+        { title: 'Bölünmüş Faz 120/240 volt üniteler', size: '44.8 KB', path: '/setup-pages/1sx-f-install2013.pdf' },
+        { title: 'Üç Fazlı WYE/STAR bağlantılı üniteler: Tüm Voltajlar3Yx Kurulum Sayfası', size: '44.8 KB', path: '/setup-pages/1sx-f-install2013.pdf' },
+        { title: 'Üç fazlı Delta bağlantılı üniteler: Tüm standart gerilimler', size: '272 KB', path: '/setup-pages/3nx-installation2013.pdf' },
+        { title: 'ST-(F)SPT üniteleri, seri ünite tipindedir.', size: '71.3 KB', path: '/setup-pages/st-spt-install-rev2013.pdf' },
+        { title: 'Tek fazlı üniteler, 120 veya 240 voltluk üniteler.', size: '90.2 KB', path: '/setup-pages/1px-f-install2013.pdf' },
+        { title: 'Telefon PDB üniteleri', size: '154 KB', path: '/setup-pages/s-pdbn-xx-v-20rev-20date-2001-18-06.pdf' },
+        { title: 'ST-TC üniteleri', size: '71.3 KB', path: '/setup-pages/st-spt-install-rev2013.pdf' },
+        { title: 'ST-C(F)Din klima üniteleri', size: '71.3 KB', path: '/setup-pages/st-spt-install-rev2013_1.pdf' },
+        { title: 'ST-Koaksiyel üniteler', size: '113 KB', path: '/setup-pages/st-n-coax-20-20install-20instructions.pdf' },
+        { title: 'ST-SPT üniteleri', size: '71.3 KB', path: '/setup-pages/st-spt-install-rev2013_1-1.pdf' },
+        { title: 'ST-CLCxxnx-B', size: '113 KB', path: '/setup-pages/st-20clcxxnx-b-20install-20rev-20date-2003-22-2011.pdf' },
+        { title: 'ST-CLPxxnxDIN-B', size: '146 KB', path: '/setup-pages/st-20clpxxnx-b-20install-20rev-20date-2001-14-2011.pdf' },
+        { title: 'ST-CLPxxnx-B', size: '146 KB', path: '/setup-pages/st-20clpxxnx-b-20install-20rev-20date-2001-14-2011_1.pdf' },
+        { title: 'ST-S-TD-8-12-16', size: '103 KB', path: '/setup-pages/st-20s-tdxx-8-12-16x-20install-20rev-20date-2012-23-2010.pdf' },
+        { title: 'ST-CxxDM4 - Veri Birimi', size: '147 KB', path: '/setup-pages/ST-CxxDM4_Install_sheet.pdf' },
+        { title: 'Orta Gerilim, Üç Fazlı Delta, 7200 volt, 3 kablo + topraklama (üç faz ve topraklama): 3N7200', size: '65.4 KB', path: '/setup-pages/3n7200-20med-20voltage-20model-20install-20rev-20date-2009-19-2008.pdf' },
+        { title: 'Orta Gerilim, Üç Fazlı Delta, 3 telli + topraklamalı Bastırıcılar (üç faz ve topraklama): 3Nx Orta Gerilim', size: '272 KB', path: '/setup-pages/3nx-20med-20voltage-20models-20install-20rev-20date-2009-19-2008.pdf' },
+        { title: 'Sinetamer Seçenekleri Kurulum Talimatları', size: '157 KB', path: '/setup-pages/stoptions-20install-20rev-20date-2008-02-2011.pdf' },
+        { title: 'DC Panel Kurulumu', size: '29.9 KB', path: '/setup-pages/dc-panel-install-rev-7-29-2013-1.pdf' },
     ];
 
     const warrantyDocuments = [
-        { title: 'Genel Garanti Bilgi Formu Panel Üniteleri', size: '50.8 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2023/12/General-ST-warranty_2021-1.pdf' },
-        { title: 'Genel Garanti Bilgi Formu Panel Üniteleri - İspanyolca', size: '54.5 KB', path: 'https://www.ecsintl.com/wp-content/uploads/2023/12/General-ST-Warranty-Espanol_2021.pdf' },
+        { title: 'Genel Garanti Bilgi Formu Panel Üniteleri', size: '50.8 KB', path: '/setup-pages/General-ST-warranty_2021-1.pdf' },
+        { title: 'Genel Garanti Bilgi Formu Panel Üniteleri - İspanyolca', size: '54.5 KB', path: '/setup-pages/General-ST-Warranty-Espanol_2021.pdf' },
     ];
 
     return (
