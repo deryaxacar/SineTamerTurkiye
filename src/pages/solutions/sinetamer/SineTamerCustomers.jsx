@@ -1,4 +1,5 @@
 import Hero from '../../../components/Hero';
+import SEO from '../../../components/SEO';
 import '../SolutionCategory.css';
 
 const SineTamerCustomers = () => {
@@ -98,6 +99,16 @@ const SineTamerCustomers = () => {
 
     return (
         <div className="solution-category-page">
+            <SEO
+                title="SineTamer Müşterileri"
+                description="Dünya genelinde SineTamer teknolojisine güvenen global markalar ve referanslarımız."
+                url="/cozumler/sinetamer/sinetamer-musterileri"
+                breadcrumbs={[
+                    { name: 'Ana Sayfa', url: '/' },
+                    { name: 'Çözümler', url: '/#solutions' },
+                    { name: 'SineTamer Müşterileri' }
+                ]}
+            />
             <Hero
                 title="SineTamer Müşterileri"
                 description="Dünya genelinde güvenilir güç koruma çözümleri ile hizmet verdiğimiz prestijli müşterilerimiz."

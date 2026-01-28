@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import YouTubeFacade from '../../components/YouTubeFacade';
+import SEO from '../../components/SEO';
 import { shareOnTwitter, shareOnFacebook, shareOnLinkedIn } from '../../utils/shareHelper';
 import { copyToClipboard } from '../../utils/clipboardHelper';
 import './MoreCategory.css';
@@ -257,6 +258,17 @@ const BlogDetail = () => {
 
     return (
         <div className="blog-detail-page">
+            <SEO
+                title={post.title}
+                description={post.excerpt}
+                image={post.image}
+                url={`/daha-fazlasi/blog/${post.id}`}
+                type="article"
+                article={{
+                    datePublished: post.date,
+                    author: post.author
+                }}
+            />
             {/* Hero Section */}
             <section className="blog-detail-hero" style={{ backgroundImage: `url(${post.image})` }}>
                 <div className="blog-detail-hero-overlay"></div>

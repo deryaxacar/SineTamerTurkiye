@@ -1,5 +1,6 @@
 import Hero from "../../components/Hero";
 import YouTubeFacade from "../../components/YouTubeFacade";
+import SEO from "../../components/SEO";
 import "./MoreCategory.css";
 import "../solutions/SolutionCategory.css";
 
@@ -26,6 +27,11 @@ const TechTopics = () => {
 
     return (
         <div className="more-category-page">
+            <SEO
+                title="Teknoloji Konuları"
+                description="Aşırı gerilim koruma ve güç kalitesi hakkında eğitici videolar. SineTamer teknik konularını öğrenin."
+                url="/daha-fazlasi/teknoloji-konulari"
+            />
             <Hero
                 title="Teknoloji Konuları"
                 description="Enerji teknolojileri hakkında eğitici videolarla bilginizi artırın"

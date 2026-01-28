@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Hero from '../../components/Hero';
+import SEO from '../../components/SEO';
 import './Products.css';
 
 const Product3 = () => {
@@ -36,6 +37,18 @@ const Product3 = () => {
 
     return (
         <div className="product-detail-page">
+            <SEO
+                title={product.title}
+                description={product.description}
+                url="/urunler/dc"
+                type="product"
+                product={{ category: 'DC Koruma' }}
+                breadcrumbs={[
+                    { name: 'Ana Sayfa', url: '/' },
+                    { name: 'Ürünler', url: '/#products' },
+                    { name: product.title }
+                ]}
+            />
             <Hero
                 title={product.title}
                 description={product.description}

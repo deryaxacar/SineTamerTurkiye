@@ -1,6 +1,7 @@
 // BrochuresPage.jsx
 import { Link } from 'react-router-dom';
 import Hero from '../../components/Hero';
+import SEO from '../../components/SEO';
 import { downloadFile } from '../../utils/downloadHelper';
 import './MoreCategory.css';
 import '../solutions/SolutionCategory.css';
@@ -101,6 +102,11 @@ const BrochuresPage = () => {
 
     return (
         <div className="more-category-page">
+            <SEO
+                title="Broşürler"
+                description="SineTamer aşırı gerilim koruma ürünleri hakkında detaylı bilgi için broşürlerimizi indirin. PDF katalog ve dokümanlar."
+                url="/daha-fazlasi/brosurler"
+            />
             <Hero
                 title="Broşürler"
                 description="Ürün ve hizmetlerimiz hakkında detaylı bilgi için broşürlerimizi indirin"

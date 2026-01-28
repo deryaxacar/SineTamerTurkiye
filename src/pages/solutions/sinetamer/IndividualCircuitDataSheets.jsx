@@ -1,5 +1,5 @@
-import React from 'react';
 import Hero from '../../../components/Hero';
+import SEO from '../../../components/SEO';
 import { downloadFile } from '../../../utils/downloadHelper';
 import '../SolutionCategory.css';
 
@@ -36,6 +36,17 @@ const IndividualCircuitDataSheets = () => {
 
     return (
         <div className="solution-category-page">
+            <SEO
+                title="Bireysel Devre Üniteleri Veri Sayfası"
+                description="SineTamer bireysel devre koruma üniteleri teknik dökümanları ve PDF veri sayfaları."
+                url="/cozumler/sinetamer/bireysel-devre-veri-sayfalari"
+                breadcrumbs={[
+                    { name: 'Ana Sayfa', url: '/' },
+                    { name: 'Çözümler', url: '/#solutions' },
+                    { name: 'Bireysel Devre Üniteleri', url: '/cozumler/sinetamer/bireysel-devre-uniteleri' },
+                    { name: 'Veri Sayfası' }
+                ]}
+            />
             <Hero
                 title="Bireysel Devre Üniteleri Veri Sayfası"
                 description="Bireysel devre üniteleri için teknik veri sayfaları ve ürün özellikleri"

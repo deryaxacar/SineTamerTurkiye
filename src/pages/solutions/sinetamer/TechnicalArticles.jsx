@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Hero from '../../../components/Hero';
+import SEO from '../../../components/SEO';
 import { downloadFile } from '../../../utils/downloadHelper';
 import '../../more/MoreCategory.css';
 import '../SolutionCategory.css';
@@ -272,6 +273,16 @@ const TechnicalArticles = () => {
 
     return (
         <div className="more-category-page">
+            <SEO
+                title="Teknik Makaleler"
+                description="Güç kalitesi, aşırı gerilim koruma ve endüstriyel SPD teknolojileri üzerine derinlemesine teknik makaleler ve saha tecrübeleri."
+                url="/cozumler/teknik-makaleler"
+                breadcrumbs={[
+                    { name: 'Ana Sayfa', url: '/' },
+                    { name: 'Çözümler', url: '/#solutions' },
+                    { name: 'Teknik Makaleler' }
+                ]}
+            />
             <Hero
                 title="Teknik Makaleler"
                 description="Güç kalitesi ve aşırı gerilim koruma üzerine dökümanlarımız"

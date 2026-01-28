@@ -1,5 +1,5 @@
-// InstallationPages.jsx
 import Hero from '../../../components/Hero';
+import SEO from '../../../components/SEO';
 import { downloadFile } from '../../../utils/downloadHelper';
 import '../SolutionCategory.css';
 
@@ -39,6 +39,16 @@ const InstallationPages = () => {
 
     return (
         <div className="solution-category-page">
+            <SEO
+                title="Kurulum Sayfaları ve Kılavuzlar"
+                description="SineTamer ürünleri için profesyonel kurulum kılavuzları, şemalar ve garanti belgeleri."
+                url="/cozumler/sinetamer/kurulum-sayfalari"
+                breadcrumbs={[
+                    { name: 'Ana Sayfa', url: '/' },
+                    { name: 'Çözümler', url: '/#solutions' },
+                    { name: 'Kurulum Sayfaları' }
+                ]}
+            />
             <Hero
                 title="Kurulum Sayfaları"
                 description="SineTamer ürünlerinin profesyonel kurulum kılavuzları ve garanti belgeleri"

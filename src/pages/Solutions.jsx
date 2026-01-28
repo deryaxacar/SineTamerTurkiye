@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
+import SEO from '../components/SEO';
 import VideoSection from '../components/VideoSection';
 import './Solutions.css';
 import './solutions/SolutionCategory.css';
@@ -126,6 +127,15 @@ const Solutions = () => {
 
     return (
         <div className="solutions-page">
+            <SEO
+                title="Çözümlerimiz"
+                description="Yenilikçi enerji çözümleri, aşırı gerilim koruma, güç kalitesi analizi ve kesintisiz güç sistemleri."
+                url="/cozumler"
+                breadcrumbs={[
+                    { name: 'Ana Sayfa', url: '/' },
+                    { name: 'Çözümler' }
+                ]}
+            />
             <Hero
                 title="Çözümlerimiz"
                 description="İhtiyaçlarınıza özel, yenilikçi ve sürdürülebilir enerji çözümleri"

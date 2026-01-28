@@ -1,0 +1,29 @@
+# SineTamer Türkiye - Robots.txt
+# https://sinetamer.com.tr
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://sinetamer.com.tr/sitemap.xml
+
+# Crawl delay (saniye)
+Crawl-delay: 1
+
+# Bloke edilecek dizinler
+Disallow: /api/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /*.json$
+Disallow: /*.map$
+
+# Google Bot özel izinler
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing Bot özel izinler
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1

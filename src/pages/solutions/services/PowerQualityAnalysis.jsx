@@ -1,4 +1,5 @@
 import Hero from '../../../components/Hero';
+import SEO from '../../../components/SEO';
 import '../SolutionCategory.css';
 
 const PowerQualityAnalysis = () => {
@@ -10,6 +11,16 @@ const PowerQualityAnalysis = () => {
 
     return (
         <div className="solution-category-page pqa-page">
+            <SEO
+                title="Güç Kalitesi Analizi"
+                description="Tesisinizin enerji altyapısını optimize edin, verimliliği artırın ve maliyetleri düşürün. Profesyonel analiz ve izleme hizmetleri."
+                url="/cozumler/hizmetler/guc-kalitesi-analizi"
+                breadcrumbs={[
+                    { name: 'Ana Sayfa', url: '/' },
+                    { name: 'Çözümler', url: '/#solutions' },
+                    { name: 'Güç Kalitesi Analizi' }
+                ]}
+            />
             <Hero
                 title="Güç Kalitesi Analizi"
                 description="Tesisinizin enerji altyapısını optimize edin, verimliliği artırın ve maliyetleri düşürün."

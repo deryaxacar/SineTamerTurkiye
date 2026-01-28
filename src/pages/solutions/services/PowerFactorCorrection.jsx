@@ -1,4 +1,5 @@
 import Hero from '../../../components/Hero';
+import SEO from '../../../components/SEO';
 import '../SolutionCategory.css';
 
 const img1 = "/images/solutions/powerfactor1.jpg";
@@ -16,6 +17,16 @@ const PowerFactorCorrection = () => {
 
     return (
         <div className="solution-category-page pfc-page">
+            <SEO
+                title="Güç Faktörü Düzeltme"
+                description="Enerji verimliliğinizi artırın, reaktif güç cezalarından kurtulun ve tesis kapasitenizi optimize edin. Güç Faktörü Düzeltme (PFC) çözümleri."
+                url="/cozumler/hizmetler/guc-faktoru-duzeltme"
+                breadcrumbs={[
+                    { name: 'Ana Sayfa', url: '/' },
+                    { name: 'Çözümler', url: '/#solutions' },
+                    { name: 'Güç Faktörü Düzeltme' }
+                ]}
+            />
             <Hero
                 title="Güç Faktörü Düzeltme"
                 description="Enerji verimliliğinizi artırın, reaktif güç cezalarından kurtulun ve tesis kapasitenizi optimize edin."

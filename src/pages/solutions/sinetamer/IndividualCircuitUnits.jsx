@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '../../../components/Hero';
+import SEO from '../../../components/SEO';
 import '../SolutionCategory.css';
 
 const IndividualCircuitUnits = () => {
@@ -55,6 +56,16 @@ const IndividualCircuitUnits = () => {
 
     return (
         <div className="solution-category-page">
+            <SEO
+                title="Bireysel Devre Üniteleri"
+                description="Tek fazlı devrelerde hassas ekipman koruması için SineTamer SPT serisi çözümler. Sinüs dalga takibi ve filtreleme."
+                url="/cozumler/sinetamer/bireysel-devre-uniteleri"
+                breadcrumbs={[
+                    { name: 'Ana Sayfa', url: '/' },
+                    { name: 'Çözümler', url: '/#solutions' },
+                    { name: 'Bireysel Devre Üniteleri' }
+                ]}
+            />
             <Hero
                 title="Bireysel Devre Üniteleri"
                 description="Hassas ekipmanlarınızın bireysel devre seviyesinde en üst düzey korunması."

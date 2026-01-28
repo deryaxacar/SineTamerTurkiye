@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Hero from '../../../components/Hero';
+import SEO from '../../../components/SEO';
 import '../SolutionCategory.css';
 
 const SurgeProtectionDevice = () => {
@@ -82,6 +83,16 @@ const SurgeProtectionDevice = () => {
 
     return (
         <div className="solution-category-page">
+            <SEO
+                title="Aşırı Gerilim Koruma Cihazı (SPD)"
+                description="SineTamer 4. Nesil teknolojiye sahip mikroişlemci tabanlı aşırı gerilim koruma sistemleri. Endüstriyel SPD çözümleri."
+                url="/cozumler/sinetamer/asiri-gerilim-koruma-cihazi"
+                breadcrumbs={[
+                    { name: 'Ana Sayfa', url: '/' },
+                    { name: 'Çözümler', url: '/#solutions' },
+                    { name: 'Aşırı Gerilim Koruma Cihazı' }
+                ]}
+            />
             <Hero
                 title="Aşırı Gerilim Koruma Cihazı"
                 description=""

@@ -1,4 +1,5 @@
 import Hero from '../../../components/Hero';
+import SEO from '../../../components/SEO';
 import '../SolutionCategory.css';
 
 const ElevatorSurgeProtection = () => {
@@ -10,6 +11,16 @@ const ElevatorSurgeProtection = () => {
 
     return (
         <div className="solution-category-page">
+            <SEO
+                title="Asansör Aşırı Gerilim Koruması"
+                description="Asansör sistemlerinizi, VFD sürücüleri ve hassas elektroniği SineTamer ile ani voltaj yükselmelerine karşı proaktif olarak koruyun."
+                url="/cozumler/sinetamer/asansor-asiri-gerilim-korumasi"
+                breadcrumbs={[
+                    { name: 'Ana Sayfa', url: '/' },
+                    { name: 'Çözümler', url: '/#solutions' },
+                    { name: 'Asansör Koruma' }
+                ]}
+            />
             <Hero
                 title="Asansör Aşırı Gerilim Koruması"
                 description="Asansör sistemlerinizi ve elektronik bileşenlerinizi aşırı gerilim dalgalanmalarına karşı SineTamer teknolojisi ile güvence altına alın."

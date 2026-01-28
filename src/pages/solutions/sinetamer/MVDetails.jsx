@@ -1,6 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '../../../components/Hero';
+import SEO from '../../../components/SEO';
 import Footer from '../../../components/Footer';
 import MediumVoltageDetails from '../../../components/solutions/MediumVoltageDetails';
 import '../SolutionCategory.css';
@@ -22,6 +22,17 @@ const MVDetails = () => {
 
     return (
         <div className="solution-category-page">
+            <SEO
+                title="Orta Gerilim Üniteleri Detayları"
+                description="SineTamer Orta Gerilim (MV) üniteleri teknik özellikleri, PDF broşürleri ve detaylı koruma verileri."
+                url="/cozumler/sinetamer/mv-detaylari"
+                breadcrumbs={[
+                    { name: 'Ana Sayfa', url: '/' },
+                    { name: 'Çözümler', url: '/#solutions' },
+                    { name: 'Orta Gerilim Üniteleri', url: '/cozumler/sinetamer/orta-gerilim-uniteleri' },
+                    { name: 'MV Detayları' }
+                ]}
+            />
             <Hero
                 title="Orta Gerilim Üniteleri Detayları"
                 description="SineTamer Orta Gerilim Üniteleri Ve Detaylı Teknik Dokümantasyonlar"

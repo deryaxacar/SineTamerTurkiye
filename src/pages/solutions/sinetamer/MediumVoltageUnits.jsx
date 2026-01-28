@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import Navbar from '../../../components/Navbar';
 import Hero from '../../../components/Hero';
+import SEO from '../../../components/SEO';
 import MediumVoltageDetails from '../../../components/solutions/MediumVoltageDetails';
 import '../SolutionCategory.css';
 
@@ -21,6 +22,16 @@ const MediumVoltageUnits = () => {
 
     return (
         <div className="solution-category-page">
+            <SEO
+                title="Orta Gerilim Üniteleri"
+                description="SineTamer Orta Gerilim (MV) aşırı gerilim koruma çözümleri. ST-CMV-AC ve diğer orta gerilim koruma sistemleri."
+                url="/cozumler/sinetamer/orta-gerilim-uniteleri"
+                breadcrumbs={[
+                    { name: 'Ana Sayfa', url: '/' },
+                    { name: 'Çözümler', url: '/#solutions' },
+                    { name: 'Orta Gerilim Üniteleri' }
+                ]}
+            />
             <Hero
                 title="Orta Gerilim Üniteleri"
                 description="SineTamer Orta Gerilim Üniteleri Ve Detayları"

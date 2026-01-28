@@ -1,4 +1,5 @@
 import Hero from '../../../components/Hero';
+import SEO from '../../../components/SEO';
 import '../SolutionCategory.css';
 
 const TurnkeyTechSolutions = () => {
@@ -10,6 +11,16 @@ const TurnkeyTechSolutions = () => {
 
     return (
         <div className="solution-category-page">
+            <SEO
+                title="Anahtar Teslimi Teknoloji Çözümleri"
+                description="Karmaşık altyapı yükseltmeleri, yenilemeleri ve konsolidasyonları için ECS anahtar teslim teknoloji çözümleri."
+                url="/cozumler/hizmetler/anahtar-teslimi-teknoloji-cozumleri"
+                breadcrumbs={[
+                    { name: 'Ana Sayfa', url: '/' },
+                    { name: 'Çözümler', url: '/#solutions' },
+                    { name: 'Anahtar Teslimi Çözümler' }
+                ]}
+            />
             <Hero
                 title="Anahtar Teslimi Teknoloji Çözümleri"
                 backgroundImage="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920"

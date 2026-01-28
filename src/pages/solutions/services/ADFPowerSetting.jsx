@@ -1,4 +1,5 @@
 import Hero from '../../../components/Hero';
+import SEO from '../../../components/SEO';
 import '../SolutionCategory.css';
 
 const img1 = "/images/solutions/adfpower1.jpg";
@@ -13,6 +14,16 @@ const ADFPowerSetting = () => {
 
     return (
         <div className="solution-category-page adf-page">
+            <SEO
+                title="ADF Güç Ayarı"
+                description="Aktif Dinamik Filtreleme (ADF) teknolojisi ile harmonik bozulmaları ve voltaj dalgalanmalarını ortadan kaldırın. Geleceğin güç anlayışı."
+                url="/cozumler/sinetamer/adf-guc-ayari"
+                breadcrumbs={[
+                    { name: 'Ana Sayfa', url: '/' },
+                    { name: 'Çözümler', url: '/#solutions' },
+                    { name: 'ADF Güç Ayarı' }
+                ]}
+            />
             <Hero
                 title="ADF Güç Ayarı"
                 description="ADF Güç Ayarı – geleceğin güç anlayışı!"

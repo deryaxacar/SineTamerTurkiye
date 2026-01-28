@@ -1,4 +1,5 @@
 import Hero from '../../../components/Hero';
+import SEO from '../../../components/SEO';
 import '../SolutionCategory.css';
 
 const AdvantageUnits = () => {
@@ -104,6 +105,16 @@ const AdvantageUnits = () => {
 
     return (
         <div className="solution-category-page">
+            <SEO
+                title="Avantaj Üniteleri"
+                description="SineTamer Avantaj serisi susturucular. Gerçek 10 modlu özel bileşenler ile üstün güç koruma ve performans çözümleri."
+                url="/cozumler/sinetamer/avantaj-uniteleri"
+                breadcrumbs={[
+                    { name: 'Ana Sayfa', url: '/' },
+                    { name: 'Çözümler', url: '/#solutions' },
+                    { name: 'Avantaj Üniteleri' }
+                ]}
+            />
             <Hero
                 title="SineTamer Avantaj Üniteleri"
                 description="SineTamer serisi susturucuların en üst düzeyi. Gerçek 10 modlu özel bileşenler ile üstün koruma ve performans."

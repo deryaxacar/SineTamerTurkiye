@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Hero from '../../components/Hero';
+import SEO from '../../components/SEO';
 import './MoreCategory.css';
 import '../solutions/SolutionCategory.css';
 
@@ -105,6 +106,11 @@ const BlogPage = () => {
 
     return (
         <div className="more-category-page">
+            <SEO
+                title="Blog"
+                description="Enerji sektöründen güncel haberler, aşırı gerilim koruma ipuçları ve teknik rehberler. SineTamer blog yazılarını keşfedin."
+                url="/daha-fazlasi/blog"
+            />
             <Hero
                 title="Blog"
                 description="Enerji dünyasından haberler, ipuçları ve rehberler"

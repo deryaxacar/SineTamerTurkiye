@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Hero from '../../../components/Hero';
+import SEO from '../../../components/SEO';
 import '../SolutionCategory.css';
 
 const DataTelecomUnits = () => {
@@ -41,6 +42,16 @@ const DataTelecomUnits = () => {
 
     return (
         <div className="solution-category-page">
+            <SEO
+                title="Veri ve Telekom Üniteleri"
+                description="Hassas veri ve telekomünikasyon ekipmanları için SineTamer aşırı gerilim koruma çözümleri. Cat6, RJ45 ve koaksiyel koruma."
+                url="/cozumler/sinetamer/veri-telekom-uniteleri"
+                breadcrumbs={[
+                    { name: 'Ana Sayfa', url: '/' },
+                    { name: 'Çözümler', url: '/#solutions' },
+                    { name: 'Veri/Telekom Üniteleri' }
+                ]}
+            />
             <Hero
                 title="Veri / Telekom Üniteleri"
                 backgroundImage="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1920"

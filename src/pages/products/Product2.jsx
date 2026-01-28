@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Hero from '../../components/Hero';
+import SEO from '../../components/SEO';
 import './Products.css';
 
 const Product2 = () => {
@@ -87,6 +88,18 @@ Bağımsız darbe bastırma cihazı olarak tasarlanan ST-SPT, harici muhafaza ge
 
     return (
         <div className="product-detail-page">
+            <SEO
+                title={product.title}
+                description={product.description}
+                url="/urunler/uc-faz"
+                type="product"
+                product={{ category: 'Alçak Gerilim Koruma' }}
+                breadcrumbs={[
+                    { name: 'Ana Sayfa', url: '/' },
+                    { name: 'Ürünler', url: '/#products' },
+                    { name: product.title }
+                ]}
+            />
             <Hero
                 title={product.title}
                 description={product.description}

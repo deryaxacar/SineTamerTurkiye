@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 const Home = () => {
     const solutions = [
@@ -73,6 +74,11 @@ const Home = () => {
 
     return (
         <div className="home">
+            <SEO
+                title="SineTamer Türkiye"
+                description="Aşırı gerilim koruma ve güç kalitesi çözümlerinde Türkiye'nin lider markası. SineTamer ile elektrik sisteminizi koruyun, enerji verimliliğinizi artırın."
+                url="/"
+            />
             {/* Hero Section */}
             <section className="hero">
                 <div className="hero-background">

@@ -1,4 +1,5 @@
 import Hero from '../../../components/Hero';
+import SEO from '../../../components/SEO';
 import '../SolutionCategory.css';
 
 const LARMUnits = () => {
@@ -10,6 +11,16 @@ const LARMUnits = () => {
 
     return (
         <div className="solution-category-page">
+            <SEO
+                title="LA ve RM Üniteleri"
+                description="SineTamer LA ve RM serisi güç koruma çözümleri. Dahili akım ve termal sigortalı, UL94V sertifikalı SPD üniteleri."
+                url="/cozumler/sinetamer/la-rm-uniteleri"
+                breadcrumbs={[
+                    { name: 'Ana Sayfa', url: '/' },
+                    { name: 'Çözümler', url: '/#solutions' },
+                    { name: 'LA & RM Üniteleri' }
+                ]}
+            />
             <Hero
                 title="LA & RM Üniteleri"
                 description="SineTamer LA ve RM serisi güç koruma çözümleri."

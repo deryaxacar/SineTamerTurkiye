@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Hero from "../../components/Hero";
+import SEO from "../../components/SEO";
 import "./MoreCategory.css";
 import "../solutions/SolutionCategory.css";
 
@@ -96,6 +97,16 @@ const VideosPage = () => {
 
     return (
         <div className="more-category-page">
+            <SEO
+                title="Videolar"
+                description="SineTamer teknolojisi, kaskad koruma ve güç kalitesi testleri hakkında bilgilendirici videolar."
+                url="/daha-fazlasi/videolar"
+                breadcrumbs={[
+                    { name: 'Ana Sayfa', url: '/' },
+                    { name: 'Daha Fazlası', url: '/daha-fazlasi' },
+                    { name: 'Videolar' }
+                ]}
+            />
             <Hero
                 title="Videolar"
                 description="Youtube videolarımızın detaylı bilgilerini burada bulabilirsiniz."

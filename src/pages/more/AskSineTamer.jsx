@@ -1,5 +1,6 @@
 import Hero from "../../components/Hero";
 import YouTubeFacade from "../../components/YouTubeFacade";
+import SEO from "../../components/SEO";
 import "./MoreCategory.css";
 import "../solutions/SolutionCategory.css";
 
@@ -36,6 +37,16 @@ const AskSineTamer = () => {
 
     return (
         <div className="more-category-page">
+            <SEO
+                title="SineTamer'a Sorun"
+                description="Aşırı gerilim koruma ve güç kalitesi hakkında sıkça sorulan sorular ve eğitici videolar."
+                url="/daha-fazlasi/sinetamer-a-sorun"
+                breadcrumbs={[
+                    { name: 'Ana Sayfa', url: '/' },
+                    { name: 'Daha Fazlası', url: '/daha-fazlasi' },
+                    { name: 'SineTamer\'a Sorun' }
+                ]}
+            />
             <Hero
                 title="SineTamer'a Sorun"
                 description="Sıkça Merak Edilen konuları Sizin İçin Topladık"
