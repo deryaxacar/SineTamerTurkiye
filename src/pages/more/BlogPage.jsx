@@ -6,7 +6,7 @@ import '../solutions/SolutionCategory.css';
 const BlogPage = () => {
     const breadcrumbItems = [
         { label: 'Ana Sayfa', path: '/' },
-        { label: 'Daha Fazlası', path: '/daha-fazlasi' },
+        { label: 'Daha Fazlası' },
         { label: 'Blog' }
     ];
 
@@ -116,8 +116,7 @@ const BlogPage = () => {
             <section className="more-content-section">
                 <div className="content-container" style={{ maxWidth: '1400px' }}>
                     <div className="content-header">
-                        <h2>Son Yazılar</h2>
-                        <p>Enerji sektöründeki gelişmeleri takip edin</p>
+                        <h2>Enerji sektöründeki gelişmeleri takip edin</h2>
                     </div>
 
                     <div className="blog-grid">

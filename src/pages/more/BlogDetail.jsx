@@ -1,4 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
+import YouTubeFacade from '../../components/YouTubeFacade';
 import './MoreCategory.css';
 
 const BlogDetail = () => {
@@ -56,7 +57,7 @@ const BlogDetail = () => {
             content: `
                 <h2>Geçici dalgalanmalar kârınızı azaltır.</h2>
                 <figure class="article-image">
-                    <img src="/blog-images/Transient-Surges.png"/>
+                    <img src="/blog-images/Transient-Surges.png" loading="lazy"/>
                 </figure>
                 <p>Geçici voltaj yükselmeleri, yalnızca birkaç mikrosaniye süren ve genellikle göz ardı edilen veya zararsız kabul edilen kısa süreli aşırı voltaj artışlarını ifade eder. Bununla birlikte, bu voltaj yükselmeleri elektronik cihazlarınız için son derece zararlı olabilir ve uzun vadeli kârınızı azaltabilir. Bu yükselmelerin nedenlerinden bazıları elektrik şebekesi anahtarlaması, yıldırım çarpması veya arızalı bir transformatör veya iletim hattıdır. Bu yükselmeler aşırı yüklenmeye veya kısa devreye neden olabilir ve zamanla cihazlarınızın performansını düşürebilir.</p>
             
@@ -92,22 +93,13 @@ const BlogDetail = () => {
             excerpt: 'Harmonikleriniz Var mı? Daha fazla Teknoloji Konusu için buraya tıklayın!',
             date: '2 Ocak 2026',
             author: 'bricar77',
+            youtubeId: 'TdKHF4Qilrw',
             content: `
                 <h2>Harmonikleriniz var mı?</h2>
                 <p>Ama Gerçekten Öyle mi?</p>
-                <figure class="article-image">
-                    <div class="video-embed">
-                        <iframe
-                            src="https://www.youtube.com/embed/TdKHF4Qilrw"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen
-                        ></iframe>
-                    </div>
-                </figure>
+                <div class="youtube-placeholder"></div>
                 <p style="margin-top: 28px;">
-                    <a href="https://www.youtube.com/c/sinetamer" class="read-more-link" target="_blank" rel="noopener noreferrer">Daha Fazla içerik</a>
+                    <a href="https://www.youtube.com/c/sinetamer loading="lazy" class="read-more-link" target="_blank" rel="noopener noreferrer">Daha Fazla içerik</a>
                 </p>
             `
         },
@@ -138,22 +130,13 @@ const BlogDetail = () => {
             excerpt: 'Ana panelde sadece bir SPD ye ihtiyacım var... Değil mi? İzleyin ve görün...',
             date: '9 Ağustos 2022',
             author: 'bricar77',
+            youtubeId: 'iYQbjIG29xg',
             content: `
                 <h2>Bir tane yeterli mi?</h2>
                 <p>Ana panelde sadece bir SPD'ye ihtiyacım var... değil mi? İzleyin ve görün...</p>
-                <figure class="article-image">
-                    <div class="video-embed">
-                        <iframe
-                            src="https://www.youtube.com/embed/iYQbjIG29xg"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen
-                        ></iframe>
-                    </div>
-                </figure>
+                <div class="youtube-placeholder"></div>
                 <p style="margin-top: 28px;">
-                    <a href="https://www.youtube.com/c/sinetamer" class="read-more-link" target="_blank" rel="noopener noreferrer">Daha Fazla içerik</a>
+                    <a href="https://www.youtube.com/c/sinetamer loading="lazy" class="read-more-link" target="_blank" rel="noopener noreferrer">Daha Fazla içerik</a>
                 </p>
             `
         },
@@ -165,22 +148,13 @@ const BlogDetail = () => {
             excerpt: 'Genel kanı evet, gerekli! Can güvenliği ve hizmet sürekliliği sizin için önemliyse, bu Teknik Konuya göz atın! Daha fazla Teknik Konu için bizi ziyaret edin... Veya bugün bizimle iletişime geçin!',
             date: '16 Mayıs 2022',
             author: 'bricar77',
+            youtubeId: 'nmcNuGU4j6E',
             content: `
                 <h2>Asansörlerin aşırı gerilim korumasına ihtiyacı var mı?</h2>
                 <p>Genel kanı evet, haklılar! Can güvenliği ve hizmet sürekliliği önemliyse, bu Teknoloji Konusuna göz atın!</p>
-                <figure class="article-image">
-                    <div class="video-embed">
-                        <iframe
-                            src="https://www.youtube.com/embed/nmcNuGU4j6E"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen
-                        ></iframe>
-                    </div>
-                </figure>
+                <div class="youtube-placeholder"></div>
                 <p style="margin-top: 28px;">
-                    <a href="https://www.youtube.com/c/sinetamer" class="read-more-link" target="_blank" rel="noopener noreferrer">Daha Fazla içerik</a>
+                    <a href="https://www.youtube.com/c/sinetamer loading="lazy" class="read-more-link" target="_blank" rel="noopener noreferrer">Daha Fazla içerik</a>
                 </p>
             `
         },
@@ -192,21 +166,12 @@ const BlogDetail = () => {
             excerpt: 'En basit cevap şu: Her yerde aşırı gerilim korumasına ihtiyacınız var! Ama daha detaylı bilgi için bu haftaki Teknoloji Konusunu izleyin! Daha fazla Teknoloji Konusu için... Abone olun!',
             date: '9 Mayıs 2022',
             author: 'bricar77',
+            youtubeId: 'i80AMgvWhMI',
             content: `
                 <h2>SPD'lere nerede ihtiyacım var?</h2>
-                <figure class="article-image">
-                    <div class="video-embed">
-                        <iframe
-                            src="https://www.youtube.com/embed/i80AMgvWhMI"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen
-                        ></iframe>
-                    </div>
-                </figure>
+                <div class="youtube-placeholder"></div>
                 <p style="margin-top: 28px;">
-                    <a href="https://www.youtube.com/c/sinetamer" class="read-more-link" target="_blank" rel="noopener noreferrer">Daha Fazla içerik</a>
+                    <a href="https://www.youtube.com/c/sinetamer loading="lazy" class="read-more-link" target="_blank" rel="noopener noreferrer">Daha Fazla içerik</a>
                 </p>
             `
         },
@@ -240,22 +205,13 @@ const BlogDetail = () => {
             excerpt: 'Tesisiniz için en iyi veya doğru SPD yi(Ateş Basınçlı Dezenfeksiyon Cihazı) seçmek oldukça kafa karıştırıcı olabilir.Daha fazla bilgi için bu Teknik Konuya göz atın.',
             date: '4 Mart 2022',
             author: 'bricar77',
+            youtubeId: 'epTfzDsSnQk',
             content: `
                 <h2>Doğru SPD yi seçmek mi?</h2>
                 <p>Tesisiniz için en iyi veya doğru SPD'yi (Ateş Basınçlı Dezenfeksiyon Cihazı) seçmek oldukça kafa karıştırıcı olabilir. Daha fazla bilgi için bu Teknik Konuya göz atın.</p>
-                <figure class="article-image">
-                    <div class="video-embed">
-                        <iframe
-                            src="https://www.youtube.com/embed/epTfzDsSnQk?start=1"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen
-                        ></iframe>
-                    </div>
-                </figure>
+                <div class="youtube-placeholder"></div>
                 <p style="margin-top: 28px;">
-                    <a href="https://www.youtube.com/c/sinetamer" class="read-more-link" target="_blank" rel="noopener noreferrer">Daha Fazla içerik</a>
+                    <a href="https://www.youtube.com/c/sinetamer loading="lazy" class="read-more-link" target="_blank" rel="noopener noreferrer">Daha Fazla içerik</a>
                 </p>
             `
         }
@@ -319,7 +275,19 @@ const BlogDetail = () => {
             <section className="blog-detail-content">
                 <div className="container">
                     <article className="blog-article">
-                        <div className="article-body" dangerouslySetInnerHTML={{ __html: post.content }} />
+                        {post.youtubeId ? (
+                            <div className="article-body">
+                                <div dangerouslySetInnerHTML={{ __html: post.content.split('<div class="youtube-placeholder"></div>')[0] }} />
+                                <figure className="article-image">
+                                    <div className="youtube-embed">
+                                        <YouTubeFacade youtubeId={post.youtubeId} customThumbnail={post.customThumbnail} />
+                                    </div>
+                                </figure>
+                                <div dangerouslySetInnerHTML={{ __html: post.content.split('<div class="youtube-placeholder"></div>')[1] || '' }} />
+                            </div>
+                        ) : (
+                            <div className="article-body" dangerouslySetInnerHTML={{ __html: post.content }} />
+                        )}
 
                         {/* Share Section */}
                         <div className="share-section">

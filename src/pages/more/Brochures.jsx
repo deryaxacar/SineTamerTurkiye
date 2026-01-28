@@ -120,7 +120,7 @@ const BrochuresPage = () => {
                         {brochures.map((brochure) => (
                             <div className="brochure-card-new" key={brochure.id}>
                                 <div className="brochure-image-new">
-                                    <img src={brochure.image} alt={brochure.title} />
+                                    <img src={brochure.image} alt={brochure.title} loading='lazy' />
                                     <div
                                         className="brochure-overlay"
                                         style={{

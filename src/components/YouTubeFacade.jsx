@@ -3,7 +3,7 @@ import { useState } from 'react';
 // YouTube Facade Component - Tıklanana kadar sadece thumbnail gösterir
 const YouTubeFacade = ({ youtubeId, customThumbnail }) => {
     const [isLoaded, setIsLoaded] = useState(false);
-    const [quality, setQuality] = useState('maxresdefault');
+    const [quality, setQuality] = useState('hqdefault');
 
     // Quality'ye göre thumbnail URL'i oluştur
     const getThumbnailUrl = (q) => `https://img.youtube.com/vi/${youtubeId}/${q}.jpg`;
