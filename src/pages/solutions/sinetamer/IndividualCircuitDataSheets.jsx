@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from '../../../components/Hero';
+import { downloadFile } from '../../../utils/downloadHelper';
 import '../SolutionCategory.css';
 
 const IndividualCircuitDataSheets = () => {
@@ -83,6 +84,10 @@ const IndividualCircuitDataSheets = () => {
                                     className="pdf-download-btn-mv"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        downloadFile(pdf.path);
+                                    }}
                                 >
                                     İndir
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

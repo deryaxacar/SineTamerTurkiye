@@ -1,4 +1,5 @@
 import React from 'react';
+import { downloadFile } from '../../utils/downloadHelper';
 
 const MediumVoltageDetails = ({ pdfs }) => {
     return (
@@ -44,6 +45,10 @@ const MediumVoltageDetails = ({ pdfs }) => {
                                     className="pdf-download-btn-mv"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        downloadFile(pdf.path);
+                                    }}
                                 >
                                     İndir
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
