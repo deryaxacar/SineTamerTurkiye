@@ -68,7 +68,16 @@ const InstallationPages = () => {
                                     </svg>
                                 </div>
                                 <div className="pdf-info-mv">
-                                    <h3>{pdf.title}</h3>
+                                    <h3>
+                                        <a
+                                            href={pdf.path}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="pdf-title-link-mv"
+                                        >
+                                            {pdf.title}
+                                        </a>
+                                    </h3>
                                     <span>{pdf.size} (PDF)</span>
                                 </div>
                                 <a
@@ -111,7 +120,16 @@ const InstallationPages = () => {
                                     </svg>
                                 </div>
                                 <div className="pdf-info-mv">
-                                    <h3>{pdf.title}</h3>
+                                    <h3>
+                                        <a
+                                            href={pdf.path}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="pdf-title-link-mv"
+                                        >
+                                            {pdf.title}
+                                        </a>
+                                    </h3>
                                     <span>{pdf.size} (PDF)</span>
                                 </div>
                                 <a

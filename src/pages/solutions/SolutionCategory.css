@@ -2161,7 +2161,6 @@
 .pdf-info-mv h3 {
     font-size: 0.9rem;
     font-weight: 600;
-    color: var(--text-dark);
     margin-bottom: 0.5rem;
     line-height: 1.4;
     display: -webkit-box;
@@ -2170,6 +2169,19 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     min-height: 2.8em;
+}
+
+.pdf-title-link-mv {
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.pdf-title-link-mv:hover {
+    color: var(--primary);
+    text-decoration: underline;
+    text-decoration-color: #000;
+    text-decoration-thickness: 1px;
 }
 
 .pdf-info-mv span {
