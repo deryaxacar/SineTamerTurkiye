@@ -382,7 +382,7 @@
 }
 
 .brochure-title-link:hover {
-    color: var(--secondary);
+    color: var(--primary);
     text-decoration: underline;
     text-decoration-color: #000;
     text-decoration-thickness: 1px;
