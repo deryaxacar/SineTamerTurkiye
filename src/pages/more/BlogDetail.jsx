@@ -7,49 +7,68 @@ const BlogDetail = () => {
     const blogPosts = [
         {
             id: 1,
-            category: 'Kategorilenmemiş',
-            image: 'https://www.ecsintl.com/wp-content/uploads/2023/12/5500ECS.jpg',
-            title: 'Zamanı Durdurun: %68,9luk İş Durdurma Vergisinden Kurtulun',
-            excerpt: 'Tesisinizin çalışmasını sürdürün, KPI larınızı koruyun ve IEEE 1668 uyumluluğunda bir adım önde olun. Beklenmedik kesintilerin %68,9 u buradan başlar.Hazır mısınız? Üretim durduğunda, baskı anında başlar.Operatörler telaşlanır, süpervizörler gösterge panellerini kontrol eder ve yönetim her seferinde aynı soruyu sorar: Tekrar çalışmaya başlamamız ne kadar sürer? Göz önünde saklanan şeyler genellikle plansız kesintilerin bir numaralı nedenidir.',
-            date: '10 Eylül 2025',
-            author: 'Jeff Edwards',
+            category: 'Aşırı Gerilim Koruma',
+            image: '/blog-images/Panelboards.png',
+            title: 'Kuruluşunuzun Neden Aşırı Gerilim Korumasına İhtiyacı Var?',
+            excerpt: ' ',
+            date: '24 Mart 2021',
+            author: 'bricar77',
             content: `
-                <p>Tesisinizin sorunsuz çalışmasını sağlayın, performans göstergelerinizi koruyun ve
-IEEE 1668 uyumluluğunun önünde kalın.</p>        
+            <h2>Kuruluşunuzun Neden Aşırı Gerilim Korumasına İhtiyacı Var?</h2>
+                <p>Elektronik cihazlar, günümüz dünyasında her işletme veya kuruluş için olmazsa olmazdır. Ödemelerin işlenmesi, iletişim ve kayıt tutma gibi işletmenin işleyişini sağlayan temel işlevleri yerine getirmede önemli bir rol oynarlar. Birçok kuruluşun sıklıkla fark edemediği şey, bu elektronik ekipmanların doğru şekilde korunmasının, yerine getirdikleri işlevler kadar önemli olduğudur.</p>
                 <figure class="article-image">
-                    <img src="https://www.ecsintl.com/wp-content/uploads/2023/12/5500ECS.jpg" alt="Çatı üzerinde güneş panelleri" />
+                    <img src="/blog-images/Panelboards.png"/>
                 </figure>
-                <h2>Beklenmedik arıza sürelerinin %68,9'u buradan başlıyor
-. Hazır mısınız?</h2>
-                <p>Üretim durduğunda, baskı hemen başlar.
-Operatörler telaşlanır, süpervizörler gösterge panellerini kontrol eder ve
-yönetim her seferinde aynı soruyu sorar: "
-Tekrar çalışmaya başlamamız ne kadar sürer?" Göz önünde saklanan
-nedenler genellikle planlanmamış duruşların bir numaralı nedenidir.
-Son sektör verilerine göre, beklenmedik
-endüstriyel duruşların %68,9'u mekanik arızalar veya operatör hataları değil,
-gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
-                <p style="margin-top: 28px;">
-                    <a href="https://www.ecsintl.com/wp-content/uploads/2025/09/August-2025-English.pdf" class="read-more-link">Devamını Oku</a>
-                </p>
-            `
+                <h2>Elektrik dalgalanmalarının tehdidi</h2>
+                <p>Elektrik dalgalanmaları, kısa süreli ancak şiddeti değişen ani elektrik akımlarıdır. Dalgalanma ne kadar güçlü olursa, o kadar fazla hasara yol açabilir. Bu, daha küçük, fark edilmeyen dalgalanmaların tehdidini küçümsemek anlamına gelmez; çünkü bunların sık görülen etkileri zamanla yavaş yavaş biriken hasar verici bir etkiye neden olabilir. Bu daha zayıf ancak daha yaygın dalgalanmalar, elektronik cihazların güvenilirliğinin azalmasına ve kullanım ömrünün kısalmasına yol açabilir.</p>
+                <p>Tipik elektrik dalgalanması nedenleri:</p>
+                <ul>
+                    <li>Arızalı kablolama</li>
+                    <li>Elektrik şebekesindeki arızalar</li>
+                    <li>Elektrik aşırı yüklenmesi (tek bir devreden çok fazla güç çekilmesi)</li>
+                    <li>Devrilmiş elektrik hatları</li>
+                    <li>Elektrik Kesintisi</li>
+                    <li>Yıldırım çarpması</li>
+                </ul>
+                <p>Elektrik dalgalanmalarının neden olduğu hasar, büyüklüğünden bağımsız olarak, her kuruluş için zararlıdır. Bir işletme hizmetlerini sunmak için elektronik ekipmanına güveniyorsa, bu cihazlardaki hasar, iş aksamalarına ve kar kaybına yol açabilir. Donanım arızalarının,  işletme aksamalarının en yaygın nedeni olduğu söylenmektedir .</p>
+                <p>Elektronik sistem arızalarının sonuçlarının ciddiyeti, güvenlik ve can güvenliği sistemleri söz konusu olduğunda önemli ölçüde artmaktadır. Bu tür senaryolarda, yalnızca bireyin güvenliği değil, kuruluşun varlıkları da büyük bir risk altındadır. Ayrıca, para cezaları veya yasal yükümlülükler nedeniyle potansiyel mali sonuçlar açısından da artan bir risk söz konusudur.</p>
+                <h2>Aşırı gerilim koruma cihazları nasıl yardımcı olur?</h2>
+                <p>Aşırı gerilim koruma cihazları (SPD'ler), bir güç dalgalanması durumunda aşırı voltaj ve akımın büyük bir kısmını ortadan kaldırarak elektronik ekipmanları korur. SPD'ler, elektrikli cihazları hasardan korumak ve sonuç olarak kullanım ömrünü uzatmak için etkili bir önlemdir. SPD'lerin diğer bazı faydaları şunlardır:</p>
+                <ul>
+                    <li>Maliyet etkinliği yüksek. Aşırı gerilim  koruma cihazları (SPD'ler) uygun fiyatlı ve kurulumu kolaydır.</li>
+                    <li>Daha az sıklıkta bakım. Aşırı gerilim koruma cihazları  (SPD'ler), elektronik donanım ve ısıtma-soğutma sistemleri gibi sistemleri etkili bir şekilde koruyarak, sürekli bakım ihtiyacını azaltır.</li>
+                    <li>Tamiri Kolay.  SPD'ler gerektiğinde kolayca tamir edilebilir veya değiştirilebilir.</li>
+                    <li>Çalışma göstergeleri veya alarmlar.  Çalışma veya arıza durumunu gösteren yeşil veya kırmızı LED'ler veya güç kaybını veya arızalı bir aşırı gerilim koruma cihazını (SPD) gösteren alarm modülleri.</li>
+                </ul>
+                <h2>Sonuç olarak</h2>
+                <p>Aşırı gerilim koruma cihazları, işletmenizin faaliyet kesintisi riskini azaltarak, elektronik sistemleri koruyarak ve can güvenliğini sağlayarak kuruluşunuza yardımcı olur. Akıllı aşırı gerilim koruma cihazları, elektronik cihazlarınızı güvende tutmanın yanı sıra, işlevleri tehlikeye girdiğinde sizi anında bilgilendirir; bu da güvenilir bir güvenlik sistemi sunar.</p>
+                <p>Aşırı gerilim koruma cihazlarının önemi nedeniyle,  Enerji Kontrol Sistemleri,  her türlü kurumsal yapıya uyacak şekilde tasarlanmış, deneyimli üreticilerden geniş bir yelpazede yüksek kaliteli cihazlar sunmaktadır. Bu cihazlar,  aşırı gerilim bastırma  ve  yıldırım çarpmalarına karşı özel koruma için güvenilir çözümler sunmaktadır .</p>
+                `
         },
         {
             id: 2,
-            category: 'SPD',
+            category: 'Aşırı Gerilim Koruması',
             image: 'https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=1200',
-            title: 'Doğru SPD Montajı',
+            title: 'Geçici dalgalanmalar kârınızı azaltır.',
             excerpt: 'Kablo uzunluğu ve montaj uygulamaları, özellikle kademeli mimarilerde, aşırı gerilim koruma performansının görünmez kahramanları (veya sessiz sabotajcıları)dır. En gelişmiş frekans azaltıcı aşırı gerilim koruyucularının bile performansı, montaj hassas bir şekilde yapılmazsa ciddi şekilde tehlikeye girebilir. Makalenin tamamı için… ayrıntılı teknik analizimize göz atın!',
-            date: '27 Haziran 2025',
-            author: 'Jeff Edwards',
+            date: '17 Mart 2021',
+            author: 'bricar77',
             content: `
-                <p>Kesinti Süresi Azaltma | Güç Kalitesi | Aşırı Gerilim Koruması</p>
-                <h2>Doğru SPD Montajı</h2>
-                <p>Kablo uzunluğu ve montaj uygulamaları , özellikle kademeli mimaride , aşırı gerilim koruma performansının görünmez kahramanları (veya sessiz sabotajcıları) dır . En gelişmiş frekans azaltıcı aşırı gerilim koruyucularının bile performansı, montaj hassasiyetle yapılmazsa ciddi şekilde tehlikeye girebilir.</p>
-                <p style="margin-top: 28px;">
-                    <a href="https://www.ecsintl.com/wp-content/uploads/2025/06/ECS-Lead-Length-and-Installation-2025.pdf" class="read-more-link">Devamını Oku</a>
-                </p>
-            `
+                <h2>Geçici dalgalanmalar kârınızı azaltır.</h2>
+                <figure class="article-image">
+                    <img src="/blog-images/Transient-Surges.png"/>
+                </figure>
+                <p>Geçici voltaj yükselmeleri, yalnızca birkaç mikrosaniye süren ve genellikle göz ardı edilen veya zararsız kabul edilen kısa süreli aşırı voltaj artışlarını ifade eder. Bununla birlikte, bu voltaj yükselmeleri elektronik cihazlarınız için son derece zararlı olabilir ve uzun vadeli kârınızı azaltabilir. Bu yükselmelerin nedenlerinden bazıları elektrik şebekesi anahtarlaması, yıldırım çarpması veya arızalı bir transformatör veya iletim hattıdır. Bu yükselmeler aşırı yüklenmeye veya kısa devreye neden olabilir ve zamanla cihazlarınızın performansını düşürebilir.</p>
+            
+                <p>International Business Times'ın  belirttiğine göre, ABD diğer gelişmiş ülkelerden daha sık elektrik kesintisi yaşıyor.  Federal veriler , elektrik kesintilerinin Amerikan işletmelerine yılda 150 milyar dolara kadar mal olduğunu gösteriyor. Elektrik dalgalanmaları , ekipmanlarda  arızaya ve ciddi iş aksamasına neden olarak işletmenizi riske attığı için gelir kaybına yol açabilir.</p>
+                <p>Birçok kuruluş, yalnızca bir saatlik kesintinin 100.000 dolardan fazla maliyete yol açabileceğini ve uzun vadeli karlarını azaltabileceğini iddia ediyor. ITC  araştırması  ayrıca, 60 dakikalık bir kesintinin işletmeye 300.000 dolardan fazla maliyete neden olabileceğini belirterek, şirketlerin verimli altyapıya büyük ölçüde bağımlı olduğunu kanıtlıyor. Çoğu zaman, hasarlar onarılamaz ve çalışma kapasitenizi ciddi şekilde etkileyebilir. Geçici güç dalgalanmaları ayrıca şirketlerin kayıplarla başa çıkamamasına ve tamamen kapanmasına yol açabilir.</p>
+                <h2>İtibarın Zedelenmesi</h2>
+                <p>Müşterilerinizin ve iş ortaklarınızın güvenini kaybettikten sonra, onları geri kazanmak sadece maliyetli olmakla kalmaz, aynı zamanda piyasadaki güvenilirliğinizi de etkiler. Ürün ve hizmetlerinizi müşterilerinize, iş ortaklarınıza ve tedarikçilerinize zamanında teslim edemediğinizde, üretim duraksaması sizi dezavantajlı duruma düşürebilir.</p>
+                <p>İtibarınızın zedelenmesi, müşterilerin şirketiniz hakkındaki algısını değiştirdiği için satışlarınızı ve gelirlerinizi ciddi şekilde etkileyebilir. Bu durum, ürününüze olan talebin düşmesiyle birlikte elden çıkarılamayan stoklarınızın artmasına da yol açabilir. Piyasa verileri, birkaç dakikalık bir kesintinin bile şirket içi operasyonların durmasına neden olabileceğini göstermektedir.</p>
+                <h2>Çözümler</h2>
+                <p>İşletmenizi korurken verimliliğinizi de sürdürmek için voltaj dalgalanmalarından kaynaklanan hasarı azaltmak amacıyla aşırı gerilim koruyucu kullanarak proaktif önlemler almanızı öneririz. ECS, elektrik kesintisi veya kararma durumunda bilgisayarlarınızın ve veri ekipmanlarınızın korunmasını sağlayacaktır.</p>
+                <p>Ayrıca, maliyet tasarrufu sağlamak ve uzun vadeli kârınızı artırmak için bir enerji kontrol planı uygulamanıza yardımcı olacağız. Geçmişte, West Fraser Sawmills ve Muhimbili Ulusal Hastanesi gibi birçok şirketin arıza sürelerini başarıyla azaltmasına yardımcı olduk.</p>
+                `
         },
         {
             id: 3,
@@ -59,7 +78,7 @@ gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
             excerpt: '2030 ve 2050 hedefleri doğrultusunda Türkiye\'nin enerji dönüşüm yol haritası. Güneş, rüzgar ve hidrojen enerjisi yatırımları hakkında güncel gelişmeler...',
             date: '5 Ocak 2026',
             author: 'Jeff Edwards',
-            content: `  
+            content: `
                 <h2>Yanlış Sıfır Geçişleri Nedir?</h2>
                 <p>Yanlış sıfır geçişleri, kontrolörün bir sıfır geçiş olayı algıladığını düşündüğü, ancak aslında gerçek bir sıfır geçişine değil, geçici veya harmonik bozulmaya tepki verdiği durumlardır.</p>
                 <p>Kelepçeleme ile frekans zayıflama dalgalanma bastırma arasındaki farkları göz önünde bulundurduğumuzda, yanlış sıfır geçişleri, temel dalgalanma bastırmanın çarpıcı bir şekilde başarısız olduğu ve yüksek performanslı dalga formu izlemenin değerini kanıtladığı mükemmel bir örnek haline gelir. Makalenin tamamını okumak için tıklayın!</p>
@@ -95,29 +114,20 @@ gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
 
         {
             id: 5,
-            category: 'Güneş Paneli',
+            category: 'Verimlilik',
             image: 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=1200',
-            title: 'Güneş panelleriniz var mı?',
-            excerpt: 'Bu haftanın Teknoloji Konusu… Daha fazla Teknoloji Konusu için… YouTube Kanalımızı ziyaret edin!',
-            date: '23 Ağustos 2022',
+            title: 'Verimliliğinizi En Üst Düzeye Çıkarın!',
+            excerpt: 'Elektrik voltajındaki ani yükselmeler günlük çalışma faaliyetleriniz için can sıkıcı olabilir. ABD Enerji Bilgi Birliği\'ne(EIA) göre, 2018 yılında müşteriler ortalama altı saatlik elektrik kesintileri yaşadı.Elektrik voltajındaki ani yükselmeler, elektrikli ekipman ve sistemlerinizin hassas altyapısını etkileyebilir ve onları tamamen veya kısmen kullanılamaz hale getirebilir.NEMA tarafından yapılan bir ankete göre, yaklaşık % 41\'i',
+            date: '10 Mart 2021',
             author: 'bricar77',
             content: `
-                <h2>Güneş panelleriniz var mı?</h2>
-                <p>Bu haftanın Teknoloji Konusu…</p>
-                <figure class="article-image">
-                    <div class="video-embed">
-                        <iframe
-                            src="https://www.youtube.com/embed/VY73sum-Vqg"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen
-                        ></iframe>
-                    </div>
-                </figure>
-                <p style="margin-top: 28px;">
-                    <a href="https://www.youtube.com/c/sinetamer" class="read-more-link" target="_blank" rel="noopener noreferrer">Daha Fazla içerik</a>
-                </p>
+                <h2>Verimliliğinizi En Üst Düzeye Çıkarın!</h2>
+                <p>Elektrik voltajındaki ani yükselmeler, günlük çalışma faaliyetleriniz için büyük bir sorun olabilir. ABD Enerji Bilgi Birliği'ne (EIA) göre, 2018 yılında müşteriler ortalama altı saatlik elektrik kesintileri yaşamıştır. Elektrik voltajındaki ani yükselmeler, elektrikli ekipman ve sistemlerinizin hassas altyapısını etkileyebilir ve onları tamamen veya kısmen kullanılamaz hale getirebilir.  NEMA tarafından yapılan bir ankete  göre, elektrik voltajındaki ani yükselmeleri yaşayan kişilerin yaklaşık %41'i elektrikli ekipmanlarında kayıp veya arıza bildirmiştir. Bu nedenle, elektrik voltajındaki ani yükselmelerin faaliyetleriniz için yıkıcı olabileceği açıktır.</p>
+                <p>Peki bu konuda ne yapabiliriz? Cevap, aşırı gerilim koruma cihazları takmakta yatıyor.</p>
+                <h2>Aşırı Gerilim Koruma Cihazları Nelerdir?</h2>
+                <p>Aşırı gerilim koruma cihazları, elektrik sistemlerinin kablolarını, aksesuarlarını ve diğer elektrik tesisatlarını geçici gerilimlerden koruyan bileşenleridir. Bu cihazlar ayrıca bilgisayarlar, otomatik üretim sistemleri, asansörler ve tıbbi ekipmanlar gibi hassas elektronik ekipmanlara da bağlanabilir.</p>
+                <h2>Çözüm</h2>
+                <p>Geçici voltaj dalgalanmaları, elektrik sistemlerine ve cihazlarına ciddi zararlar verebilir ve bakım ve onarım nedeniyle kayıplara yol açabilir. Aşırı gerilim koruma cihazları, aşırı gerilimlerin zararlı etkilerini ortadan kaldırmada ve ekipman arızası olasılığını azaltmada hayati bir rol oynar. Bu nedenle, değerli eşyalarınızı korumak ve kararsız voltaj endişesinden kurtulmak için kaliteli aşırı gerilim koruma cihazlarının takılması önerilir.</p>
             `
         },
         {
@@ -130,7 +140,7 @@ gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
             author: 'bricar77',
             content: `
                 <h2>Bir tane yeterli mi?</h2>
-                <p>Ana panelde sadece bir SPD'ye ihtiyacım var... değil mi? İzleyin ve görün...</p>                
+                <p>Ana panelde sadece bir SPD'ye ihtiyacım var... değil mi? İzleyin ve görün...</p>
                 <figure class="article-image">
                     <div class="video-embed">
                         <iframe
@@ -202,28 +212,24 @@ gerilim düşüşü olayları tarafından tetiklenmektedir.</p>
         },
         {
             id: 9,
-            category: 'UPS',
+            category: 'Güç Kalitesi',
             image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200',
-            title: 'UPS cihazının boyutu nasıl belirlenir?',
-            excerpt: 'UPS cihazının boyutu nasıl belirlenir?',
-            date: '11 Mart 2022',
-            author: 'İnfo ESC',
+            title: 'Güç Kalitesi Önemli mi?',
+            excerpt: 'Güç Kalitesi Önemli mi?',
+            date: '08 Mart 2021',
+            author: 'bricar77',
             content: `
-                <h2>UPS cihazının boyutu nasıl belirlenir?</h2>
+                <h2>Güç Kalitesi Önemli mi?</h2>
                 <figure class="article-image">
-                    <div class="video-embed">
-                        <iframe
-                            src="https://www.youtube.com/embed/i80AMgvWhMI?start=4"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen
-                        ></iframe>
-                    </div>
+                    <img src="/blog-images/power.jpg" alt="Güç Kalitesi Önemli mi?">
                 </figure>
-                <p style="margin-top: 28px;">
-                    <a href="https://www.youtube.com/c/sinetamer" class="read-more-link" target="_blank" rel="noopener noreferrer">Daha Fazla içerik</a>
-                </p>
+                <p>Güç kalitesi karmaşık bir konudur. En basit haliyle, elektrik güç kalitesi, bir güç kaynağının voltajı, frekansı ve sinüzoidal dalga biçimini koruyarak belirlenmiş standartlara ne kadar uyduğunu ifade eder. İstikrarlı bir güç kalitesine sahip olmak hayati önem taşır. Yüksek güç kalitesi, voltaj değişimlerinden kaynaklanan elektrikli ekipmanlara verilen zararları azaltmaya yardımcı olur. Burada, iyi bir güç kalitesine sahip olmanın bazı nedenlerini vurgulayacağız.</p>
+                <h2>Güç Kalitesi Neden Önemlidir?</h2>
+                <p>Güç kalitesi birçok nedenden dolayı önemlidir. Tüm elektrikli ekipmanlar belirli voltaj seviyelerinde çalışacak şekilde tasarlanmıştır. Düşük kaliteli elektrik beslemesi, ekipmanınızın voltaj aralığının dışında kalan güç kesintilerine neden olabilir. Bu çok tehlikeli olabilir çünkü ekipman arızalanabilir veya tamamen bozulabilir ve onarımı veya değiştirilmesi önemli zaman ve para gerektirebilir. Zayıf güç kaynağı, herhangi bir elektronik ekipmanı yavaş yavaş bozarak, elektrikli ekipmanınızın erken yaşlanmasına ve arızalanmasına neden olabilir. Düşük güç kalitesi nedeniyle makine arızası, hastaneler gibi kritik uygulamalarda hayati tehlike oluşturabilir.</p>
+                <p>İşletmelerdeki üretim hızı, elektrik tedarikindeki dalgalanmalardan etkilenebilir. Bu da işletmeler için önemli kayıplara yol açabilir. Elektrik Enerjisi Araştırma Enstitüsü'ne göre, düşük elektrik kalitesi,  endüstriye  yıllık olarak 188 milyar dolara kadar doğrudan maliyet ve verimlilik kaybına neden olmaktadır. Kötü elektrik kalitesi ayrıca enerji tüketimini artırarak yüksek enerji faturalarına yol açmaktadır. Bunun temel nedeni, elektrik tedarikçilerinin tarife belirlerken elektrik enerjisi kalitesini dikkate almamalarıdır.</p>
+                <p>Bilgisayar dünyasında, güç kalitesi hassas elektrikli ekipmanların düzgün çalışması ve bakımı için çok önemlidir. Sisteminizin arızalanması acı vericidir, ancak tüm verilerinizi kaybetmek korkunçtur. Voltaj seviyelerindeki ani bir artış, ekipmanın arızalanmasına ve veri kaybına yol açabilir. Ayrıca, elektriksel gürültü bilgisayar sinyallerini bozarak iletilen verilerin bozulmasına veya kaybolmasına neden olabilir. Güç kesintileri,  dünya genelinde veri kaybının en önemli nedenlerinden biridir  . Şirketler ve bireyler bu tür aksiliklerden kaçınmak için genellikle sistemlerini CPU hasarına karşı korumak amacıyla yedek güç kaynağı kurarlar.</p>
+                <h2>Çözüm</h2>
+                <p>İyi bir güç kalitesine sahip olmanın faydaları çoktur. Yüksek güç kalitesine önem vermek, elektrikli alet ve ekipmanlarınızın voltaj dalgalanmaları veya güç düzensizlikleri nedeniyle zarar görmemesini sağlar. Tüketiciler, daha düşük tüketim sayesinde elektrik tarifelerinde tasarruf sağlarlar. Üretim ve veri kayıpları en aza indirilebilir ve şirketin genel performansı iyileştirilebilir. Ekipmanınızın iyi korunmasını sağlamak istiyorsanız, tutarlı ve yüksek kaliteli güç sağlamak için diğer güç kalitesi güvence ekipmanlarıyla birlikte bir yedek güç kaynağı edinmeyi düşünün</p>
             `
         },
         {

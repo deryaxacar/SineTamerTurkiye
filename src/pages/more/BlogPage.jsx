@@ -13,21 +13,21 @@ const BlogPage = () => {
     const blogPosts = [
         {
             id: 1,
-            title: 'Zamanı Durdurun: %68,9luk İş Durdurma Vergisinden Kurtulun',
-            excerpt: 'Tesisinizin çalışmasını sürdürün, KPI larınızı koruyun ve IEEE 1668 uyumluluğunda bir adım önde olun. Beklenmedik kesintilerin %68,9 u buradan başlar.Hazır mısınız? Üretim durduğunda, baskı anında başlar.Operatörler telaşlanır, süpervizörler gösterge panellerini kontrol eder ve yönetim her seferinde aynı soruyu sorar: Tekrar çalışmaya başlamamız ne kadar sürer? Göz önünde saklanan şeyler genellikle plansız kesintilerin bir numaralı nedenidir...',
+            title: 'Kuruluşunuzun Neden Aşırı Gerilim Korumasına İhtiyacı Var?',
+            excerpt: 'Elektronik cihazlar, günümüz dünyasında her işletme veya kuruluş için vazgeçilmezdir. Ödemelerin işlenmesi, iletişim ve kayıt tutma gibi işletmenin işleyişini sağlayan temel işlevleri yerine getirmede önemli bir rol oynarlar. Birçok kuruluşun sıklıkla fark edemediği şey ise, bu elektronik cihazların uygun şekilde korunmasının önemidir.',
             image: '',
-            date: '10 Eylül 2025',
-            author: 'Jeff Edwards',
-            category: 'Kategorilenmemiş',
+            date: '24 Mart 2021',
+            author: 'bricar77',
+            category: 'Aşırı Gerilim Koruması',
         },
         {
             id: 2,
-            title: 'Doğru SPD Montajı',
-            excerpt: 'Kablo uzunluğu ve montaj uygulamaları, özellikle kademeli mimarilerde, aşırı gerilim koruma performansının görünmez kahramanları (veya sessiz sabotajcıları)dır. En gelişmiş frekans azaltıcı aşırı gerilim koruyucularının bile performansı, montaj hassas bir şekilde yapılmazsa ciddi şekilde tehlikeye girebilir. Makalenin tamamı için… ayrıntılı teknik analizimize göz atın!',
+            title: 'Geçici dalgalanmalar kârınızı azaltır.',
+            excerpt: 'Geçici voltaj yükselmeleri, yalnızca birkaç mikrosaniye süren ve genellikle göz ardı edilen veya zararsız kabul edilen kısa süreli aşırı voltaj artışlarını ifade eder. Bununla birlikte, bu voltaj yükselmeleri elektronik cihazlarınız için son derece zararlı olabilir ve uzun vadeli kârınızı azaltabilir. Bu yükselmelerin nedenlerinden bazıları elektrik şebekesi anahtarlaması, yıldırım çarpması veya arızalı bir transformatör veya iletim hattıdır.',
             image: '',
-            date: '27 Haziran 2025',
-            author: 'Jeff Edwards',
-            category: 'SPD',
+            date: '17 Mart 2021',
+            author: 'bricar77',
+            category: 'Aşırı Gerilim Koruması',
         },
         {
             id: 3,
@@ -49,12 +49,12 @@ const BlogPage = () => {
         },
         {
             id: 5,
-            title: 'Güneş panelleriniz var mı?',
-            excerpt: 'Bu haftanın Teknoloji Konusu… Daha fazla Teknoloji Konusu için… YouTube Kanalımızı ziyaret edin!',
+            title: 'Verimliliğinizi En Üst Düzeye Çıkarın!',
+            excerpt: 'Elektrik voltajındaki ani yükselmeler günlük çalışma faaliyetleriniz için can sıkıcı olabilir. ABD Enerji Bilgi Birliği\'ne (EIA) göre, 2018 yılında müşteriler ortalama altı saatlik elektrik kesintileri yaşadı. Elektrik voltajındaki ani yükselmeler, elektrikli ekipman ve sistemlerinizin hassas altyapısını etkileyebilir ve onları tamamen veya kısmen kullanılamaz hale getirebilir. NEMA tarafından yapılan bir ankete göre, yaklaşık %41\'i',
             image: '',
-            date: '23 Ağustos 2022',
+            date: '10 Mart 2021',
             author: 'bricar77',
-            category: 'Güneş Paneli',
+            category: 'Verimlilik',
         },
         {
             id: 6,
@@ -63,7 +63,7 @@ const BlogPage = () => {
             image: '',
             date: '9 Ağustos 2022',
             author: 'bricar77',
-            category: 'Kategorilenmemiş',
+            category: 'SPD',
         },
         {
             id: 7,
@@ -85,12 +85,12 @@ const BlogPage = () => {
         },
         {
             id: 9,
-            title: 'UPS cihazının boyutu nasıl belirlenir?',
-            excerpt: 'UPS cihazının boyutu nasıl belirlenir?',
+            title: 'Güç Kalitesi Önemli mi?',
+            excerpt: 'Güç kalitesi karmaşık bir konudur. En basit haliyle, elektrik güç kalitesi, bir güç kaynağının voltajı, frekansı ve sinüzoidal dalga biçimini koruyarak belirlenmiş standartlara ne kadar uyduğunu ifade eder. İstikrarlı bir güç kalitesine sahip olmak hayati önem taşır.',
             image: '',
-            date: '11 Mart 2022',
-            author: 'İnfo ESC',
-            category: 'UPS',
+            date: '08 Mart 2021',
+            author: 'bricar77',
+            category: 'Güç Kalitesi',
         },
         {
             id: 10,
@@ -166,10 +166,10 @@ const BlogPage = () => {
 
                     {/* Pagination placeholder */}
                     <div className="blog-pagination">
-                        <span className="page-info">Sayfa 1 / 5</span>
+                        <span className="page-info">Sayfa 1 / 1</span>
                         <div className="pagination-buttons">
                             <button className="pagination-btn active">1</button>
-                            <button className="pagination-btn">2</button>
+                            {/* <button className="pagination-btn">2</button>
                             <button className="pagination-btn">3</button>
                             <button className="pagination-btn">4</button>
                             <button className="pagination-btn">5</button>
@@ -178,7 +178,7 @@ const BlogPage = () => {
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                     <path d="M9 18l6-6-6-6" />
                                 </svg>
-                            </button>
+                            </button> */}
                         </div>
                     </div>
                 </div>
